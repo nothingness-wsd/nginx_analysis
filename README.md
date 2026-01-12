@@ -1,2 +1,15 @@
 # nginx_analysis
-source code analysis
+
+source code analysis for nginx
+
+Nginx是一个高性能的 HTTP 服务器 和 反向代理服务器
+
+**Nginx 是一个非常优秀的 C 语言开源项目**。
+
+Nginx 使用 **纯 C 语言** 编写，充分利用了 C 的高效性和对底层系统的控制能力。
+
+
+代码结构清晰，命名规范，注释详实（尤其在核心部分如 event、http、core 等）。
+
+> **Nginx 不仅是一个成功的 Web 服务器软件，更是 C 语言系统编程的典范之作**。  
+> 它展示了如何用简洁、高效的 C 代码构建可扩展、高并发的网络服务，是学习系统编程、网络编程和高性能服务器设计的绝佳参考项目。
