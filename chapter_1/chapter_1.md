@@ -108,9 +108,29 @@ http {
 
 ---
 
+## 2.运行
 ```c
 sudo ./nginx
 ```
 启动 nginx
 
 ---
+
+打开浏览器访问
+
+http://localhost:80
+![alt text](image.png)
+
+---
+
+## 3.分析代码
+
+上面所示 启动 nginx 后 到 浏览器访问成功显示页面，到底是如何实现的？
+
+为了搞清楚以上问题 接下来就需要分析源代码
+
+分析源代码首先就要找到 mian 函数，main 函数是源代码中最先被执行的
+
+main 函数
+定义在
+`./nginx-1.24.0/src/core/nginx.c`
