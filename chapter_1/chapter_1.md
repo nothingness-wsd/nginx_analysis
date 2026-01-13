@@ -42,3 +42,75 @@ Linux wsd-ubuntu 6.8.0-90-generic #91~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov
 -s（内核名称）、-n（主机名）、-r（内核发布版本）、-v（内核版本）、
 -m（机器硬件名称）、-p（处理器类型）、-i（硬件平台）和 -o（操作系统）。
 这个命令是查看Linux系统内核和硬件基本信息最常用的工具之一。
+
+---
+
+# 2.nginx-1.24.0 源码 编译安装
+
+[nginx-1.24.0 源码 编译安装](https://blog.csdn.net/weixin_41812346/article/details/145267995?spm=1011.2415.3001.5331)
+
+---
+
+# 3.运行，分析
+
+ ## 1.编译配置
+ ```c
+sudo ./configure \
+--sbin-path=/home/wsd/Desktop/Nginx \
+--conf-path=/home/wsd/Desktop/Nginx/conf/nginx.conf \
+--error-log-path=/home/wsd/Desktop/Nginx/log/error.log \
+--http-log-path=/home/wsd/Desktop/Nginx/log/access.log
+```
+
+---
+
+
+```c
+sudo make 
+```
+重新编译
+
+---
+
+```c
+sudo make install
+```
+安装 编译后的可执行文件
+
+---
+
+配置文件 nginx.conf 如下
+```c
+worker_processes  1;
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    server {
+        listen       80 deferred;
+        server_name  localhost;
+
+        location / {
+            root   html;
+            index  index.html index.htm;
+        }
+
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+    }
+}
+```
+
+---
+
+```c
+sudo ./nginx
+```
+启动 nginx
+
+---
