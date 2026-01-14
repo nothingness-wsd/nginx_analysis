@@ -4,11 +4,6 @@ INCLUDE = -I./src/core -I./src/event -I./src/event/modules -I./src/http -I./src/
 # 声明伪目标
 .PHONY: all build clean
 
-# 清理目标
-clean:
-	rm -f night && \
-	find objs/src/ -type f -delete
-
 # 默认目标
 all: build
 
@@ -302,4 +297,7 @@ objs/src/core/night_hash.o: \
 		
 
 	
-
+# 清理目标
+clean:
+	rm -f night && \
+	find objs/src/ -type f -delete

@@ -29,12 +29,13 @@
 #include <sys/un.h>
 #include <sys/utsname.h>
 
-#define NIGHT_OK    			(0)
-#define NIGHT_ERROR 			(-1)
-#define NIGHT_AGAIN 			(-2)
-
-#define NIGHT_DONE      		(-4)
-#define NIGHT_DECLINED 			(-5)
+#define  NIGHT_OK				0
+#define  NIGHT_ERROR			-1
+#define  NIGHT_AGAIN			-2
+#define  NIGHT_BUSY				-3
+#define  NIGHT_DONE				-4
+#define  NIGHT_DECLINED			-5
+#define  NIGHT_ABORT			-6
 
 #define LF 		((char)'\n')
 #define CR 		((char)'\r')
