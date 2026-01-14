@@ -1,0 +1,4707 @@
+FILE=src/os/unix/ngx_process.c:LINE=205
+worker_0 start:
+
+FILE=src/core/ngx_array.c:LINE=56
+function:	ngx_array_push
+
+FILE=src/core/ngx_array.c:LINE=107
+元素个数:1
+function ngx_array_push:	return
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(24) <= pool->max (4095)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/os/unix/ngx_alloc.c:LINE=20
+function:	ngx_alloc
+
+FILE=src/os/unix/ngx_alloc.c:LINE=33
+function ngx_alloc:	return
+
+FILE=src/os/unix/ngx_alloc.c:LINE=20
+function:	ngx_alloc
+
+FILE=src/os/unix/ngx_alloc.c:LINE=33
+function ngx_alloc:	return
+
+FILE=src/os/unix/ngx_alloc.c:LINE=20
+function:	ngx_alloc
+
+FILE=src/os/unix/ngx_alloc.c:LINE=33
+function ngx_alloc:	return
+
+FILE=src/os/unix/ngx_alloc.c:LINE=20
+function:	ngx_alloc
+
+FILE=src/os/unix/ngx_alloc.c:LINE=33
+function ngx_alloc:	return
+
+FILE=src/os/unix/ngx_alloc.c:LINE=20
+function:	ngx_alloc
+
+FILE=src/os/unix/ngx_alloc.c:LINE=33
+function ngx_alloc:	return
+
+FILE=src/event/modules/ngx_epoll_module.c:LINE=581
+function:	ngx_epoll_add_event
+
+FILE=src/event/modules/ngx_epoll_module.c:LINE=581
+function:	ngx_epoll_add_event
+
+FILE=src/core/ngx_string.c:LINE=59
+function:	ngx_cpystrn
+
+FILE=src/core/ngx_string.c:LINE=59
+function:	ngx_cpystrn
+
+FILE=src/core/ngx_times.c:LINE=102
+function:	ngx_time_update
+
+FILE=src/core/ngx_times.c:LINE=115
+ngx_time_lock=0
+
+FILE=src/core/ngx_times.c:LINE=126
+ngx_time_lock=1
+
+FILE=src/core/ngx_times.c:LINE=130
+获取当前精确时间
+ngx_gettimeofday(&tv)
+
+FILE=src/core/ngx_times.c:LINE=135
+ngx_gettimeofday(&tv) completed
+
+FILE=src/core/ngx_times.c:LINE=142
+sec=1768287924
+
+FILE=src/core/ngx_times.c:LINE=148
+msec=685
+
+FILE=src/core/ngx_times.c:LINE=153
+更新全局单调时间计数器
+ngx_monotonic_time(sec, msec)
+
+FILE=src/core/ngx_times.c:LINE=332
+function:	ngx_monotonic_time
+
+FILE=src/core/ngx_times.c:LINE=357
+function ngx_monotonic_time:	retun
+
+FILE=src/core/ngx_times.c:LINE=158
+更新全局单调时间计数器完成
+ngx_monotonic_time(sec, msec) completed
+ngx_current_msec=19145310
+
+FILE=src/core/ngx_times.c:LINE=164
+获取当前时间槽的指针
+slot=2
+
+FILE=src/core/ngx_times.c:LINE=187
+循环更新时间槽
+slot=2
+
+FILE=src/core/ngx_times.c:LINE=196
+更新后
+slot=3
+
+FILE=src/core/ngx_times.c:LINE=208
+将时间戳转换为结构化的日历时间
+ngx_gmtime
+
+FILE=src/core/ngx_times.c:LINE=475
+function:	ngx_gmtime
+
+FILE=src/core/ngx_times.c:LINE=583
+mon=1
+
+FILE=src/core/ngx_times.c:LINE=586
+function ngx_gmtime:	return
+
+FILE=src/core/ngx_times.c:LINE=213
+将时间戳转换为结构化的日历时间完成
+ngx_gmtime completed
+
+FILE=src/core/ngx_times.c:LINE=225
+格式化 HTTP 标准时间字符串
+p0=Tue, 13 Jan 2026 07:05:24 GMT
+
+FILE=src/core/ngx_times.c:LINE=237
+获取本地时间
+ngx_localtime(sec, &tm)
+
+FILE=src/os/unix/ngx_time.c:LINE=77
+function:	ngx_localtime
+
+FILE=src/os/unix/ngx_time.c:LINE=82
+localtime_r
+
+FILE=src/os/unix/ngx_time.c:LINE=103
+function ngx_localtime:	return
+
+FILE=src/core/ngx_times.c:LINE=242
+获取本地时间完成
+ngx_localtime(sec, &tm) completed
+
+FILE=src/core/ngx_times.c:LINE=247
+时区偏移
+cached_gmtoff=480
+
+FILE=src/core/ngx_times.c:LINE=312
+释放时间更新锁
+ngx_unlock(&ngx_time_lock)
+
+FILE=src/core/ngx_times.c:LINE=317
+已释放时间更新锁
+ngx_time_lock=0
+
+FILE=src/core/ngx_times.c:LINE=320
+function ngx_time_update:	return
+
+FILE=src/event/ngx_event_accept.c:LINE=28
+function:	ngx_event_accept
+
+FILE=src/event/ngx_event_accept.c:LINE=70
+ev->available=0
+
+FILE=src/event/ngx_event_accept.c:LINE=86
+do-while 循环，处理连接事件
+
+FILE=src/event/ngx_event_accept.c:LINE=92
+socklen=112
+
+FILE=src/event/ngx_event_accept.c:LINE=99
+调用 accept4 接受连接， 同时设置为非阻塞
+s = accept4(lc->fd, &sa.sockaddr, &socklen, SOCK_NONBLOCK)
+s=4
+
+FILE=src/event/ngx_event_accept.c:LINE=197
+ngx_accept_disabled = ngx_cycle->connection_n / 8 - ngx_cycle->free_connection_n
+-894 = 128 - 1022
+
+FILE=src/event/ngx_event_accept.c:LINE=202
+获取新连接结构体
+c = ngx_get_connection(s, ev->log)
+
+FILE=src/core/ngx_palloc.c:LINE=21
+function:	ngx_create_pool
+
+FILE=src/os/unix/ngx_alloc.c:LINE=61
+function:	ngx_memalign
+
+FILE=src/os/unix/ngx_alloc.c:LINE=85
+function ngx_memalign:	return
+
+FILE=src/core/ngx_palloc.c:LINE=40
+NGX_MAX_ALLOC_FROM_POOL=4095
+
+FILE=src/core/ngx_palloc.c:LINE=49
+function ngx_create_pool:	retun
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(16) <= pool->max (432)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(80) <= pool->max (432)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/event/ngx_event_accept.c:LINE=336
+rev->ready = 1;
+rev->available = 1;
+
+FILE=src/event/ngx_event_accept.c:LINE=364
+连接开始时间
+c->start_time=19145310
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/event/ngx_event_accept.c:LINE=390
+accepted address is:
+127.0.0.1
+
+FILE=src/event/ngx_event_accept.c:LINE=435
+调用业务处理函数
+ls->handler(c)
+
+FILE=src/http/ngx_http_request.c:LINE=209
+function:	ngx_http_init_connection
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(48) <= pool->max (432)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(24) <= pool->max (432)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_request.c:LINE=378
+rev->handler(rev)
+
+FILE=src/http/ngx_http_request.c:LINE=409
+function:	ngx_http_wait_request_handler
+
+FILE=src/http/ngx_http_request.c:LINE=454
+client_header_buffer_size=1024
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(80) <= pool->max (432)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=163
+大块分配
+ngx_palloc_large
+
+FILE=src/os/unix/ngx_alloc.c:LINE=20
+function:	ngx_alloc
+
+FILE=src/os/unix/ngx_alloc.c:LINE=33
+function ngx_alloc:	return
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_request.c:LINE=486
+从客户端连接读取数据到缓冲区
+n = c->recv(c, b->last, size)
+
+FILE=src/os/unix/ngx_recv.c:LINE=16
+ngx_unix_recv
+
+FILE=src/os/unix/ngx_recv.c:LINE=65
+rev->available=1
+rev->pending_eof=0
+
+FILE=src/http/ngx_http_request.c:LINE=493
+n = c->recv(c, b->last, size) completed
+n=728
+GET / HTTP/1.1
+Host: localhost
+Connection: keep-alive
+sec-ch-ua: "Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+If-None-Match: "68a8213f-267"
+If-Modified-Since: Fri, 22 Aug 2025 07:50:23 GMT
+
+
+
+FILE=src/http/ngx_http_request.c:LINE=565
+标记连接为不可重用
+ngx_reusable_connection(c, 0)
+
+FILE=src/core/ngx_connection.c:LINE=1281
+function:	ngx_reusable_connection
+
+FILE=src/core/ngx_connection.c:LINE=1303
+c->reusable = reusable(0);
+
+FILE=src/http/ngx_http_request.c:LINE=570
+ngx_reusable_connection(c, 0) completed
+
+FILE=src/http/ngx_http_request.c:LINE=574
+为连接创建 HTTP 请求结构
+c->data = ngx_http_create_request(c)
+
+FILE=src/core/ngx_palloc.c:LINE=21
+function:	ngx_create_pool
+
+FILE=src/os/unix/ngx_alloc.c:LINE=61
+function:	ngx_memalign
+
+FILE=src/os/unix/ngx_alloc.c:LINE=85
+function ngx_memalign:	return
+
+FILE=src/core/ngx_palloc.c:LINE=40
+NGX_MAX_ALLOC_FROM_POOL=4095
+
+FILE=src/core/ngx_palloc.c:LINE=49
+function ngx_create_pool:	retun
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(1328) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/core/ngx_list.h:LINE=39
+function:	ngx_list_init
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(1120) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_list.h:LINE=54
+function ngx_list_init:	return NGX_OK
+
+FILE=src/core/ngx_list.h:LINE=39
+function:	ngx_list_init
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(224) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_list.h:LINE=54
+function ngx_list_init:	return NGX_OK
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(344) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(144) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/http/ngx_http_request.c:LINE=579
+ngx_http_create_request(c) completed
+
+FILE=src/http/ngx_http_request.c:LINE=592
+调用请求行处理函数
+ngx_http_process_request_line(rev)
+
+FILE=src/core/ngx_list.h:LINE=39
+function:	ngx_list_init
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(1120) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=221
+分配新的块
+ngx_palloc_block
+
+FILE=src/core/ngx_palloc.c:LINE=231
+function:	ngx_palloc_block
+
+FILE=src/os/unix/ngx_alloc.c:LINE=61
+function:	ngx_memalign
+
+FILE=src/os/unix/ngx_alloc.c:LINE=85
+function ngx_memalign:	return
+
+FILE=src/core/ngx_palloc.c:LINE=267
+function ngx_palloc_block:	FILE=src/core/ngx_list.h:LINE=54
+function ngx_list_init:	return NGX_OK
+
+FILE=src/http/ngx_http_request.c:LINE=1271
+ngx_http_process_request_headers(rev)
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_request.c:LINE=1619
+ngx_http_process_request(r)
+
+FILE=src/http/ngx_http_request.c:LINE=2232
+ngx_http_handler(r)
+
+FILE=src/http/ngx_http_core_module.c:LINE=822
+function:	ngx_http_handler
+
+FILE=src/http/ngx_http_core_module.c:LINE=833
+if (!r->internal)
+
+FILE=src/http/ngx_http_core_module.c:LINE=895
+function:	ngx_http_core_run_phases
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=0
+
+FILE=src/http/ngx_http_core_module.c:LINE=992
+function:	ngx_http_core_rewrite_phase
+
+FILE=src/http/modules/ngx_http_rewrite_module.c:LINE=139
+function:	ngx_http_rewrite_handler
+
+FILE=src/http/modules/ngx_http_rewrite_module.c:LINE=185
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1005
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=1
+
+FILE=src/http/ngx_http_core_module.c:LINE=1035
+function:	ngx_http_core_find_config_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1610
+function:	ngx_http_core_find_location
+
+FILE=src/http/ngx_http_core_module.c:LINE=1704
+function:	ngx_http_core_find_static_location
+
+FILE=src/http/ngx_http_core_module.c:LINE=1714
+uri=/
+
+FILE=src/http/ngx_http_core_module.c:LINE=1737
+node->len=1
+n=1
+node->name=/
+
+FILE=src/http/ngx_http_core_module.c:LINE=1744
+rc=0
+
+FILE=src/http/ngx_http_core_module.c:LINE=1783
+if (len == (size_t) node->len)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1797
+else
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1629
+if (rc == NGX_AGAIN)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1610
+function:	ngx_http_core_find_location
+
+FILE=src/http/ngx_http_core_module.c:LINE=1704
+function:	ngx_http_core_find_static_location
+
+FILE=src/http/ngx_http_core_module.c:LINE=1714
+uri=/
+
+FILE=src/http/ngx_http_core_module.c:LINE=1724
+if (node == NULL)
+rv=-5
+
+FILE=src/http/ngx_http_core_module.c:LINE=1686
+rc=-5
+
+FILE=src/http/ngx_http_core_module.c:LINE=1686
+rc=-5
+
+FILE=src/http/ngx_http_core_module.c:LINE=1048
+-5 = ngx_http_core_find_location(r);
+
+FILE=src/http/ngx_http_core_module.c:LINE=1068
+ngx_http_update_location_config(r);
+
+FILE=src/http/ngx_http_core_module.c:LINE=1465
+function:	ngx_http_update_location_config
+
+FILE=src/http/ngx_http_core_module.c:LINE=1483
+if (r == r->main)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1498
+else
+r->connection->sendfile = 0;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1516
+else
+r->request_body_file_log_level = NGX_LOG_WARN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1525
+r->request_body_in_single_buf=0
+
+FILE=src/http/ngx_http_core_module.c:LINE=1529
+if (r->keepalive)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1583
+if (!clcf->tcp_nopush)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1138
+r->phase_handler=2
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=2
+
+FILE=src/http/ngx_http_core_module.c:LINE=992
+function:	ngx_http_core_rewrite_phase
+
+FILE=src/http/modules/ngx_http_rewrite_module.c:LINE=139
+function:	ngx_http_rewrite_handler
+
+FILE=src/http/modules/ngx_http_rewrite_module.c:LINE=185
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1005
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=3
+
+FILE=src/http/ngx_http_core_module.c:LINE=1150
+function:	ngx_http_core_post_rewrite_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1162
+if (!r->uri_changed)
+r->phase_handler=4
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=4
+
+FILE=src/http/ngx_http_core_module.c:LINE=930
+function:	ngx_http_core_generic_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=942
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_limit_req_module.c:LINE=197
+function:	ngx_http_limit_req_handler
+
+FILE=src/http/modules/ngx_http_limit_req_module.c:LINE=226
+lrcf->limits.nelts=0
+
+FILE=src/http/modules/ngx_http_limit_req_module.c:LINE=272
+if (rc == NGX_DECLINED)
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=958
+if (rc == NGX_DECLINED)
+r->phase_handler=5
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=5
+
+FILE=src/http/ngx_http_core_module.c:LINE=930
+function:	ngx_http_core_generic_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=942
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_limit_conn_module.c:LINE=182
+function:	ngx_http_limit_conn_handler
+
+FILE=src/http/modules/ngx_http_limit_conn_module.c:LINE=206
+lccf->limits.nelts=0
+
+FILE=src/http/modules/ngx_http_limit_conn_module.c:LINE=317
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=958
+if (rc == NGX_DECLINED)
+r->phase_handler=6
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=6
+
+FILE=src/http/ngx_http_core_module.c:LINE=1200
+function:	ngx_http_core_access_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1217
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_access_module.c:LINE=125
+function:	ngx_http_access_handler
+
+FILE=src/http/modules/ngx_http_access_module.c:LINE=141
+case AF_INET:
+
+FILE=src/http/modules/ngx_http_access_module.c:LINE=186
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1225
+if (rc == NGX_DECLINED)
+r->phase_handler=7
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=7
+
+FILE=src/http/ngx_http_core_module.c:LINE=1200
+function:	ngx_http_core_access_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1217
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_auth_basic_module.c:LINE=92
+function:	ngx_http_auth_basic_handler
+
+FILE=src/http/modules/ngx_http_auth_basic_module.c:LINE=114
+if (alcf->realm == NULL || alcf->user_file == NULL)
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1225
+if (rc == NGX_DECLINED)
+r->phase_handler=8
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=8
+
+FILE=src/http/ngx_http_core_module.c:LINE=1280
+function:	ngx_http_core_post_access_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1311
+r->phase_handler=9
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=9
+
+FILE=src/http/ngx_http_core_module.c:LINE=930
+function:	ngx_http_core_generic_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=942
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_try_files_module.c:LINE=81
+function:	ngx_http_try_files_handler
+
+FILE=src/http/modules/ngx_http_try_files_module.c:LINE=100
+if (tlcf->try_files == NULL)
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=958
+if (rc == NGX_DECLINED)
+r->phase_handler=10
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=10
+
+FILE=src/http/ngx_http_core_module.c:LINE=930
+function:	ngx_http_core_generic_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=942
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_mirror_module.c:LINE=88
+function:	ngx_http_mirror_handler
+
+FILE=src/http/modules/ngx_http_mirror_module.c:LINE=106
+if (mlcf->mirror == NULL)
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=958
+if (rc == NGX_DECLINED)
+r->phase_handler=11
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=11
+
+FILE=src/http/ngx_http_core_module.c:LINE=1385
+function:	ngx_http_core_content_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1407
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=99
+function:	ngx_http_index_handler
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=145
+ilcf->indices->nelts=2
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=150
+index[0]
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=155
+if (index[i].lengths == NULL)
+index[i].name.data=index.html
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=174
+reserve=10
+len=11
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=204
+reserve=10
+allocated=0
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=209
+if (reserve > allocated)
+
+FILE=src/http/ngx_http_core_module.c:LINE=2351
+function:	ngx_http_map_uri_to_path
+
+FILE=src/http/ngx_http_core_module.c:LINE=2385
+if (clcf->root_lengths == NULL)
+
+FILE=src/http/ngx_http_core_module.c:LINE=2394
+path->len(33) = clcf->root.len(21) + reserved(10) + r->uri.len(1) - alias(0) + 1;
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_core_module.c:LINE=2407
+path->data=/usr/local/nginx/html
+
+FILE=src/http/ngx_http_core_module.c:LINE=2449
+path->data=/usr/local/nginx/html/
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=219
+allocated=11
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=228
+if (index[i].values == NULL)
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=237
+path.len=32
+path.data=/usr/local/nginx/html/index.html
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=281
+of.read_ahead=0
+of.directio=9223372036854775807
+of.valid=60
+of.min_uses=1
+of.errors=0
+of.events=0
+
+FILE=src/http/ngx_http_core_module.c:LINE=3238
+function:	ngx_http_set_disable_symlinks
+
+FILE=src/http/ngx_http_core_module.c:LINE=3242
+#if (NGX_HAVE_OPENAT)
+
+FILE=src/http/ngx_http_core_module.c:LINE=3254
+if (clcf->disable_symlinks_from == NULL)
+return NGX_OK;
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=296
+ngx_open_cached_file
+
+FILE=src/core/ngx_open_file_cache.c:LINE=148
+function:	ngx_open_cached_file
+
+FILE=src/core/ngx_open_file_cache.c:LINE=166
+if (cache == NULL)
+
+FILE=src/core/ngx_open_file_cache.c:LINE=172
+if (of->test_only)
+
+FILE=src/core/ngx_open_file_cache.c:LINE=858
+function:	ngx_file_info_wrapper
+
+FILE=src/core/ngx_open_file_cache.c:LINE=880
+#else
+
+FILE=src/core/ngx_open_file_cache.c:LINE=888
+if (of->disable_symlinks == NGX_DISABLE_SYMLINKS_OFF)
+
+FILE=src/core/ngx_open_file_cache.c:LINE=900
+return rc(0)
+
+FILE=src/core/ngx_open_file_cache.c:LINE=209
+return NGX_OK;
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=353
+if (!clcf->alias)
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=368
+uri.len=11
+uri.data=/index.html
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=372
+ngx_http_internal_redirect
+
+FILE=src/http/ngx_http_core_module.c:LINE=3009
+function:	ngx_http_internal_redirect
+
+FILE=src/http/ngx_http_core_module.c:LINE=3021
+r->uri_changes=10
+
+FILE=src/http/ngx_http_core_module.c:LINE=3034
+r->uri=/
+n=1
+
+FILE=src/http/ngx_http_core_module.c:LINE=3042
+r->uri=/index.html
+
+FILE=src/http/ngx_http_core_module.c:LINE=3050
+args=
+n=0
+
+FILE=src/http/ngx_http_core_module.c:LINE=3068
+ngx_http_set_exten(r);
+
+FILE=src/http/ngx_http_core_module.c:LINE=2014
+function:	ngx_http_set_exten
+
+FILE=src/http/ngx_http_core_module.c:LINE=2032
+r->exten.data=html
+
+FILE=src/http/ngx_http_core_module.c:LINE=1465
+function:	ngx_http_update_location_config
+
+FILE=src/http/ngx_http_core_module.c:LINE=1483
+if (r == r->main)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1498
+else
+r->connection->sendfile = 0;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1516
+else
+r->request_body_file_log_level = NGX_LOG_WARN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1525
+r->request_body_in_single_buf=0
+
+FILE=src/http/ngx_http_core_module.c:LINE=1529
+if (r->keepalive)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1583
+if (!clcf->tcp_nopush)
+
+FILE=src/http/ngx_http_core_module.c:LINE=3102
+r->main->count=2
+
+FILE=src/http/ngx_http_core_module.c:LINE=3105
+ngx_http_handler(r);
+
+FILE=src/http/ngx_http_core_module.c:LINE=822
+function:	ngx_http_handler
+
+FILE=src/http/ngx_http_core_module.c:LINE=856
+else	r->internal
+
+FILE=src/http/ngx_http_core_module.c:LINE=865
+r->phase_handler=0
+
+FILE=src/http/ngx_http_core_module.c:LINE=895
+function:	ngx_http_core_run_phases
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=0
+
+FILE=src/http/ngx_http_core_module.c:LINE=992
+function:	ngx_http_core_rewrite_phase
+
+FILE=src/http/modules/ngx_http_rewrite_module.c:LINE=139
+function:	ngx_http_rewrite_handler
+
+FILE=src/http/modules/ngx_http_rewrite_module.c:LINE=185
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1005
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=1
+
+FILE=src/http/ngx_http_core_module.c:LINE=1035
+function:	ngx_http_core_find_config_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1610
+function:	ngx_http_core_find_location
+
+FILE=src/http/ngx_http_core_module.c:LINE=1704
+function:	ngx_http_core_find_static_location
+
+FILE=src/http/ngx_http_core_module.c:LINE=1714
+uri=/index.html
+
+FILE=src/http/ngx_http_core_module.c:LINE=1737
+node->len=1
+n=1
+node->name=/
+
+FILE=src/http/ngx_http_core_module.c:LINE=1744
+rc=0
+
+FILE=src/http/ngx_http_core_module.c:LINE=1756
+if (len > (size_t) node->len)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1761
+if (node->inclusive)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1737
+node->len=8
+n=8
+node->name=50x.html
+
+FILE=src/http/ngx_http_core_module.c:LINE=1744
+rc=52
+
+FILE=src/http/ngx_http_core_module.c:LINE=1724
+if (node == NULL)
+rv=-2
+
+FILE=src/http/ngx_http_core_module.c:LINE=1629
+if (rc == NGX_AGAIN)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1610
+function:	ngx_http_core_find_location
+
+FILE=src/http/ngx_http_core_module.c:LINE=1704
+function:	ngx_http_core_find_static_location
+
+FILE=src/http/ngx_http_core_module.c:LINE=1714
+uri=/index.html
+
+FILE=src/http/ngx_http_core_module.c:LINE=1724
+if (node == NULL)
+rv=-5
+
+FILE=src/http/ngx_http_core_module.c:LINE=1686
+rc=-5
+
+FILE=src/http/ngx_http_core_module.c:LINE=1686
+rc=-5
+
+FILE=src/http/ngx_http_core_module.c:LINE=1048
+-5 = ngx_http_core_find_location(r);
+
+FILE=src/http/ngx_http_core_module.c:LINE=1068
+ngx_http_update_location_config(r);
+
+FILE=src/http/ngx_http_core_module.c:LINE=1465
+function:	ngx_http_update_location_config
+
+FILE=src/http/ngx_http_core_module.c:LINE=1483
+if (r == r->main)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1498
+else
+r->connection->sendfile = 0;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1516
+else
+r->request_body_file_log_level = NGX_LOG_WARN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1525
+r->request_body_in_single_buf=0
+
+FILE=src/http/ngx_http_core_module.c:LINE=1529
+if (r->keepalive)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1583
+if (!clcf->tcp_nopush)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1138
+r->phase_handler=2
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=2
+
+FILE=src/http/ngx_http_core_module.c:LINE=992
+function:	ngx_http_core_rewrite_phase
+
+FILE=src/http/modules/ngx_http_rewrite_module.c:LINE=139
+function:	ngx_http_rewrite_handler
+
+FILE=src/http/modules/ngx_http_rewrite_module.c:LINE=185
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1005
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=3
+
+FILE=src/http/ngx_http_core_module.c:LINE=1150
+function:	ngx_http_core_post_rewrite_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1162
+if (!r->uri_changed)
+r->phase_handler=4
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=4
+
+FILE=src/http/ngx_http_core_module.c:LINE=930
+function:	ngx_http_core_generic_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=942
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_limit_req_module.c:LINE=197
+function:	ngx_http_limit_req_handler
+
+FILE=src/http/modules/ngx_http_limit_req_module.c:LINE=226
+lrcf->limits.nelts=0
+
+FILE=src/http/modules/ngx_http_limit_req_module.c:LINE=272
+if (rc == NGX_DECLINED)
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=958
+if (rc == NGX_DECLINED)
+r->phase_handler=5
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=5
+
+FILE=src/http/ngx_http_core_module.c:LINE=930
+function:	ngx_http_core_generic_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=942
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_limit_conn_module.c:LINE=182
+function:	ngx_http_limit_conn_handler
+
+FILE=src/http/modules/ngx_http_limit_conn_module.c:LINE=206
+lccf->limits.nelts=0
+
+FILE=src/http/modules/ngx_http_limit_conn_module.c:LINE=317
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=958
+if (rc == NGX_DECLINED)
+r->phase_handler=6
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=6
+
+FILE=src/http/ngx_http_core_module.c:LINE=1200
+function:	ngx_http_core_access_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1217
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_access_module.c:LINE=125
+function:	ngx_http_access_handler
+
+FILE=src/http/modules/ngx_http_access_module.c:LINE=141
+case AF_INET:
+
+FILE=src/http/modules/ngx_http_access_module.c:LINE=186
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1225
+if (rc == NGX_DECLINED)
+r->phase_handler=7
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=7
+
+FILE=src/http/ngx_http_core_module.c:LINE=1200
+function:	ngx_http_core_access_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1217
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_auth_basic_module.c:LINE=92
+function:	ngx_http_auth_basic_handler
+
+FILE=src/http/modules/ngx_http_auth_basic_module.c:LINE=114
+if (alcf->realm == NULL || alcf->user_file == NULL)
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1225
+if (rc == NGX_DECLINED)
+r->phase_handler=8
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=8
+
+FILE=src/http/ngx_http_core_module.c:LINE=1280
+function:	ngx_http_core_post_access_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1311
+r->phase_handler=9
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=9
+
+FILE=src/http/ngx_http_core_module.c:LINE=930
+function:	ngx_http_core_generic_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=942
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_try_files_module.c:LINE=81
+function:	ngx_http_try_files_handler
+
+FILE=src/http/modules/ngx_http_try_files_module.c:LINE=100
+if (tlcf->try_files == NULL)
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=958
+if (rc == NGX_DECLINED)
+r->phase_handler=10
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=10
+
+FILE=src/http/ngx_http_core_module.c:LINE=930
+function:	ngx_http_core_generic_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=942
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_mirror_module.c:LINE=88
+function:	ngx_http_mirror_handler
+
+FILE=src/http/modules/ngx_http_mirror_module.c:LINE=106
+if (mlcf->mirror == NULL)
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=958
+if (rc == NGX_DECLINED)
+r->phase_handler=11
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=11
+
+FILE=src/http/ngx_http_core_module.c:LINE=1385
+function:	ngx_http_core_content_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1407
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=99
+function:	ngx_http_index_handler
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=117
+if (r->uri.data[r->uri.len - 1] != '/')
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1434
+if (ph->checker)
+r->phase_handler=12
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=12
+
+FILE=src/http/ngx_http_core_module.c:LINE=1385
+function:	ngx_http_core_content_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1407
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_autoindex_module.c:LINE=157
+function:	ngx_http_autoindex_handler
+
+FILE=src/http/modules/ngx_http_autoindex_module.c:LINE=177
+r->uri.data=/index.html
+
+FILE=src/http/modules/ngx_http_autoindex_module.c:LINE=182
+if (r->uri.data[r->uri.len - 1] != '/')
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1434
+if (ph->checker)
+r->phase_handler=13
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=13
+
+FILE=src/http/ngx_http_core_module.c:LINE=1385
+function:	ngx_http_core_content_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1407
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_static_module.c:LINE=53
+function:	ngx_http_static_handler
+
+FILE=src/http/ngx_http_core_module.c:LINE=2351
+function:	ngx_http_map_uri_to_path
+
+FILE=src/http/ngx_http_core_module.c:LINE=2385
+if (clcf->root_lengths == NULL)
+
+FILE=src/http/ngx_http_core_module.c:LINE=2394
+path->len(33) = clcf->root.len(21) + reserved(0) + r->uri.len(11) - alias(0) + 1;
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_core_module.c:LINE=2407
+path->data=/usr/local/nginx/html
+
+FILE=src/http/ngx_http_core_module.c:LINE=2449
+path->data=/usr/local/nginx/html/index.html
+
+FILE=src/http/modules/ngx_http_static_module.c:LINE=118
+path.len=32
+path.data=/usr/local/nginx/html/index.html
+
+FILE=src/http/ngx_http_core_module.c:LINE=3238
+function:	ngx_http_set_disable_symlinks
+
+FILE=src/http/ngx_http_core_module.c:LINE=3242
+#if (NGX_HAVE_OPENAT)
+
+FILE=src/http/ngx_http_core_module.c:LINE=3254
+if (clcf->disable_symlinks_from == NULL)
+return NGX_OK;
+
+FILE=src/http/modules/ngx_http_static_module.c:LINE=206
+ngx_open_cached_file
+
+FILE=src/core/ngx_open_file_cache.c:LINE=148
+function:	ngx_open_cached_file
+
+FILE=src/core/ngx_open_file_cache.c:LINE=166
+if (cache == NULL)
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(24) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(24) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_open_file_cache.c:LINE=223
+ngx_open_and_stat_file
+
+FILE=src/core/ngx_open_file_cache.c:LINE=940
+function:	ngx_open_and_stat_file
+
+FILE=src/core/ngx_open_file_cache.c:LINE=990
+if (!of->log)
+ngx_open_file_wrapper
+
+FILE=src/core/ngx_open_file_cache.c:LINE=677
+function:	ngx_open_file_wrapper
+
+FILE=src/core/ngx_open_file_cache.c:LINE=697
+#else
+
+FILE=src/core/ngx_open_file_cache.c:LINE=706
+if (of->disable_symlinks == NGX_DISABLE_SYMLINKS_OFF)
+
+FILE=src/core/ngx_open_file_cache.c:LINE=717
+return fd(13)
+
+FILE=src/core/ngx_open_file_cache.c:LINE=1051
+else
+
+FILE=src/core/ngx_open_file_cache.c:LINE=1087
+return NGX_OK;
+
+FILE=src/core/ngx_open_file_cache.c:LINE=230
+if (rc == NGX_OK && !of->is_dir)
+
+FILE=src/core/ngx_open_file_cache.c:LINE=241
+return rc(0)
+
+FILE=src/http/modules/ngx_http_static_module.c:LINE=348
+ngx_http_set_etag
+
+FILE=src/http/ngx_http_core_module.c:LINE=2058
+function:	ngx_http_set_etag
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_core_module.c:LINE=2126
+r->headers_out.etag->value.len=14
+r->headers_out.etag->value.data="68a8213f-267"
+return NGX_OK;
+
+FILE=src/http/modules/ngx_http_static_module.c:LINE=355
+ngx_http_set_content_type
+
+FILE=src/http/ngx_http_core_module.c:LINE=1895
+function:	ngx_http_set_content_type
+
+FILE=src/http/ngx_http_core_module.c:LINE=1919
+if (r->exten.len)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1924
+r->exten.data=html
+
+FILE=src/http/ngx_http_core_module.c:LINE=1957
+hash=104
+
+FILE=src/http/ngx_http_core_module.c:LINE=1957
+hash=3340
+
+FILE=src/http/ngx_http_core_module.c:LINE=1957
+hash=103649
+
+FILE=src/http/ngx_http_core_module.c:LINE=1957
+hash=3213227
+
+FILE=src/http/ngx_http_core_module.c:LINE=1970
+ngx_hash_find
+
+FILE=src/http/ngx_http_core_module.c:LINE=1976
+type->data=text/html
+
+FILE=src/http/ngx_http_core_module.c:LINE=1986
+if (type)
+return NGX_OK;
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(80) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(200) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/http/modules/ngx_http_static_module.c:LINE=381
+rc = ngx_http_send_header(r);
+
+FILE=src/http/ngx_http_core_module.c:LINE=2259
+function:	ngx_http_send_header
+
+FILE=src/http/ngx_http_core_module.c:LINE=2307
+return ngx_http_top_header_filter(r);
+
+FILE=src/http/modules/ngx_http_range_filter_module.c:LINE=152
+function:	ngx_http_range_header_filter
+
+FILE=src/http/modules/ngx_http_range_filter_module.c:LINE=184
+return ngx_http_next_header_filter(r);
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=161
+function:	ngx_http_header_filter
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=189
+r->header_sent = 1;
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=244
+if (r->headers_out.last_modified_time != -1)
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=271
+len=13
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=291
+else
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=296
+status=304
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=341
+status 3xx
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=400
+status_line=304 Not Modified
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=410
+if (r->headers_out.server == NULL)
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=416
+len=51
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=439
+if (r->headers_out.date == NULL)
+len=88
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=476
+if(r->headers_out.location == NULL)
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=557
+else if (r->keepalive)
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=587
+#if (NGX_HTTP_GZIP)
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(80) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(180) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=648
+HTTP/1.1 304 Not Modified
+
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=669
+HTTP/1.1 304 Not Modified
+Server: nginx/1.24.0
+��$`
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=681
+HTTP/1.1 304 Not Modified
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=709
+HTTP/1.1 304 Not Modified
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=720
+HTTP/1.1 304 Not Modified
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+
+
+FILE=src/core/ngx_times.c:LINE=475
+function:	ngx_gmtime
+
+FILE=src/core/ngx_times.c:LINE=583
+mon=8
+
+FILE=src/core/ngx_times.c:LINE=586
+function ngx_gmtime:	return
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=734
+HTTP/1.1 304 Not Modified
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+Last-Modified: Fri, 22 Aug 2025 07:50:23 GMT
+`
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=772
+HTTP/1.1 304 Not Modified
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+Last-Modified: Fri, 22 Aug 2025 07:50:23 GMT
+`
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=780
+HTTP/1.1 304 Not Modified
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+Last-Modified: Fri, 22 Aug 2025 07:50:23 GMT
+`
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=801
+HTTP/1.1 304 Not Modified
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+Last-Modified: Fri, 22 Aug 2025 07:50:23 GMT
+Connection: keep-alive
+
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=839
+HTTP/1.1 304 Not Modified
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+Last-Modified: Fri, 22 Aug 2025 07:50:23 GMT
+Connection: keep-alive
+ETag: "68a8213f-267"
+�$`
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=859
+return ngx_http_write_filter(r, &out);
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=53
+function:	ngx_http_write_filter
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=63
+in->buf->in_file=0
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=82
+r->out=NULL
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=177
+for (ln = in; ln; ln = ln->next)
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(16) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=239
+cl->buf->in_file=0
+size=180
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=262
+if (cl->buf->last_buf)
+last = 1;
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=282
+size=180
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=294
+c->write->delayed=0
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=341
+if (!r->limit_rate_set)
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=346
+r->limit_rate=0
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=405
+limit=2097152
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=412
+sent=0
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=418
+chain = c->send_chain(c, r->out, limit);
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=52
+function:	ngx_linux_sendfile_chain
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=101
+prev_send=0
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=108
+cl = ngx_output_chain_to_iovec(&header, in, limit - send, c->log);
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=116
+function:	ngx_output_chain_to_iovec
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=134
+for ( /* void */ ; in && total < limit; in = in->next)
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=182
+size=180
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=185
+HTTP/1.1 304 Not Modified
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+Last-Modified: Fri, 22 Aug 2025 07:50:23 GMT
+Connection: keep-alive
+ETag: "68a8213f-267"
+
+temp=180
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=228
+vec->count=1
+return in=(nil)
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=136
+c->tcp_nopush=2
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=247
+n = ngx_writev(c, &header);
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=239
+function:	ngx_writev
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=258
+n=180
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=252
+n=180
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=261
+sent=180
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=268
+c->sent=180
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=272
+in = ngx_chain_update_sent(in, sent);
+
+FILE=src/core/ngx_buf.c:LINE=309
+function:	ngx_chain_update_sent
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=305
+if (send >= limit || in == NULL)
+return in;
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=478
+ngx_free_chain(r->pool, ln);
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=488
+r->out=(nil)
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=507
+return NGX_OK;
+
+FILE=src/http/modules/ngx_http_static_module.c:LINE=386
+0 = ngx_http_send_header(r);
+
+FILE=src/http/modules/ngx_http_static_module.c:LINE=391
+return rc(0);
+
+FILE=src/http/ngx_http_core_module.c:LINE=1413
+if (rc != NGX_DECLINED) {
+ngx_http_finalize_request(r, rc);
+
+FILE=src/http/ngx_http_request.c:LINE=2642
+function:	ngx_http_finalize_request
+
+FILE=src/http/ngx_http_request.c:LINE=2860
+if (!r->post_action) {
+
+FILE=src/http/ngx_http_request.c:LINE=2896
+ngx_http_finalize_connection(r);
+
+FILE=src/http/ngx_http_request.c:LINE=2970
+function:	ngx_http_finalize_connection
+
+FILE=src/http/ngx_http_request.c:LINE=2992
+if (r->main->count != 1) {
+
+FILE=src/http/ngx_http_request.c:LINE=3010
+ngx_http_close_request(r, 0);
+
+FILE=src/http/ngx_http_request.c:LINE=4043
+function:	ngx_http_close_request
+
+FILE=src/http/ngx_http_request.c:LINE=4066
+r->count=1
+
+FILE=src/http/ngx_http_request.c:LINE=4073
+if (r->count || r->blocked) {
+return;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1418
+ngx_http_finalize_request(r, rc) completed
+
+FILE=src/http/ngx_http_core_module.c:LINE=1421
+function ngx_http_core_content_phase:	return NGX_OK;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(0) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=918
+if (rc == NGX_OK) {
+function ngx_http_core_run_phases:	return;
+
+FILE=src/http/ngx_http_core_module.c:LINE=884
+ngx_http_core_run_phases(r) completed
+
+FILE=src/http/ngx_http_core_module.c:LINE=887
+function ngx_http_handler:	return
+
+FILE=src/http/ngx_http_core_module.c:LINE=3110
+ngx_http_internal_redirect return NGX_DONE;
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=378
+ngx_http_internal_redirect completed
+rc=-4
+
+FILE=src/http/ngx_http_core_module.c:LINE=1413
+if (rc != NGX_DECLINED) {
+ngx_http_finalize_request(r, rc);
+
+FILE=src/http/ngx_http_request.c:LINE=2642
+function:	ngx_http_finalize_request
+
+FILE=src/http/ngx_http_request.c:LINE=2658
+if (rc == NGX_DONE) {
+ngx_http_finalize_connection(r);
+
+FILE=src/http/ngx_http_request.c:LINE=2970
+function:	ngx_http_finalize_connection
+
+FILE=src/http/ngx_http_request.c:LINE=3050
+ngx_http_set_keepalive(r);
+
+FILE=src/http/ngx_http_request.c:LINE=3349
+function:	ngx_http_set_keepalive
+
+FILE=src/http/ngx_http_request.c:LINE=3426
+r->keepalive = 0;
+
+FILE=src/http/ngx_http_request.c:LINE=3432
+ngx_http_free_request(r, 0);
+
+FILE=src/http/ngx_http_request.c:LINE=4108
+function:	ngx_http_free_request
+
+FILE=src/http/ngx_http_request.c:LINE=4178
+if (!r->logged) {
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_request.c:LINE=4224
+ngx_destroy_pool(pool);
+
+FILE=src/core/ngx_palloc.c:LINE=59
+function:	ngx_destroy_pool
+
+FILE=src/core/ngx_palloc.c:LINE=68
+cleanup
+
+FILE=src/core/ngx_palloc.c:LINE=75
+c->handler(c->data)
+
+FILE=src/core/ngx_palloc.c:LINE=118
+function ngx_destroy_pool:	return
+
+FILE=src/http/ngx_http_request.c:LINE=4229
+function ngx_http_free_request:	return;
+
+FILE=src/http/ngx_http_request.c:LINE=3438
+c->data = hc;
+
+FILE=src/http/ngx_http_request.c:LINE=3443
+ngx_handle_read_event(rev, 0)
+
+FILE=src/event/ngx_event.c:LINE=272
+function:	ngx_handle_read_event
+
+FILE=src/event/ngx_event.c:LINE=279
+if (ngx_event_flags & NGX_USE_CLEAR_EVENT) {
+
+FILE=src/event/ngx_event.c:LINE=289
+if (!rev->active && !rev->ready) {
+ngx_add_event
+
+FILE=src/event/modules/ngx_epoll_module.c:LINE=581
+function:	ngx_epoll_add_event
+
+FILE=src/event/ngx_event.c:LINE=300
+function ngx_handle_read_event:	return NGX_OK;
+
+FILE=src/http/ngx_http_request.c:LINE=3501
+b=0x601b4bf2b628
+b->start=0x601b4bf1f500
+
+FILE=src/http/ngx_http_request.c:LINE=3510
+if (ngx_pfree(c->pool, b->start) == NGX_OK) {
+b->pos = NULL;
+
+FILE=src/http/ngx_http_request.c:LINE=3579
+rev->handler = ngx_http_keepalive_handler;
+
+FILE=src/http/ngx_http_request.c:LINE=3618
+else
+tcp_nodelay = 1;
+
+FILE=src/http/ngx_http_request.c:LINE=3625
+tcp_nodelay=1
+clcf->tcp_nodelay=1
+
+FILE=src/core/ngx_connection.c:LINE=1484
+function:	ngx_tcp_nodelay
+
+FILE=src/core/ngx_connection.c:LINE=1510
+setsockopt(TCP_NODELAY)
+
+FILE=src/core/ngx_connection.c:LINE=1546
+return NGX_OK;
+
+FILE=src/http/ngx_http_request.c:LINE=3647
+ngx_reusable_connection(c, 1);
+
+FILE=src/core/ngx_connection.c:LINE=1281
+function:	ngx_reusable_connection
+
+FILE=src/core/ngx_connection.c:LINE=1303
+c->reusable = reusable(1);
+
+FILE=src/core/ngx_connection.c:LINE=1311
+将该连接加入可重用队列
+
+FILE=src/core/ngx_connection.c:LINE=1320
+ngx_cycle->reusable_connections_n=1
+
+FILE=src/http/ngx_http_request.c:LINE=3652
+ngx_reusable_connection(c, 1)	completed
+
+FILE=src/http/ngx_http_request.c:LINE=3656
+ngx_add_timer(rev, clcf->keepalive_timeout);
+clcf->keepalive_timeout=75000
+
+FILE=src/event/ngx_event_timer.h:LINE=55
+function:	ngx_event_add_timer
+
+FILE=src/event/ngx_event_timer.h:LINE=66
+key = ngx_current_msec + timer;
+19220310 = 19145310 + 75000;
+
+FILE=src/event/ngx_event_timer.h:LINE=102
+ngx_rbtree_insert
+
+FILE=src/http/ngx_http_request.c:LINE=3661
+ngx_add_timer completed
+
+FILE=src/http/ngx_http_request.c:LINE=3055
+ngx_http_set_keepalive(r) completed
+
+FILE=src/http/ngx_http_request.c:LINE=3058
+function ngx_http_finalize_connection:	return;
+
+FILE=src/http/ngx_http_request.c:LINE=2663
+ngx_http_finalize_connection(r) completed
+
+FILE=src/http/ngx_http_request.c:LINE=2666
+ngx_http_finalize_request	return;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1418
+ngx_http_finalize_request(r, rc) completed
+
+FILE=src/http/ngx_http_core_module.c:LINE=1421
+function ngx_http_core_content_phase:	return NGX_OK;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(0) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=918
+if (rc == NGX_OK) {
+function ngx_http_core_run_phases:	return;
+
+FILE=src/http/ngx_http_core_module.c:LINE=884
+ngx_http_core_run_phases(r) completed
+
+FILE=src/http/ngx_http_core_module.c:LINE=887
+function ngx_http_handler:	return
+
+FILE=src/http/ngx_http_request.c:LINE=2237
+ngx_http_handler(r) completed
+
+FILE=src/http/ngx_http_request.c:LINE=2240
+function ngx_http_process_request:	return
+
+FILE=src/http/ngx_http_request.c:LINE=1624
+ngx_http_process_request(r) completed
+
+FILE=src/http/ngx_http_request.c:LINE=1648
+ngx_http_run_posted_requests(c)
+
+FILE=src/http/ngx_http_request.c:LINE=2546
+function:	ngx_http_run_posted_requests
+
+FILE=src/http/ngx_http_request.c:LINE=2554
+for ( ;; )
+
+FILE=src/http/ngx_http_request.c:LINE=2560
+连接已被销毁
+
+FILE=src/http/ngx_http_request.c:LINE=2563
+function ngx_http_run_posted_requests:	return
+
+FILE=src/http/ngx_http_request.c:LINE=1653
+ngx_http_run_posted_requests(c) completed
+
+FILE=src/http/ngx_http_request.c:LINE=1656
+function ngx_http_process_request_headers:	return
+
+FILE=src/http/ngx_http_request.c:LINE=1276
+ngx_http_process_request_headers(rev) completed
+
+FILE=src/http/ngx_http_request.c:LINE=1322
+ngx_http_run_posted_requests(c)
+
+FILE=src/http/ngx_http_request.c:LINE=2546
+function:	ngx_http_run_posted_requests
+
+FILE=src/http/ngx_http_request.c:LINE=2554
+for ( ;; )
+
+FILE=src/http/ngx_http_request.c:LINE=2560
+连接已被销毁
+
+FILE=src/http/ngx_http_request.c:LINE=2563
+function ngx_http_run_posted_requests:	return
+
+FILE=src/http/ngx_http_request.c:LINE=1327
+ngx_http_run_posted_requests(c) completed
+
+FILE=src/http/ngx_http_request.c:LINE=1330
+function ngx_http_process_request_line:	return
+
+FILE=src/http/ngx_http_request.c:LINE=597
+ngx_http_process_request_line(rev) completed
+
+FILE=src/http/ngx_http_request.c:LINE=600
+function ngx_http_wait_request_handler:	return
+
+FILE=src/http/ngx_http_request.c:LINE=383
+rev->handler(rev) completed
+
+FILE=src/http/ngx_http_request.c:LINE=386
+function ngx_http_init_connection:	return
+
+FILE=src/event/ngx_event_accept.c:LINE=440
+业务处理
+ls->handler(c) completed
+
+FILE=src/event/ngx_event_accept.c:LINE=453
+function ngx_event_accept:	return
+
+FILE=src/core/ngx_times.c:LINE=102
+function:	ngx_time_update
+
+FILE=src/core/ngx_times.c:LINE=115
+ngx_time_lock=0
+
+FILE=src/core/ngx_times.c:LINE=126
+ngx_time_lock=1
+
+FILE=src/core/ngx_times.c:LINE=130
+获取当前精确时间
+ngx_gettimeofday(&tv)
+
+FILE=src/core/ngx_times.c:LINE=135
+ngx_gettimeofday(&tv) completed
+
+FILE=src/core/ngx_times.c:LINE=142
+sec=1768287924
+
+FILE=src/core/ngx_times.c:LINE=148
+msec=848
+
+FILE=src/core/ngx_times.c:LINE=153
+更新全局单调时间计数器
+ngx_monotonic_time(sec, msec)
+
+FILE=src/core/ngx_times.c:LINE=332
+function:	ngx_monotonic_time
+
+FILE=src/core/ngx_times.c:LINE=357
+function ngx_monotonic_time:	retun
+
+FILE=src/core/ngx_times.c:LINE=158
+更新全局单调时间计数器完成
+ngx_monotonic_time(sec, msec) completed
+ngx_current_msec=19145474
+
+FILE=src/core/ngx_times.c:LINE=164
+获取当前时间槽的指针
+slot=3
+
+FILE=src/core/ngx_times.c:LINE=176
+night_time_lock=0
+function ngx_time_update:	return
+
+FILE=src/http/ngx_http_request.c:LINE=3683
+function:	ngx_http_keepalive_handler
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=163
+大块分配
+ngx_palloc_large
+
+FILE=src/os/unix/ngx_alloc.c:LINE=20
+function:	ngx_alloc
+
+FILE=src/os/unix/ngx_alloc.c:LINE=33
+function ngx_alloc:	return
+
+FILE=src/os/unix/ngx_recv.c:LINE=16
+ngx_unix_recv
+
+FILE=src/os/unix/ngx_recv.c:LINE=65
+rev->available=-1
+rev->pending_eof=0
+
+FILE=src/core/ngx_connection.c:LINE=1281
+function:	ngx_reusable_connection
+
+FILE=src/core/ngx_connection.c:LINE=1290
+当前连接 已经是可重用状态,需要先从可重用队列中移除它
+
+FILE=src/core/ngx_connection.c:LINE=1303
+c->reusable = reusable(0);
+
+FILE=src/core/ngx_palloc.c:LINE=21
+function:	ngx_create_pool
+
+FILE=src/os/unix/ngx_alloc.c:LINE=61
+function:	ngx_memalign
+
+FILE=src/os/unix/ngx_alloc.c:LINE=85
+function ngx_memalign:	return
+
+FILE=src/core/ngx_palloc.c:LINE=40
+NGX_MAX_ALLOC_FROM_POOL=4095
+
+FILE=src/core/ngx_palloc.c:LINE=49
+function ngx_create_pool:	retun
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(1328) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/core/ngx_list.h:LINE=39
+function:	ngx_list_init
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(1120) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_list.h:LINE=54
+function ngx_list_init:	return NGX_OK
+
+FILE=src/core/ngx_list.h:LINE=39
+function:	ngx_list_init
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(224) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_list.h:LINE=54
+function ngx_list_init:	return NGX_OK
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(344) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(144) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/core/ngx_list.h:LINE=39
+function:	ngx_list_init
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(1120) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=221
+分配新的块
+ngx_palloc_block
+
+FILE=src/core/ngx_palloc.c:LINE=231
+function:	ngx_palloc_block
+
+FILE=src/os/unix/ngx_alloc.c:LINE=61
+function:	ngx_memalign
+
+FILE=src/os/unix/ngx_alloc.c:LINE=85
+function ngx_memalign:	return
+
+FILE=src/core/ngx_palloc.c:LINE=267
+function ngx_palloc_block:	FILE=src/core/ngx_list.h:LINE=54
+function ngx_list_init:	return NGX_OK
+
+FILE=src/http/ngx_http_request.c:LINE=1271
+ngx_http_process_request_headers(rev)
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_request.c:LINE=1619
+ngx_http_process_request(r)
+
+FILE=src/http/ngx_http_request.c:LINE=2232
+ngx_http_handler(r)
+
+FILE=src/http/ngx_http_core_module.c:LINE=822
+function:	ngx_http_handler
+
+FILE=src/http/ngx_http_core_module.c:LINE=833
+if (!r->internal)
+
+FILE=src/http/ngx_http_core_module.c:LINE=895
+function:	ngx_http_core_run_phases
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=0
+
+FILE=src/http/ngx_http_core_module.c:LINE=992
+function:	ngx_http_core_rewrite_phase
+
+FILE=src/http/modules/ngx_http_rewrite_module.c:LINE=139
+function:	ngx_http_rewrite_handler
+
+FILE=src/http/modules/ngx_http_rewrite_module.c:LINE=185
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1005
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=1
+
+FILE=src/http/ngx_http_core_module.c:LINE=1035
+function:	ngx_http_core_find_config_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1610
+function:	ngx_http_core_find_location
+
+FILE=src/http/ngx_http_core_module.c:LINE=1704
+function:	ngx_http_core_find_static_location
+
+FILE=src/http/ngx_http_core_module.c:LINE=1714
+uri=/favicon.ico
+
+FILE=src/http/ngx_http_core_module.c:LINE=1737
+node->len=1
+n=1
+node->name=/
+
+FILE=src/http/ngx_http_core_module.c:LINE=1744
+rc=0
+
+FILE=src/http/ngx_http_core_module.c:LINE=1756
+if (len > (size_t) node->len)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1761
+if (node->inclusive)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1737
+node->len=8
+n=8
+node->name=50x.html
+
+FILE=src/http/ngx_http_core_module.c:LINE=1744
+rc=49
+
+FILE=src/http/ngx_http_core_module.c:LINE=1724
+if (node == NULL)
+rv=-2
+
+FILE=src/http/ngx_http_core_module.c:LINE=1629
+if (rc == NGX_AGAIN)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1610
+function:	ngx_http_core_find_location
+
+FILE=src/http/ngx_http_core_module.c:LINE=1704
+function:	ngx_http_core_find_static_location
+
+FILE=src/http/ngx_http_core_module.c:LINE=1714
+uri=/favicon.ico
+
+FILE=src/http/ngx_http_core_module.c:LINE=1724
+if (node == NULL)
+rv=-5
+
+FILE=src/http/ngx_http_core_module.c:LINE=1686
+rc=-5
+
+FILE=src/http/ngx_http_core_module.c:LINE=1686
+rc=-5
+
+FILE=src/http/ngx_http_core_module.c:LINE=1048
+-5 = ngx_http_core_find_location(r);
+
+FILE=src/http/ngx_http_core_module.c:LINE=1068
+ngx_http_update_location_config(r);
+
+FILE=src/http/ngx_http_core_module.c:LINE=1465
+function:	ngx_http_update_location_config
+
+FILE=src/http/ngx_http_core_module.c:LINE=1483
+if (r == r->main)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1498
+else
+r->connection->sendfile = 0;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1516
+else
+r->request_body_file_log_level = NGX_LOG_WARN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1525
+r->request_body_in_single_buf=0
+
+FILE=src/http/ngx_http_core_module.c:LINE=1529
+if (r->keepalive)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1583
+if (!clcf->tcp_nopush)
+
+FILE=src/http/ngx_http_core_module.c:LINE=1138
+r->phase_handler=2
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=2
+
+FILE=src/http/ngx_http_core_module.c:LINE=992
+function:	ngx_http_core_rewrite_phase
+
+FILE=src/http/modules/ngx_http_rewrite_module.c:LINE=139
+function:	ngx_http_rewrite_handler
+
+FILE=src/http/modules/ngx_http_rewrite_module.c:LINE=185
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1005
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=3
+
+FILE=src/http/ngx_http_core_module.c:LINE=1150
+function:	ngx_http_core_post_rewrite_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1162
+if (!r->uri_changed)
+r->phase_handler=4
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=4
+
+FILE=src/http/ngx_http_core_module.c:LINE=930
+function:	ngx_http_core_generic_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=942
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_limit_req_module.c:LINE=197
+function:	ngx_http_limit_req_handler
+
+FILE=src/http/modules/ngx_http_limit_req_module.c:LINE=226
+lrcf->limits.nelts=0
+
+FILE=src/http/modules/ngx_http_limit_req_module.c:LINE=272
+if (rc == NGX_DECLINED)
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=958
+if (rc == NGX_DECLINED)
+r->phase_handler=5
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=5
+
+FILE=src/http/ngx_http_core_module.c:LINE=930
+function:	ngx_http_core_generic_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=942
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_limit_conn_module.c:LINE=182
+function:	ngx_http_limit_conn_handler
+
+FILE=src/http/modules/ngx_http_limit_conn_module.c:LINE=206
+lccf->limits.nelts=0
+
+FILE=src/http/modules/ngx_http_limit_conn_module.c:LINE=317
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=958
+if (rc == NGX_DECLINED)
+r->phase_handler=6
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=6
+
+FILE=src/http/ngx_http_core_module.c:LINE=1200
+function:	ngx_http_core_access_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1217
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_access_module.c:LINE=125
+function:	ngx_http_access_handler
+
+FILE=src/http/modules/ngx_http_access_module.c:LINE=141
+case AF_INET:
+
+FILE=src/http/modules/ngx_http_access_module.c:LINE=186
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1225
+if (rc == NGX_DECLINED)
+r->phase_handler=7
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=7
+
+FILE=src/http/ngx_http_core_module.c:LINE=1200
+function:	ngx_http_core_access_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1217
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_auth_basic_module.c:LINE=92
+function:	ngx_http_auth_basic_handler
+
+FILE=src/http/modules/ngx_http_auth_basic_module.c:LINE=114
+if (alcf->realm == NULL || alcf->user_file == NULL)
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1225
+if (rc == NGX_DECLINED)
+r->phase_handler=8
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=8
+
+FILE=src/http/ngx_http_core_module.c:LINE=1280
+function:	ngx_http_core_post_access_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1311
+r->phase_handler=9
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=9
+
+FILE=src/http/ngx_http_core_module.c:LINE=930
+function:	ngx_http_core_generic_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=942
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_try_files_module.c:LINE=81
+function:	ngx_http_try_files_handler
+
+FILE=src/http/modules/ngx_http_try_files_module.c:LINE=100
+if (tlcf->try_files == NULL)
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=958
+if (rc == NGX_DECLINED)
+r->phase_handler=10
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=10
+
+FILE=src/http/ngx_http_core_module.c:LINE=930
+function:	ngx_http_core_generic_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=942
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_mirror_module.c:LINE=88
+function:	ngx_http_mirror_handler
+
+FILE=src/http/modules/ngx_http_mirror_module.c:LINE=106
+if (mlcf->mirror == NULL)
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=958
+if (rc == NGX_DECLINED)
+r->phase_handler=11
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=11
+
+FILE=src/http/ngx_http_core_module.c:LINE=1385
+function:	ngx_http_core_content_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1407
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=99
+function:	ngx_http_index_handler
+
+FILE=src/http/modules/ngx_http_index_module.c:LINE=117
+if (r->uri.data[r->uri.len - 1] != '/')
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1434
+if (ph->checker)
+r->phase_handler=12
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=12
+
+FILE=src/http/ngx_http_core_module.c:LINE=1385
+function:	ngx_http_core_content_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1407
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_autoindex_module.c:LINE=157
+function:	ngx_http_autoindex_handler
+
+FILE=src/http/modules/ngx_http_autoindex_module.c:LINE=177
+r->uri.data=/favicon.ico HTTP/1.1
+Host
+
+FILE=src/http/modules/ngx_http_autoindex_module.c:LINE=182
+if (r->uri.data[r->uri.len - 1] != '/')
+return NGX_DECLINED;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1434
+if (ph->checker)
+r->phase_handler=13
+return NGX_AGAIN;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(-2) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=908
+r->phase_handler=13
+
+FILE=src/http/ngx_http_core_module.c:LINE=1385
+function:	ngx_http_core_content_phase
+
+FILE=src/http/ngx_http_core_module.c:LINE=1407
+rc = ph->handler(r);
+
+FILE=src/http/modules/ngx_http_static_module.c:LINE=53
+function:	ngx_http_static_handler
+
+FILE=src/http/ngx_http_core_module.c:LINE=2351
+function:	ngx_http_map_uri_to_path
+
+FILE=src/http/ngx_http_core_module.c:LINE=2385
+if (clcf->root_lengths == NULL)
+
+FILE=src/http/ngx_http_core_module.c:LINE=2394
+path->len(34) = clcf->root.len(21) + reserved(0) + r->uri.len(12) - alias(0) + 1;
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_core_module.c:LINE=2407
+path->data=/usr/local/nginx/htmlpt-languageif-none-matchif-modified-since/usr/local/nginx/html/index.html
+
+FILE=src/http/ngx_http_core_module.c:LINE=2449
+path->data=/usr/local/nginx/html/favicon.ico
+
+FILE=src/http/modules/ngx_http_static_module.c:LINE=118
+path.len=33
+path.data=/usr/local/nginx/html/favicon.ico
+
+FILE=src/http/ngx_http_core_module.c:LINE=3238
+function:	ngx_http_set_disable_symlinks
+
+FILE=src/http/ngx_http_core_module.c:LINE=3242
+#if (NGX_HAVE_OPENAT)
+
+FILE=src/http/ngx_http_core_module.c:LINE=3254
+if (clcf->disable_symlinks_from == NULL)
+return NGX_OK;
+
+FILE=src/http/modules/ngx_http_static_module.c:LINE=206
+ngx_open_cached_file
+
+FILE=src/core/ngx_open_file_cache.c:LINE=148
+function:	ngx_open_cached_file
+
+FILE=src/core/ngx_open_file_cache.c:LINE=166
+if (cache == NULL)
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(24) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(24) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_open_file_cache.c:LINE=223
+ngx_open_and_stat_file
+
+FILE=src/core/ngx_open_file_cache.c:LINE=940
+function:	ngx_open_and_stat_file
+
+FILE=src/core/ngx_open_file_cache.c:LINE=990
+if (!of->log)
+ngx_open_file_wrapper
+
+FILE=src/core/ngx_open_file_cache.c:LINE=677
+function:	ngx_open_file_wrapper
+
+FILE=src/core/ngx_open_file_cache.c:LINE=697
+#else
+
+FILE=src/core/ngx_open_file_cache.c:LINE=706
+if (of->disable_symlinks == NGX_DISABLE_SYMLINKS_OFF)
+
+FILE=src/core/ngx_open_file_cache.c:LINE=241
+return rc(-1)
+
+FILE=src/http/modules/ngx_http_static_module.c:LINE=212
+ngx_open_cached_file() != NGX_OK
+
+FILE=src/http/ngx_http_core_module.c:LINE=1413
+if (rc != NGX_DECLINED) {
+ngx_http_finalize_request(r, rc);
+
+FILE=src/http/ngx_http_request.c:LINE=2642
+function:	ngx_http_finalize_request
+
+FILE=src/http/ngx_http_request.c:LINE=2725
+处理特殊响应码
+
+FILE=src/http/ngx_http_core_module.c:LINE=2259
+function:	ngx_http_send_header
+
+FILE=src/http/ngx_http_core_module.c:LINE=2288
+if (r->err_status)
+
+FILE=src/http/ngx_http_core_module.c:LINE=2307
+return ngx_http_top_header_filter(r);
+
+FILE=src/http/modules/ngx_http_range_filter_module.c:LINE=152
+function:	ngx_http_range_header_filter
+
+FILE=src/http/modules/ngx_http_range_filter_module.c:LINE=184
+return ngx_http_next_header_filter(r);
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=161
+function:	ngx_http_header_filter
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=189
+r->header_sent = 1;
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=271
+len=13
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=291
+else
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=296
+status=404
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=356
+status 4xx
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=400
+status_line=404 Not Found
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=410
+if (r->headers_out.server == NULL)
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=416
+len=48
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=439
+if (r->headers_out.date == NULL)
+len=85
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=476
+if(r->headers_out.location == NULL)
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=557
+else if (r->keepalive)
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=587
+#if (NGX_HTTP_GZIP)
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(80) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(172) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=648
+HTTP/1.1 404 Not Found
+�Jhr
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=669
+HTTP/1.1 404 Not Found
+Server: nginx/1.24.0
+
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=681
+HTTP/1.1 404 Not Found
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=709
+HTTP/1.1 404 Not Found
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+Content-Type: text/html
+
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=720
+HTTP/1.1 404 Not Found
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+Content-Type: text/html
+Content-Length: 555
+
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=734
+HTTP/1.1 404 Not Found
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+Content-Type: text/html
+Content-Length: 555
+
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=772
+HTTP/1.1 404 Not Found
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+Content-Type: text/html
+Content-Length: 555
+
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=780
+HTTP/1.1 404 Not Found
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+Content-Type: text/html
+Content-Length: 555
+
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=801
+HTTP/1.1 404 Not Found
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+Content-Type: text/html
+Content-Length: 555
+Connection: keep-alive
+
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=839
+HTTP/1.1 404 Not Found
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+Content-Type: text/html
+Content-Length: 555
+Connection: keep-alive
+
+
+FILE=src/http/ngx_http_header_filter_module.c:LINE=859
+return ngx_http_write_filter(r, &out);
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=53
+function:	ngx_http_write_filter
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=63
+in->buf->in_file=0
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=82
+r->out=NULL
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=177
+for (ln = in; ln; ln = ln->next)
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(16) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=239
+cl->buf->in_file=0
+size=155
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=282
+size=155
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=287
+clcf->postpone_output=1460
+if (!last && !flush && in && size < (off_t) clcf->postpone_output)
+return NGX_OK;
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(80) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(80) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(80) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/http/ngx_http_core_module.c:LINE=2319
+function:	ngx_http_output_filter
+
+FILE=src/http/ngx_http_core_module.c:LINE=2330
+rc = ngx_http_top_body_filter(r, in);
+
+FILE=src/http/modules/ngx_http_range_filter_module.c:LINE=692
+function:	ngx_http_range_body_filter
+
+FILE=src/http/modules/ngx_http_range_filter_module.c:LINE=706
+in->buf->in_file=0
+
+FILE=src/http/modules/ngx_http_range_filter_module.c:LINE=714
+if (ctx == NULL)
+return ngx_http_next_body_filter(r, in);
+
+FILE=src/http/ngx_http_copy_filter_module.c:LINE=88
+function:	ngx_http_copy_filter
+
+FILE=src/http/ngx_http_copy_filter_module.c:LINE=108
+if (ctx == NULL)
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(104) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/http/ngx_http_copy_filter_module.c:LINE=132
+ctx->bufs.num=2
+ctx->bufs.size=32768
+
+FILE=src/http/ngx_http_copy_filter_module.c:LINE=158
+r->request_output = 1;
+
+FILE=src/http/ngx_http_copy_filter_module.c:LINE=172
+rc = ngx_output_chain(ctx, in);
+
+FILE=src/core/ngx_output_chain.c:LINE=44
+function:	ngx_output_chain
+
+FILE=src/core/ngx_output_chain.c:LINE=89
+if (in)
+add the incoming buf to the chain ctx->in
+
+FILE=src/core/ngx_output_chain.c:LINE=414
+function:	ngx_output_chain_add_copy
+
+FILE=src/core/ngx_output_chain.c:LINE=430
+while (in)
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(16) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_output_chain.c:LINE=474
+cl->buf->in_file=0
+
+FILE=src/core/ngx_output_chain.c:LINE=430
+while (in)
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(16) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_output_chain.c:LINE=474
+cl->buf->in_file=0
+
+FILE=src/core/ngx_output_chain.c:LINE=430
+while (in)
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(16) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_output_chain.c:LINE=474
+cl->buf->in_file=0
+
+FILE=src/core/ngx_output_chain.c:LINE=483
+return NGX_OK;
+
+FILE=src/core/ngx_output_chain.c:LINE=104
+for ( ;; ) 
+
+FILE=src/core/ngx_output_chain.c:LINE=115
+while (ctx->in)
+
+FILE=src/core/ngx_output_chain.c:LINE=125
+bsize=100
+
+FILE=src/core/ngx_output_chain.c:LINE=183
+if (ngx_output_chain_as_is(ctx, ctx->in->buf))
+
+FILE=src/core/ngx_output_chain.c:LINE=195
+continue;
+
+FILE=src/core/ngx_output_chain.c:LINE=115
+while (ctx->in)
+
+FILE=src/core/ngx_output_chain.c:LINE=125
+bsize=53
+
+FILE=src/core/ngx_output_chain.c:LINE=183
+if (ngx_output_chain_as_is(ctx, ctx->in->buf))
+
+FILE=src/core/ngx_output_chain.c:LINE=195
+continue;
+
+FILE=src/core/ngx_output_chain.c:LINE=115
+while (ctx->in)
+
+FILE=src/core/ngx_output_chain.c:LINE=125
+bsize=402
+
+FILE=src/core/ngx_output_chain.c:LINE=183
+if (ngx_output_chain_as_is(ctx, ctx->in->buf))
+
+FILE=src/core/ngx_output_chain.c:LINE=195
+continue;
+
+FILE=src/core/ngx_output_chain.c:LINE=326
+last = ctx->output_filter(ctx->filter_ctx, out);
+
+FILE=src/http/ngx_http_postpone_filter_module.c:LINE=60
+function:	ngx_http_postpone_filter
+
+FILE=src/http/ngx_http_postpone_filter_module.c:LINE=106
+if (r->postponed == NULL)
+
+FILE=src/http/ngx_http_postpone_filter_module.c:LINE=112
+if (in || c->buffered)
+return ngx_http_next_body_filter(r->main, in);
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=53
+function:	ngx_http_write_filter
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=63
+in->buf->in_file=0
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=90
+for (cl = r->out; cl; cl = cl->next)
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=145
+size=155
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=177
+for (ln = in; ln; ln = ln->next)
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(16) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=239
+cl->buf->in_file=0
+size=255
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=177
+for (ln = in; ln; ln = ln->next)
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(16) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=239
+cl->buf->in_file=0
+size=308
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=177
+for (ln = in; ln; ln = ln->next)
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(16) <= pool->max (4016)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=239
+cl->buf->in_file=0
+size=710
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=262
+if (cl->buf->last_buf)
+last = 1;
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=282
+size=710
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=294
+c->write->delayed=0
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=341
+if (!r->limit_rate_set)
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=346
+r->limit_rate=0
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=405
+limit=2097152
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=412
+sent=0
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=418
+chain = c->send_chain(c, r->out, limit);
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=52
+function:	ngx_linux_sendfile_chain
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=101
+prev_send=0
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=108
+cl = ngx_output_chain_to_iovec(&header, in, limit - send, c->log);
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=116
+function:	ngx_output_chain_to_iovec
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=134
+for ( /* void */ ; in && total < limit; in = in->next)
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=182
+size=155
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=185
+HTTP/1.1 404 Not Found
+Server: nginx/1.24.0
+Date: Tue, 13 Jan 2026 07:05:24 GMT
+Content-Type: text/html
+Content-Length: 555
+Connection: keep-alive
+
+temp=155
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=134
+for ( /* void */ ; in && total < limit; in = in->next)
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=182
+size=100
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=185
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+temp=100
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=134
+for ( /* void */ ; in && total < limit; in = in->next)
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=182
+size=53
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=185
+<hr><center>nginx/1.24.0</center>
+</body>
+</html>
+temp=53
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=134
+for ( /* void */ ; in && total < limit; in = in->next)
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=182
+size=402
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=185
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+temp=402
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=228
+vec->count=4
+return in=(nil)
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=136
+c->tcp_nopush=2
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=247
+n = ngx_writev(c, &header);
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=239
+function:	ngx_writev
+
+FILE=src/os/unix/ngx_writev_chain.c:LINE=258
+n=710
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=252
+n=710
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=261
+sent=710
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=268
+c->sent=710
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=272
+in = ngx_chain_update_sent(in, sent);
+
+FILE=src/core/ngx_buf.c:LINE=309
+function:	ngx_chain_update_sent
+
+FILE=src/os/unix/ngx_linux_sendfile_chain.c:LINE=305
+if (send >= limit || in == NULL)
+return in;
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=478
+ngx_free_chain(r->pool, ln);
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=478
+ngx_free_chain(r->pool, ln);
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=478
+ngx_free_chain(r->pool, ln);
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=478
+ngx_free_chain(r->pool, ln);
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=488
+r->out=(nil)
+
+FILE=src/http/ngx_http_write_filter_module.c:LINE=507
+return NGX_OK;
+
+FILE=src/core/ngx_output_chain.c:LINE=340
+ngx_chain_update_chains
+
+FILE=src/core/ngx_buf.c:LINE=190
+function:	ngx_chain_update_chains
+
+FILE=src/core/ngx_buf.c:LINE=198
+if (*out) {
+
+FILE=src/core/ngx_buf.c:LINE=204
+if (*busy == NULL) {
+
+FILE=src/core/ngx_buf.c:LINE=228
+while (*busy) {
+
+FILE=src/core/ngx_buf.c:LINE=235
+if (cl->buf->tag != tag) {
+
+FILE=src/core/ngx_buf.c:LINE=228
+while (*busy) {
+
+FILE=src/core/ngx_buf.c:LINE=235
+if (cl->buf->tag != tag) {
+
+FILE=src/core/ngx_buf.c:LINE=228
+while (*busy) {
+
+FILE=src/core/ngx_buf.c:LINE=235
+if (cl->buf->tag != tag) {
+
+FILE=src/core/ngx_output_chain.c:LINE=104
+for ( ;; ) 
+
+FILE=src/core/ngx_output_chain.c:LINE=305
+if (out == NULL && last != NGX_NONE)
+
+FILE=src/core/ngx_output_chain.c:LINE=319
+return last(0);
+
+FILE=src/http/ngx_http_copy_filter_module.c:LINE=190
+return rc(0);
+
+FILE=src/http/ngx_http_core_module.c:LINE=2340
+return rc(0);
+
+FILE=src/http/ngx_http_request.c:LINE=2642
+function:	ngx_http_finalize_request
+
+FILE=src/http/ngx_http_request.c:LINE=2860
+if (!r->post_action) {
+
+FILE=src/http/ngx_http_request.c:LINE=2896
+ngx_http_finalize_connection(r);
+
+FILE=src/http/ngx_http_request.c:LINE=2970
+function:	ngx_http_finalize_connection
+
+FILE=src/http/ngx_http_request.c:LINE=3050
+ngx_http_set_keepalive(r);
+
+FILE=src/http/ngx_http_request.c:LINE=3349
+function:	ngx_http_set_keepalive
+
+FILE=src/http/ngx_http_request.c:LINE=3426
+r->keepalive = 0;
+
+FILE=src/http/ngx_http_request.c:LINE=3432
+ngx_http_free_request(r, 0);
+
+FILE=src/http/ngx_http_request.c:LINE=4108
+function:	ngx_http_free_request
+
+FILE=src/http/ngx_http_request.c:LINE=4178
+if (!r->logged) {
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_request.c:LINE=4224
+ngx_destroy_pool(pool);
+
+FILE=src/core/ngx_palloc.c:LINE=59
+function:	ngx_destroy_pool
+
+FILE=src/core/ngx_palloc.c:LINE=68
+cleanup
+
+FILE=src/core/ngx_palloc.c:LINE=118
+function ngx_destroy_pool:	return
+
+FILE=src/http/ngx_http_request.c:LINE=4229
+function ngx_http_free_request:	return;
+
+FILE=src/http/ngx_http_request.c:LINE=3438
+c->data = hc;
+
+FILE=src/http/ngx_http_request.c:LINE=3443
+ngx_handle_read_event(rev, 0)
+
+FILE=src/event/ngx_event.c:LINE=272
+function:	ngx_handle_read_event
+
+FILE=src/event/ngx_event.c:LINE=279
+if (ngx_event_flags & NGX_USE_CLEAR_EVENT) {
+
+FILE=src/event/ngx_event.c:LINE=300
+function ngx_handle_read_event:	return NGX_OK;
+
+FILE=src/http/ngx_http_request.c:LINE=3501
+b=0x601b4bf2b628
+b->start=0x601b4bf1f500
+
+FILE=src/http/ngx_http_request.c:LINE=3510
+if (ngx_pfree(c->pool, b->start) == NGX_OK) {
+b->pos = NULL;
+
+FILE=src/http/ngx_http_request.c:LINE=3579
+rev->handler = ngx_http_keepalive_handler;
+
+FILE=src/http/ngx_http_request.c:LINE=3618
+else
+tcp_nodelay = 1;
+
+FILE=src/http/ngx_http_request.c:LINE=3625
+tcp_nodelay=1
+clcf->tcp_nodelay=1
+
+FILE=src/core/ngx_connection.c:LINE=1484
+function:	ngx_tcp_nodelay
+
+FILE=src/core/ngx_connection.c:LINE=1491
+if (c->tcp_nodelay != NGX_TCP_NODELAY_UNSET)
+
+FILE=src/http/ngx_http_request.c:LINE=3647
+ngx_reusable_connection(c, 1);
+
+FILE=src/core/ngx_connection.c:LINE=1281
+function:	ngx_reusable_connection
+
+FILE=src/core/ngx_connection.c:LINE=1303
+c->reusable = reusable(1);
+
+FILE=src/core/ngx_connection.c:LINE=1311
+将该连接加入可重用队列
+
+FILE=src/core/ngx_connection.c:LINE=1320
+ngx_cycle->reusable_connections_n=1
+
+FILE=src/http/ngx_http_request.c:LINE=3652
+ngx_reusable_connection(c, 1)	completed
+
+FILE=src/http/ngx_http_request.c:LINE=3656
+ngx_add_timer(rev, clcf->keepalive_timeout);
+clcf->keepalive_timeout=75000
+
+FILE=src/event/ngx_event_timer.h:LINE=55
+function:	ngx_event_add_timer
+
+FILE=src/event/ngx_event_timer.h:LINE=66
+key = ngx_current_msec + timer;
+19220474 = 19145474 + 75000;
+
+FILE=src/event/ngx_event_timer.h:LINE=102
+ngx_rbtree_insert
+
+FILE=src/http/ngx_http_request.c:LINE=3661
+ngx_add_timer completed
+
+FILE=src/http/ngx_http_request.c:LINE=3055
+ngx_http_set_keepalive(r) completed
+
+FILE=src/http/ngx_http_request.c:LINE=3058
+function ngx_http_finalize_connection:	return;
+
+FILE=src/http/ngx_http_core_module.c:LINE=1418
+ngx_http_finalize_request(r, rc) completed
+
+FILE=src/http/ngx_http_core_module.c:LINE=1421
+function ngx_http_core_content_phase:	return NGX_OK;
+
+FILE=src/http/ngx_http_core_module.c:LINE=913
+ngx_http_core_run_phases:
+rc(0) = ph[r->phase_handler].checker
+
+FILE=src/http/ngx_http_core_module.c:LINE=918
+if (rc == NGX_OK) {
+function ngx_http_core_run_phases:	return;
+
+FILE=src/http/ngx_http_core_module.c:LINE=884
+ngx_http_core_run_phases(r) completed
+
+FILE=src/http/ngx_http_core_module.c:LINE=887
+function ngx_http_handler:	return
+
+FILE=src/http/ngx_http_request.c:LINE=2237
+ngx_http_handler(r) completed
+
+FILE=src/http/ngx_http_request.c:LINE=2240
+function ngx_http_process_request:	return
+
+FILE=src/http/ngx_http_request.c:LINE=1624
+ngx_http_process_request(r) completed
+
+FILE=src/http/ngx_http_request.c:LINE=1648
+ngx_http_run_posted_requests(c)
+
+FILE=src/http/ngx_http_request.c:LINE=2546
+function:	ngx_http_run_posted_requests
+
+FILE=src/http/ngx_http_request.c:LINE=2554
+for ( ;; )
+
+FILE=src/http/ngx_http_request.c:LINE=2560
+连接已被销毁
+
+FILE=src/http/ngx_http_request.c:LINE=2563
+function ngx_http_run_posted_requests:	return
+
+FILE=src/http/ngx_http_request.c:LINE=1653
+ngx_http_run_posted_requests(c) completed
+
+FILE=src/http/ngx_http_request.c:LINE=1656
+function ngx_http_process_request_headers:	return
+
+FILE=src/http/ngx_http_request.c:LINE=1276
+ngx_http_process_request_headers(rev) completed
+
+FILE=src/http/ngx_http_request.c:LINE=1322
+ngx_http_run_posted_requests(c)
+
+FILE=src/http/ngx_http_request.c:LINE=2546
+function:	ngx_http_run_posted_requests
+
+FILE=src/http/ngx_http_request.c:LINE=2554
+for ( ;; )
+
+FILE=src/http/ngx_http_request.c:LINE=2560
+连接已被销毁
+
+FILE=src/http/ngx_http_request.c:LINE=2563
+function ngx_http_run_posted_requests:	return
+
+FILE=src/http/ngx_http_request.c:LINE=1327
+ngx_http_run_posted_requests(c) completed
+
+FILE=src/http/ngx_http_request.c:LINE=1330
+function ngx_http_process_request_line:	return
+
+FILE=src/core/ngx_times.c:LINE=102
+function:	ngx_time_update
+
+FILE=src/core/ngx_times.c:LINE=115
+ngx_time_lock=0
+
+FILE=src/core/ngx_times.c:LINE=126
+ngx_time_lock=1
+
+FILE=src/core/ngx_times.c:LINE=130
+获取当前精确时间
+ngx_gettimeofday(&tv)
+
+FILE=src/core/ngx_times.c:LINE=135
+ngx_gettimeofday(&tv) completed
+
+FILE=src/core/ngx_times.c:LINE=142
+sec=1768287925
+
+FILE=src/core/ngx_times.c:LINE=148
+msec=724
+
+FILE=src/core/ngx_times.c:LINE=153
+更新全局单调时间计数器
+ngx_monotonic_time(sec, msec)
+
+FILE=src/core/ngx_times.c:LINE=332
+function:	ngx_monotonic_time
+
+FILE=src/core/ngx_times.c:LINE=357
+function ngx_monotonic_time:	retun
+
+FILE=src/core/ngx_times.c:LINE=158
+更新全局单调时间计数器完成
+ngx_monotonic_time(sec, msec) completed
+ngx_current_msec=19146349
+
+FILE=src/core/ngx_times.c:LINE=164
+获取当前时间槽的指针
+slot=3
+
+FILE=src/core/ngx_times.c:LINE=187
+循环更新时间槽
+slot=3
+
+FILE=src/core/ngx_times.c:LINE=196
+更新后
+slot=4
+
+FILE=src/core/ngx_times.c:LINE=208
+将时间戳转换为结构化的日历时间
+ngx_gmtime
+
+FILE=src/core/ngx_times.c:LINE=475
+function:	ngx_gmtime
+
+FILE=src/core/ngx_times.c:LINE=583
+mon=1
+
+FILE=src/core/ngx_times.c:LINE=586
+function ngx_gmtime:	return
+
+FILE=src/core/ngx_times.c:LINE=213
+将时间戳转换为结构化的日历时间完成
+ngx_gmtime completed
+
+FILE=src/core/ngx_times.c:LINE=225
+格式化 HTTP 标准时间字符串
+p0=Tue, 13 Jan 2026 07:05:25 GMT
+
+FILE=src/core/ngx_times.c:LINE=237
+获取本地时间
+ngx_localtime(sec, &tm)
+
+FILE=src/os/unix/ngx_time.c:LINE=77
+function:	ngx_localtime
+
+FILE=src/os/unix/ngx_time.c:LINE=82
+localtime_r
+
+FILE=src/os/unix/ngx_time.c:LINE=103
+function ngx_localtime:	return
+
+FILE=src/core/ngx_times.c:LINE=242
+获取本地时间完成
+ngx_localtime(sec, &tm) completed
+
+FILE=src/core/ngx_times.c:LINE=247
+时区偏移
+cached_gmtoff=480
+
+FILE=src/core/ngx_times.c:LINE=312
+释放时间更新锁
+ngx_unlock(&ngx_time_lock)
+
+FILE=src/core/ngx_times.c:LINE=317
+已释放时间更新锁
+ngx_time_lock=0
+
+FILE=src/core/ngx_times.c:LINE=320
+function ngx_time_update:	return
+
+FILE=src/event/ngx_event_accept.c:LINE=28
+function:	ngx_event_accept
+
+FILE=src/event/ngx_event_accept.c:LINE=70
+ev->available=0
+
+FILE=src/event/ngx_event_accept.c:LINE=86
+do-while 循环，处理连接事件
+
+FILE=src/event/ngx_event_accept.c:LINE=92
+socklen=112
+
+FILE=src/event/ngx_event_accept.c:LINE=99
+调用 accept4 接受连接， 同时设置为非阻塞
+s = accept4(lc->fd, &sa.sockaddr, &socklen, SOCK_NONBLOCK)
+s=13
+
+FILE=src/event/ngx_event_accept.c:LINE=197
+ngx_accept_disabled = ngx_cycle->connection_n / 8 - ngx_cycle->free_connection_n
+-893 = 128 - 1021
+
+FILE=src/event/ngx_event_accept.c:LINE=202
+获取新连接结构体
+c = ngx_get_connection(s, ev->log)
+
+FILE=src/core/ngx_palloc.c:LINE=21
+function:	ngx_create_pool
+
+FILE=src/os/unix/ngx_alloc.c:LINE=61
+function:	ngx_memalign
+
+FILE=src/os/unix/ngx_alloc.c:LINE=85
+function ngx_memalign:	return
+
+FILE=src/core/ngx_palloc.c:LINE=40
+NGX_MAX_ALLOC_FROM_POOL=4095
+
+FILE=src/core/ngx_palloc.c:LINE=49
+function ngx_create_pool:	retun
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(16) <= pool->max (432)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(80) <= pool->max (432)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/event/ngx_event_accept.c:LINE=336
+rev->ready = 1;
+rev->available = 1;
+
+FILE=src/event/ngx_event_accept.c:LINE=364
+连接开始时间
+c->start_time=19146349
+
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/event/ngx_event_accept.c:LINE=390
+accepted address is:
+127.0.0.1
+
+FILE=src/event/ngx_event_accept.c:LINE=435
+调用业务处理函数
+ls->handler(c)
+
+FILE=src/http/ngx_http_request.c:LINE=209
+function:	ngx_http_init_connection
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(48) <= pool->max (432)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(24) <= pool->max (432)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_request.c:LINE=378
+rev->handler(rev)
+
+FILE=src/http/ngx_http_request.c:LINE=409
+function:	ngx_http_wait_request_handler
+
+FILE=src/http/ngx_http_request.c:LINE=454
+client_header_buffer_size=1024
+
+FILE=src/core/ngx_palloc.c:LINE=361
+function:	ngx_pcalloc
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=155
+size(80) <= pool->max (432)
+
+小块分配
+ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_palloc.c:LINE=371
+function ngx_pcalloc:	return
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=163
+大块分配
+ngx_palloc_large
+
+FILE=src/os/unix/ngx_alloc.c:LINE=20
+function:	ngx_alloc
+
+FILE=src/os/unix/ngx_alloc.c:LINE=33
+function ngx_alloc:	return
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/http/ngx_http_request.c:LINE=486
+从客户端连接读取数据到缓冲区
+n = c->recv(c, b->last, size)
+
+FILE=src/os/unix/ngx_recv.c:LINE=16
+ngx_unix_recv
+
+FILE=src/os/unix/ngx_recv.c:LINE=65
+rev->available=1
+rev->pending_eof=0
+
+FILE=src/event/ngx_event_timer.h:LINE=55
+function:	ngx_event_add_timer
+
+FILE=src/event/ngx_event_timer.h:LINE=66
+key = ngx_current_msec + timer;
+19206349 = 19146349 + 60000;
+
+FILE=src/event/ngx_event_timer.h:LINE=102
+ngx_rbtree_insert
+
+FILE=src/core/ngx_connection.c:LINE=1281
+function:	ngx_reusable_connection
+
+FILE=src/core/ngx_connection.c:LINE=1303
+c->reusable = reusable(1);
+
+FILE=src/core/ngx_connection.c:LINE=1311
+将该连接加入可重用队列
+
+FILE=src/core/ngx_connection.c:LINE=1320
+ngx_cycle->reusable_connections_n=2
+
+FILE=src/event/ngx_event.c:LINE=272
+function:	ngx_handle_read_event
+
+FILE=src/event/ngx_event.c:LINE=279
+if (ngx_event_flags & NGX_USE_CLEAR_EVENT) {
+
+FILE=src/event/ngx_event.c:LINE=289
+if (!rev->active && !rev->ready) {
+ngx_add_event
+
+FILE=src/event/modules/ngx_epoll_module.c:LINE=581
+function:	ngx_epoll_add_event
+
+FILE=src/event/ngx_event.c:LINE=300
+function ngx_handle_read_event:	return NGX_OK;
+
+FILE=src/http/ngx_http_request.c:LINE=383
+rev->handler(rev) completed
+
+FILE=src/http/ngx_http_request.c:LINE=386
+function ngx_http_init_connection:	return
+
+FILE=src/event/ngx_event_accept.c:LINE=440
+业务处理
+ls->handler(c) completed
+
+FILE=src/event/ngx_event_accept.c:LINE=453
+function ngx_event_accept:	return
+
+FILE=src/core/ngx_times.c:LINE=102
+function:	ngx_time_update
+
+FILE=src/core/ngx_times.c:LINE=115
+ngx_time_lock=0
+
+FILE=src/core/ngx_times.c:LINE=126
+ngx_time_lock=1
+
+FILE=src/core/ngx_times.c:LINE=130
+获取当前精确时间
+ngx_gettimeofday(&tv)
+
+FILE=src/core/ngx_times.c:LINE=135
+ngx_gettimeofday(&tv) completed
+
+FILE=src/core/ngx_times.c:LINE=142
+sec=1768287975
+
+FILE=src/core/ngx_times.c:LINE=148
+msec=239
+
+FILE=src/core/ngx_times.c:LINE=153
+更新全局单调时间计数器
+ngx_monotonic_time(sec, msec)
+
+FILE=src/core/ngx_times.c:LINE=332
+function:	ngx_monotonic_time
+
+FILE=src/core/ngx_times.c:LINE=357
+function ngx_monotonic_time:	retun
+
+FILE=src/core/ngx_times.c:LINE=158
+更新全局单调时间计数器完成
+ngx_monotonic_time(sec, msec) completed
+ngx_current_msec=19195864
+
+FILE=src/core/ngx_times.c:LINE=164
+获取当前时间槽的指针
+slot=4
+
+FILE=src/core/ngx_times.c:LINE=187
+循环更新时间槽
+slot=4
+
+FILE=src/core/ngx_times.c:LINE=196
+更新后
+slot=5
+
+FILE=src/core/ngx_times.c:LINE=208
+将时间戳转换为结构化的日历时间
+ngx_gmtime
+
+FILE=src/core/ngx_times.c:LINE=475
+function:	ngx_gmtime
+
+FILE=src/core/ngx_times.c:LINE=583
+mon=1
+
+FILE=src/core/ngx_times.c:LINE=586
+function ngx_gmtime:	return
+
+FILE=src/core/ngx_times.c:LINE=213
+将时间戳转换为结构化的日历时间完成
+ngx_gmtime completed
+
+FILE=src/core/ngx_times.c:LINE=225
+格式化 HTTP 标准时间字符串
+p0=Tue, 13 Jan 2026 07:06:15 GMT
+
+FILE=src/core/ngx_times.c:LINE=237
+获取本地时间
+ngx_localtime(sec, &tm)
+
+FILE=src/os/unix/ngx_time.c:LINE=77
+function:	ngx_localtime
+
+FILE=src/os/unix/ngx_time.c:LINE=82
+localtime_r
+
+FILE=src/os/unix/ngx_time.c:LINE=103
+function ngx_localtime:	return
+
+FILE=src/core/ngx_times.c:LINE=242
+获取本地时间完成
+ngx_localtime(sec, &tm) completed
+
+FILE=src/core/ngx_times.c:LINE=247
+时区偏移
+cached_gmtoff=480
+
+FILE=src/core/ngx_times.c:LINE=312
+释放时间更新锁
+ngx_unlock(&ngx_time_lock)
+
+FILE=src/core/ngx_times.c:LINE=317
+已释放时间更新锁
+ngx_time_lock=0
+
+FILE=src/core/ngx_times.c:LINE=320
+function ngx_time_update:	return
+
+FILE=src/http/ngx_http_request.c:LINE=409
+function:	ngx_http_wait_request_handler
+
+FILE=src/http/ngx_http_request.c:LINE=454
+client_header_buffer_size=1024
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=163
+大块分配
+ngx_palloc_large
+
+FILE=src/os/unix/ngx_alloc.c:LINE=20
+function:	ngx_alloc
+
+FILE=src/os/unix/ngx_alloc.c:LINE=33
+function ngx_alloc:	return
+
+FILE=src/http/ngx_http_request.c:LINE=486
+从客户端连接读取数据到缓冲区
+n = c->recv(c, b->last, size)
+
+FILE=src/os/unix/ngx_recv.c:LINE=16
+ngx_unix_recv
+
+FILE=src/os/unix/ngx_recv.c:LINE=65
+rev->available=-1
+rev->pending_eof=1
+
+FILE=src/core/ngx_connection.c:LINE=1281
+function:	ngx_reusable_connection
+
+FILE=src/core/ngx_connection.c:LINE=1290
+当前连接 已经是可重用状态,需要先从可重用队列中移除它
+
+FILE=src/core/ngx_connection.c:LINE=1303
+c->reusable = reusable(0);
+
+FILE=src/core/ngx_palloc.c:LINE=59
+function:	ngx_destroy_pool
+
+FILE=src/core/ngx_palloc.c:LINE=118
+function ngx_destroy_pool:	return
+
+FILE=src/core/ngx_times.c:LINE=102
+function:	ngx_time_update
+
+FILE=src/core/ngx_times.c:LINE=115
+ngx_time_lock=0
+
+FILE=src/core/ngx_times.c:LINE=126
+ngx_time_lock=1
+
+FILE=src/core/ngx_times.c:LINE=130
+获取当前精确时间
+ngx_gettimeofday(&tv)
+
+FILE=src/core/ngx_times.c:LINE=135
+ngx_gettimeofday(&tv) completed
+
+FILE=src/core/ngx_times.c:LINE=142
+sec=1768287975
+
+FILE=src/core/ngx_times.c:LINE=148
+msec=240
+
+FILE=src/core/ngx_times.c:LINE=153
+更新全局单调时间计数器
+ngx_monotonic_time(sec, msec)
+
+FILE=src/core/ngx_times.c:LINE=332
+function:	ngx_monotonic_time
+
+FILE=src/core/ngx_times.c:LINE=357
+function ngx_monotonic_time:	retun
+
+FILE=src/core/ngx_times.c:LINE=158
+更新全局单调时间计数器完成
+ngx_monotonic_time(sec, msec) completed
+ngx_current_msec=19195866
+
+FILE=src/core/ngx_times.c:LINE=164
+获取当前时间槽的指针
+slot=5
+
+FILE=src/core/ngx_times.c:LINE=176
+night_time_lock=0
+function ngx_time_update:	return
+
+FILE=src/http/ngx_http_request.c:LINE=3683
+function:	ngx_http_keepalive_handler
+
+FILE=src/core/ngx_palloc.c:LINE=149
+function:	ngx_palloc
+
+FILE=src/core/ngx_palloc.c:LINE=163
+大块分配
+ngx_palloc_large
+
+FILE=src/os/unix/ngx_alloc.c:LINE=20
+function:	ngx_alloc
+
+FILE=src/os/unix/ngx_alloc.c:LINE=33
+function ngx_alloc:	return
+
+FILE=src/os/unix/ngx_recv.c:LINE=16
+ngx_unix_recv
+
+FILE=src/os/unix/ngx_recv.c:LINE=65
+rev->available=-1
+rev->pending_eof=1
+
+FILE=src/core/ngx_connection.c:LINE=1281
+function:	ngx_reusable_connection
+
+FILE=src/core/ngx_connection.c:LINE=1290
+当前连接 已经是可重用状态,需要先从可重用队列中移除它
+
+FILE=src/core/ngx_connection.c:LINE=1303
+c->reusable = reusable(0);
+
+FILE=src/core/ngx_palloc.c:LINE=59
+function:	ngx_destroy_pool
+
+FILE=src/core/ngx_palloc.c:LINE=118
+function ngx_destroy_pool:	return
+

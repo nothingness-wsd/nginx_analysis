@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm -f ./tmp.txt
+
+grep -rn "ngx_variable_value_t" ./nginx-1.24.0 > ./tmp.txt

@@ -1,0 +1,19 @@
+FILE=src/core/ngx_palloc.c:LINE=173
+function:	ngx_pnalloc
+
+FILE=src/core/ngx_palloc.c:LINE=179
+分配小块内存
+ngx_palloc_small(pool, size, 0)
+
+FILE=src/core/ngx_palloc.c:LINE=196
+function:	ngx_palloc_small
+
+FILE=src/core/ngx_string.c:LINE=59
+function:	ngx_cpystrn
+
+FILE=src/core/ngx_string.c:LINE=59
+function:	ngx_cpystrn
+
+FILE=src/core/ngx_string.c:LINE=59
+function:	ngx_cpystrn
+

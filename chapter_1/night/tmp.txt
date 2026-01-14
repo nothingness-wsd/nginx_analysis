@@ -1,0 +1,1 @@
+./src/core/night_core_module.c:46:	if (night_conf_full_name(cycle, &ccf->pid, 0) != NIGHT_OK) 

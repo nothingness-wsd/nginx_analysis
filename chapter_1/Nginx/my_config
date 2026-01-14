@@ -1,0 +1,11 @@
+ sudo ./configure \
+  --sbin-path=/home/wsd/Desktop/Nginx \
+  --conf-path=/home/wsd/Desktop/Nginx/conf/nginx.conf \
+  --error-log-path=/home/wsd/Desktop/Nginx/log/error.log \
+  --http-log-path=/home/wsd/Desktop/Nginx/log/access.log \
+  --with-pcre \
+  --with-http_ssl_module \
+  --with-http_v2_module \
+  --with-http_gzip_static_module \
+  --with-stream \
+  --with-stream_ssl_module

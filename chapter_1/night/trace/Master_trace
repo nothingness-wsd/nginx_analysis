@@ -1,0 +1,2623 @@
+FILE=src/core/night.c:LINE=34
+function:	main
+
+FILE=src/core/night.c:LINE=38
+命令行参数解析
+night_get_options(argc, argv)
+
+FILE=src/core/night.c:LINE=320
+function:	night_get_options
+
+FILE=src/core/night.c:LINE=327
+argc=1
+
+FILE=src/core/night.c:LINE=339
+function ngx_get_options:	return NIGHT_OK
+
+FILE=src/core/night.c:LINE=50
+命令行参数解析完成
+night_get_options(argc, argv) completed
+
+FILE=src/core/night.c:LINE=54
+时间系统初始化
+night_time_init()
+
+FILE=src/core/night_times.c:LINE=27
+function:	night_time_init
+
+FILE=src/core/night_times.c:LINE=37
+首次更新系统时间
+night_time_update()
+
+FILE=src/core/night_times.c:LINE=52
+function:	night_time_update
+
+FILE=src/core/night_times.c:LINE=66
+night_time_lock=0
+
+FILE=src/core/night_times.c:LINE=78
+night_time_lock=1
+
+FILE=src/core/night_times.c:LINE=82
+获取当前精确时间
+night_gettimeofday(&tv)
+
+FILE=src/core/night_times.c:LINE=87
+night_gettimeofday(&tv) completed
+
+FILE=src/core/night_times.c:LINE=94
+sec=1767774874
+
+FILE=src/core/night_times.c:LINE=100
+msec=81
+
+FILE=src/core/night_times.c:LINE=106
+更新全局单调时间计数器
+night_monotonic_time(sec, msec)
+
+FILE=src/core/night_times.c:LINE=233
+function:	night_monotonic_time
+
+FILE=src/core/night_times.c:LINE=253
+function night_monotonic_time:	retun
+
+FILE=src/core/night_times.c:LINE=111
+更新全局单调时间计数器完成
+night_monotonic_time(sec, msec) completed
+night_current_msec=107130636
+
+FILE=src/core/night_times.c:LINE=117
+获取当前时间槽的指针
+slot=0
+
+FILE=src/core/night_times.c:LINE=141
+循环更新时间槽
+slot=0
+
+FILE=src/core/night_times.c:LINE=153
+更新后
+slot=1
+
+FILE=src/core/night_times.c:LINE=165
+将时间戳转换为结构化的日历时间
+night_gmtime
+
+FILE=src/core/night_times.c:LINE=263
+function:	night_gmtime
+
+FILE=src/core/night_times.c:LINE=401
+function night_gmtime:	return
+
+FILE=src/core/night_times.c:LINE=170
+将时间戳转换为结构化的日历时间完成
+night_gmtime completed
+
+FILE=src/core/night_times.c:LINE=182
+格式化 HTTP 标准时间字符串
+p0=Wed, 07 Jan 2026 08:34:34 GMT
+
+FILE=src/core/night_times.c:LINE=187
+获取本地时间
+night_localtime(sec, &tm)
+
+FILE=src/os/unix/night_time.c:LINE=7
+function:	night_localtime
+
+FILE=src/os/unix/night_time.c:LINE=10
+localtime_r
+
+FILE=src/os/unix/night_time.c:LINE=23
+function night_localtime:	return
+
+FILE=src/core/night_times.c:LINE=192
+获取本地时间完成
+night_localtime(sec, &tm) completed
+
+FILE=src/core/night_times.c:LINE=197
+时区偏移
+cached_gmtoff=480
+
+FILE=src/core/night_times.c:LINE=217
+释放时间更新锁
+night_unlock(&night_time_lock)
+
+FILE=src/core/night_times.c:LINE=222
+已释放时间更新锁
+night_time_lock=0
+
+FILE=src/core/night_times.c:LINE=225
+function night_time_update:	return
+
+FILE=src/core/night_times.c:LINE=42
+首次更新系统时间完成
+night_time_update() completed
+
+FILE=src/core/night_times.c:LINE=45
+function night_time_init:	return
+
+FILE=src/core/night.c:LINE=59
+时间系统初始化完成
+night_time_init() completed
+
+FILE=src/core/night.c:LINE=68
+night_pid=12122
+night_parent=12121
+
+FILE=src/core/night.c:LINE=81
+init_cycle 初始化
+
+FILE=src/core/night.c:LINE=88
+内存池创建
+night_create_pool(1024)
+
+FILE=src/core/night_palloc.c:LINE=15
+function:	night_create_pool
+
+FILE=src/os/unix/night_alloc.c:LINE=7
+function:	night_memalign
+
+FILE=src/os/unix/night_alloc.c:LINE=30
+function night_memalign:	return
+
+FILE=src/core/night_palloc.c:LINE=39
+function night_create_pool:	retun
+
+FILE=src/core/night.c:LINE=100
+内存池创建完成
+night_create_pool(1024) completed
+
+FILE=src/core/night.c:LINE=104
+保存命令行参数
+night_save_argv(&init_cycle, argc, argv)
+
+FILE=src/core/night.c:LINE=270
+function:	night_save_argv
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night.c:LINE=303
+night_argv[i]=./night
+
+FILE=src/core/night.c:LINE=311
+function night_save_argv:	return NIGHT_OK
+
+FILE=src/core/night.c:LINE=115
+保存命令行参数完成
+night_save_argv(&init_cycle, argc, argv) completed
+
+FILE=src/core/night.c:LINE=119
+处理进程选项
+night_process_options
+
+FILE=src/core/night.c:LINE=213
+function:	night_process_options
+
+FILE=src/core/night.c:LINE=236
+cycle->prefix.data=/home/wsd/Desktop/night/
+
+FILE=src/core/night.c:LINE=245
+cycle->conf_prefix.data=/home/wsd/Desktop/night/conf/
+
+FILE=src/core/night.c:LINE=255
+cycle->conf_file.data=/home/wsd/Desktop/night/conf/night.conf
+
+FILE=src/core/night.c:LINE=258
+function night_process_options:	return NIGHT_OK
+
+FILE=src/core/night.c:LINE=131
+处理进程选项完成
+night_process_options completed
+
+FILE=src/core/night.c:LINE=135
+系统初始化
+night_os_init
+
+FILE=src/os/unix/night_posix_init.c:LINE=23
+function:	night_os_init
+
+FILE=src/os/unix/night_posix_init.c:LINE=30
+当前平台需要特殊初始化
+night_os_specific_init
+
+FILE=src/os/unix/night_linux_init.c:LINE=15
+function:	night_os_specific_init
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/os/unix/night_linux_init.c:LINE=41
+night_linux_kern_ostype=Linux
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/os/unix/night_linux_init.c:LINE=47
+night_linux_kern_osrelease=6.8.0-90-generic
+
+FILE=src/os/unix/night_linux_init.c:LINE=61
+function night_os_specific_init:	return NIGHT_OK
+
+FILE=src/os/unix/night_posix_init.c:LINE=42
+当前平台特殊初始化 完成
+night_os_specific_init completed
+
+FILE=src/os/unix/night_posix_init.c:LINE=46
+为进程标题修改功能 初始化环境
+night_init_setproctitle
+
+FILE=src/os/unix/night_setproctitle.c:LINE=9
+function:	night_init_setproctitle
+
+FILE=src/os/unix/night_setproctitle.c:LINE=27
+size=2096
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/os/unix/night_setproctitle.c:LINE=70
+function night_init_setproctitle:	return NIGHT_OK
+
+FILE=src/os/unix/night_posix_init.c:LINE=57
+为进程标题修改功能 初始化环境 完成
+night_init_setproctitle completed
+
+FILE=src/os/unix/night_posix_init.c:LINE=64
+night_pagesize=4096
+
+FILE=src/os/unix/night_posix_init.c:LINE=73
+night_pagesize_shift=12
+
+FILE=src/os/unix/night_posix_init.c:LINE=82
+CPU 核心数
+night_ncpu=1
+
+FILE=src/os/unix/night_posix_init.c:LINE=90
+CPU 核心数
+night_ncpu=1
+
+FILE=src/os/unix/night_posix_init.c:LINE=100
+缓存行大小
+night_cacheline_size=64
+
+FILE=src/os/unix/night_posix_init.c:LINE=115
+当前进程能打开的最大文件描述符数量
+night_max_sockets=1024
+
+FILE=src/os/unix/night_posix_init.c:LINE=124
+function night_os_init:	return NIGHT_OK
+
+FILE=src/core/night.c:LINE=147
+系统初始化完成
+night_os_init completed
+
+FILE=src/core/night.c:LINE=151
+Slab 内存分配器初始化
+night_slab_sizes_init()
+
+FILE=src/core/night_slab.c:LINE=12
+function:	night_slab_sizes_init
+
+FILE=src/core/night_slab.c:LINE=37
+night_slab_max_size=2048
+night_slab_exact_size=64
+night_slab_exact_shift=6
+
+function night_slab_sizes_init:	return
+
+FILE=src/core/night.c:LINE=156
+Slab 内存分配器初始化 完成
+night_slab_sizes_init() completed
+
+FILE=src/core/night.c:LINE=164
+预初始化所有模块
+night_preinit_modules
+
+FILE=src/core/night_modules.c:LINE=87
+function:	night_preinit_modules
+
+FILE=src/core/night_modules.c:LINE=104
+function night_preinit_modules:	return NIGHT_OK
+
+FILE=src/core/night.c:LINE=175
+预初始化所有模块 完成
+night_preinit_modules completed
+
+FILE=src/core/night.c:LINE=185
+创建完整的运行时周期对象
+night_init_cycle
+
+FILE=src/core/night_cycle.c:LINE=24
+function:	night_init_cycle
+
+FILE=src/core/night_cycle.c:LINE=28
+更新时区信息
+night_timezone_update()
+
+FILE=src/os/unix/night_time.c:LINE=30
+function:	night_timezone_update
+
+FILE=src/os/unix/night_time.c:LINE=43
+function night_timezone_update:	return
+
+FILE=src/core/night_cycle.c:LINE=33
+更新时区信息 完成
+night_timezone_update() completed
+
+FILE=src/core/night_cycle.c:LINE=36
+更新时间缓存
+night_time_update
+
+FILE=src/core/night_times.c:LINE=52
+function:	night_time_update
+
+FILE=src/core/night_times.c:LINE=66
+night_time_lock=0
+
+FILE=src/core/night_times.c:LINE=78
+night_time_lock=1
+
+FILE=src/core/night_times.c:LINE=82
+获取当前精确时间
+night_gettimeofday(&tv)
+
+FILE=src/core/night_times.c:LINE=87
+night_gettimeofday(&tv) completed
+
+FILE=src/core/night_times.c:LINE=94
+sec=1767774874
+
+FILE=src/core/night_times.c:LINE=100
+msec=81
+
+FILE=src/core/night_times.c:LINE=106
+更新全局单调时间计数器
+night_monotonic_time(sec, msec)
+
+FILE=src/core/night_times.c:LINE=233
+function:	night_monotonic_time
+
+FILE=src/core/night_times.c:LINE=253
+function night_monotonic_time:	retun
+
+FILE=src/core/night_times.c:LINE=111
+更新全局单调时间计数器完成
+night_monotonic_time(sec, msec) completed
+night_current_msec=107130636
+
+FILE=src/core/night_times.c:LINE=117
+获取当前时间槽的指针
+slot=1
+
+FILE=src/core/night_times.c:LINE=141
+循环更新时间槽
+slot=1
+
+FILE=src/core/night_times.c:LINE=153
+更新后
+slot=2
+
+FILE=src/core/night_times.c:LINE=165
+将时间戳转换为结构化的日历时间
+night_gmtime
+
+FILE=src/core/night_times.c:LINE=263
+function:	night_gmtime
+
+FILE=src/core/night_times.c:LINE=401
+function night_gmtime:	return
+
+FILE=src/core/night_times.c:LINE=170
+将时间戳转换为结构化的日历时间完成
+night_gmtime completed
+
+FILE=src/core/night_times.c:LINE=182
+格式化 HTTP 标准时间字符串
+p0=Wed, 07 Jan 2026 08:34:34 GMT
+
+FILE=src/core/night_times.c:LINE=187
+获取本地时间
+night_localtime(sec, &tm)
+
+FILE=src/os/unix/night_time.c:LINE=7
+function:	night_localtime
+
+FILE=src/os/unix/night_time.c:LINE=10
+localtime_r
+
+FILE=src/os/unix/night_time.c:LINE=23
+function night_localtime:	return
+
+FILE=src/core/night_times.c:LINE=192
+获取本地时间完成
+night_localtime(sec, &tm) completed
+
+FILE=src/core/night_times.c:LINE=197
+时区偏移
+cached_gmtoff=480
+
+FILE=src/core/night_times.c:LINE=217
+释放时间更新锁
+night_unlock(&night_time_lock)
+
+FILE=src/core/night_times.c:LINE=222
+已释放时间更新锁
+night_time_lock=0
+
+FILE=src/core/night_times.c:LINE=225
+function night_time_update:	return
+
+FILE=src/core/night_cycle.c:LINE=44
+更新时间缓存 完成
+night_time_update completed
+
+FILE=src/core/night_cycle.c:LINE=47
+创建内存池
+night_create_pool
+
+FILE=src/core/night_palloc.c:LINE=15
+function:	night_create_pool
+
+FILE=src/os/unix/night_alloc.c:LINE=7
+function:	night_memalign
+
+FILE=src/os/unix/night_alloc.c:LINE=30
+function night_memalign:	return
+
+FILE=src/core/night_palloc.c:LINE=39
+function night_create_pool:	retun
+
+FILE=src/core/night_cycle.c:LINE=56
+创建内存池 完成
+night_create_pool completed
+
+FILE=src/core/night_cycle.c:LINE=59
+分配 night_cycle_t 结构体
+
+FILE=src/core/night_palloc.c:LINE=48
+function:	night_pcalloc
+
+FILE=src/core/night_palloc.c:LINE=68
+function:	night_palloc
+
+FILE=src/core/night_palloc.c:LINE=75
+size(424) <= pool->max (4032)
+
+小块分配
+night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=59
+function night_pcalloc:	return
+
+FILE=src/core/night_cycle.c:LINE=69
+分配 night_cycle_t 结构体 完成
+
+FILE=src/core/night_cycle.c:LINE=72
+初始化 cycle 基本字段：内存池、日志、指向旧 cycle
+
+FILE=src/core/night_cycle.c:LINE=78
+从旧的 cycle（old_cycle）中复制关键配置路径和文件名字符串到新创建的 cycle 中
+
+FILE=src/core/night_string.c:LINE=38
+function:	night_pstrdup
+
+FILE=src/core/night_palloc.c:LINE=300
+function:	night_pnalloc
+
+FILE=src/core/night_palloc.c:LINE=305
+分配小块内存
+night_palloc_small(pool, size, 0)
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_string.c:LINE=51
+/home/wsd/Desktop/night/conf/
+function night_pstrdup:	return
+
+FILE=src/core/night_string.c:LINE=38
+function:	night_pstrdup
+
+FILE=src/core/night_palloc.c:LINE=300
+function:	night_pnalloc
+
+FILE=src/core/night_palloc.c:LINE=305
+分配小块内存
+night_palloc_small(pool, size, 0)
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_string.c:LINE=51
+/home/wsd/Desktop/night/
+function night_pstrdup:	return
+
+FILE=src/core/night_palloc.c:LINE=300
+function:	night_pnalloc
+
+FILE=src/core/night_palloc.c:LINE=305
+分配小块内存
+night_palloc_small(pool, size, 0)
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_string.c:LINE=6
+function:	night_cpystrn
+
+FILE=src/core/night_string.c:LINE=29
+function night_cpystrn:	return
+
+FILE=src/core/night_cycle.c:LINE=106
+从旧的 cycle（old_cycle）中复制关键配置路径和文件名字符串到新创建的 cycle 中 完成
+
+FILE=src/core/night_cycle.c:LINE=109
+初始化 paths 数组
+
+FILE=src/core/night_array.c:LINE=6
+function:	night_array_init
+
+FILE=src/core/night_palloc.c:LINE=68
+function:	night_palloc
+
+FILE=src/core/night_palloc.c:LINE=75
+size(80) <= pool->max (4032)
+
+小块分配
+night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_array.c:LINE=20
+function night_array_init:	return NIGHT_OK
+
+FILE=src/core/night_cycle.c:LINE=123
+初始化 paths 数组 完成
+
+FILE=src/core/night_cycle.c:LINE=126
+初始化 config_dump 
+
+FILE=src/core/night_array.c:LINE=6
+function:	night_array_init
+
+FILE=src/core/night_palloc.c:LINE=68
+function:	night_palloc
+
+FILE=src/core/night_palloc.c:LINE=75
+size(24) <= pool->max (4032)
+
+小块分配
+night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_array.c:LINE=20
+function night_array_init:	return NIGHT_OK
+
+FILE=src/core/night_cycle.c:LINE=138
+初始化 config_dump 完成
+
+FILE=src/core/night_cycle.c:LINE=141
+初始化 open_files 链表
+
+FILE=src/core/night_list.c:LINE=6
+function:	night_list_init
+
+FILE=src/core/night_palloc.c:LINE=68
+function:	night_palloc
+
+FILE=src/core/night_palloc.c:LINE=75
+size(480) <= pool->max (4032)
+
+小块分配
+night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_list.c:LINE=22
+function night_list_init:	return NIGHT_OK
+
+FILE=src/core/night_cycle.c:LINE=164
+初始化 open_files 链表 完成
+
+FILE=src/core/night_cycle.c:LINE=167
+初始化 shared_memory 链表
+
+FILE=src/core/night_list.c:LINE=6
+function:	night_list_init
+
+FILE=src/core/night_palloc.c:LINE=68
+function:	night_palloc
+
+FILE=src/core/night_palloc.c:LINE=75
+size(0) <= pool->max (4032)
+
+小块分配
+night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_list.c:LINE=22
+function night_list_init:	return NIGHT_OK
+
+FILE=src/core/night_cycle.c:LINE=191
+初始化 shared_memory 链表 完成
+
+FILE=src/core/night_cycle.c:LINE=194
+初始化 listening 数组
+
+FILE=src/core/night_array.c:LINE=6
+function:	night_array_init
+
+FILE=src/core/night_palloc.c:LINE=68
+function:	night_palloc
+
+FILE=src/core/night_palloc.c:LINE=75
+size(0) <= pool->max (4032)
+
+小块分配
+night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_array.c:LINE=20
+function night_array_init:	return NIGHT_OK
+
+FILE=src/core/night_cycle.c:LINE=208
+初始化 listening 数组 完成
+
+FILE=src/core/night_cycle.c:LINE=211
+初始化 可重用连接队列
+
+FILE=src/core/night_cycle.c:LINE=216
+初始化 可重用连接队列 完成
+
+FILE=src/core/night_cycle.c:LINE=219
+分配 模块配置上下文数组
+
+FILE=src/core/night_palloc.c:LINE=48
+function:	night_pcalloc
+
+FILE=src/core/night_palloc.c:LINE=68
+function:	night_palloc
+
+FILE=src/core/night_palloc.c:LINE=75
+size(32) <= pool->max (4032)
+
+小块分配
+night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=59
+function night_pcalloc:	return
+
+FILE=src/core/night_cycle.c:LINE=229
+分配 模块配置上下文数组 完成
+
+FILE=src/core/night_cycle.c:LINE=232
+获取并设置主机名
+
+FILE=src/core/night_palloc.c:LINE=300
+function:	night_pnalloc
+
+FILE=src/core/night_palloc.c:LINE=305
+分配小块内存
+night_palloc_small(pool, size, 0)
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_string.c:LINE=108
+function:	night_strlow
+
+FILE=src/core/night_string.c:LINE=115
+w
+
+FILE=src/core/night_string.c:LINE=115
+s
+
+FILE=src/core/night_string.c:LINE=115
+d
+
+FILE=src/core/night_string.c:LINE=115
+-
+
+FILE=src/core/night_string.c:LINE=115
+u
+
+FILE=src/core/night_string.c:LINE=115
+b
+
+FILE=src/core/night_string.c:LINE=115
+u
+
+FILE=src/core/night_string.c:LINE=115
+n
+
+FILE=src/core/night_string.c:LINE=115
+t
+
+FILE=src/core/night_string.c:LINE=115
+u
+
+FILE=src/core/night_string.c:LINE=123
+function night_strlow:	return
+
+FILE=src/core/night_cycle.c:LINE=257
+获取并设置主机名 完成
+hostname=wsd-ubuntu
+
+FILE=src/core/night_cycle.c:LINE=261
+加载所有模块到 cycle->modules
+
+FILE=src/core/night_modules.c:LINE=113
+function:	night_cycle_modules
+
+FILE=src/core/night_palloc.c:LINE=48
+function:	night_pcalloc
+
+FILE=src/core/night_palloc.c:LINE=68
+function:	night_palloc
+
+FILE=src/core/night_palloc.c:LINE=75
+size(40) <= pool->max (4032)
+
+小块分配
+night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=59
+function night_pcalloc:	return
+
+FILE=src/core/night_modules.c:LINE=126
+function night_cycle_modules:	return NIGHT_OK
+
+FILE=src/core/night_cycle.c:LINE=270
+加载所有模块到 cycle->modules 完成
+
+FILE=src/core/night_cycle.c:LINE=273
+遍历所有模块,调用 CORE 模块的 create_conf 回调函数
+
+FILE=src/core/night_cycle.c:LINE=278
+i=0
+
+FILE=src/core/night_cycle.c:LINE=290
+module name=night_core_module
+module->create_conf(cycle)
+
+FILE=src/core/night_core_module.c:LINE=7
+function:	night_core_module_create_conf
+
+FILE=src/core/night_palloc.c:LINE=48
+function:	night_pcalloc
+
+FILE=src/core/night_palloc.c:LINE=68
+function:	night_palloc
+
+FILE=src/core/night_palloc.c:LINE=75
+size(56) <= pool->max (4032)
+
+小块分配
+night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=59
+function night_pcalloc:	return
+
+FILE=src/core/night_core_module.c:LINE=22
+function night_core_module_create_conf:	return
+
+FILE=src/core/night_cycle.c:LINE=278
+i=1
+
+FILE=src/core/night_cycle.c:LINE=278
+i=2
+
+FILE=src/core/night_cycle.c:LINE=278
+i=3
+
+FILE=src/core/night_cycle.c:LINE=304
+遍历所有模块,调用 CORE 模块的 create_conf 回调函数 完成
+
+FILE=src/core/night_cycle.c:LINE=307
+保存 environ 为了在解析完后恢复，防止污染全局环境
+
+FILE=src/core/night_cycle.c:LINE=312
+初始化 配置解析器 conf, 为解析配置文件做准备
+
+FILE=src/core/night_array.c:LINE=29
+function:	night_array_create
+
+FILE=src/core/night_palloc.c:LINE=68
+function:	night_palloc
+
+FILE=src/core/night_palloc.c:LINE=75
+size(40) <= pool->max (4032)
+
+小块分配
+night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_array.c:LINE=6
+function:	night_array_init
+
+FILE=src/core/night_palloc.c:LINE=68
+function:	night_palloc
+
+FILE=src/core/night_palloc.c:LINE=75
+size(160) <= pool->max (4032)
+
+小块分配
+night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_array.c:LINE=20
+function night_array_init:	return NIGHT_OK
+
+FILE=src/core/night_array.c:LINE=45
+function night_array_create:	return
+
+FILE=src/core/night_palloc.c:LINE=15
+function:	night_create_pool
+
+FILE=src/os/unix/night_alloc.c:LINE=7
+function:	night_memalign
+
+FILE=src/os/unix/night_alloc.c:LINE=30
+function night_memalign:	return
+
+FILE=src/core/night_palloc.c:LINE=39
+function night_create_pool:	retun
+
+FILE=src/core/night_cycle.c:LINE=337
+解析配置文件
+
+FILE=src/core/night_conf.c:LINE=43
+function:	night_conf_parse
+
+FILE=src/core/night_conf.c:LINE=48
+filename=/home/wsd/Desktop/night/conf/night.conf
+
+FILE=src/core/night_conf.c:LINE=64
+保存并切换配置文件上下文
+
+FILE=src/core/night_conf.c:LINE=71
+获取文件元信息
+
+FILE=src/core/night_conf.c:LINE=80
+获取文件元信息 完成
+
+FILE=src/core/night_conf.c:LINE=83
+初始化读取缓冲区
+
+FILE=src/core/night_conf.c:LINE=99
+初始化读取缓冲区 完成
+
+FILE=src/core/night_conf.c:LINE=102
+初始化当前正在解析的配置文件的元数据
+
+FILE=src/core/night_conf.c:LINE=111
+初始化当前正在解析的配置文件的元数据 完成
+
+FILE=src/core/night_conf.c:LINE=114
+将解析模式设置为 “解析配置文件” 模式
+
+FILE=src/core/night_conf.c:LINE=119
+配置转储控制
+
+FILE=src/core/night_conf.c:LINE=140
+不启用 dump
+
+FILE=src/core/night_conf.c:LINE=163
+主解析循环
+
+FILE=src/core/night_conf.c:LINE=168
+读取 token
+
+FILE=src/core/night_conf.c:LINE=318
+function:	night_conf_read_token
+
+FILE=src/core/night_conf.c:LINE=321
+初始化局部变量
+
+FILE=src/core/night_conf.c:LINE=340
+文件大小 file_size=364
+
+FILE=src/core/night_conf.c:LINE=343
+主循环：逐字节解析
+
+FILE=src/core/night_conf.c:LINE=350
+当前 buffer 已读完，需要从文件加载更多内容
+
+FILE=src/core/night_conf.c:LINE=441
+计算还能读多少字节（不超过 buffer 剩余空间）
+
+FILE=src/core/night_conf.c:LINE=451
+还能读 size=364 字节
+
+FILE=src/core/night_conf.c:LINE=454
+从文件读取新数据
+night_read_file
+
+FILE=src/os/unix/night_files.c:LINE=6
+function:	night_read_file
+
+FILE=src/os/unix/night_files.c:LINE=11
+读取文件数据
+pread(4, 0x56c37fbeb610, 364, 0)
+
+FILE=src/os/unix/night_files.c:LINE=16
+读取文件数据 完成
+n=364
+
+FILE=src/os/unix/night_files.c:LINE=28
+更新文件偏移量
+file->offset=364
+
+FILE=src/os/unix/night_files.c:LINE=35
+function night_read_file:	return 364
+
+FILE=src/core/night_conf.c:LINE=459
+从文件读取新数据 完成
+
+FILE=src/core/night_conf.c:LINE=480
+更新数据缓冲区信息
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=w
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=o
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=r
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=k
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=e
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=r
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=_
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=p
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=r
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=o
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=c
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=e
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=s
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=s
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=e
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=s
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch= 
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=695
+found == 1，提取 token
+
+FILE=src/core/night_array.c:LINE=54
+function:	night_array_push
+
+FILE=src/core/night_array.c:LINE=100
+元素个数:1
+function night_array_push:	return
+
+FILE=src/core/night_palloc.c:LINE=300
+function:	night_pnalloc
+
+FILE=src/core/night_palloc.c:LINE=305
+分配小块内存
+night_palloc_small(pool, size, 0)
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_conf.c:LINE=746
+word->len=16
+word->data=worker_processes
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch= 
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=1
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=;
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=695
+found == 1，提取 token
+
+FILE=src/core/night_array.c:LINE=54
+function:	night_array_push
+
+FILE=src/core/night_array.c:LINE=100
+元素个数:2
+function night_array_push:	return
+
+FILE=src/core/night_palloc.c:LINE=300
+function:	night_pnalloc
+
+FILE=src/core/night_palloc.c:LINE=305
+分配小块内存
+night_palloc_small(pool, size, 0)
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_conf.c:LINE=746
+word->len=1
+word->data=1
+
+FILE=src/core/night_conf.c:LINE=173
+读取 token 完成
+
+FILE=src/core/night_conf.c:LINE=233
+标准指令处理器 处理指令
+night_conf_handler(cf, 0) 
+
+FILE=src/core/night_conf.c:LINE=768
+function:	night_conf_handler
+
+FILE=src/core/night_conf.c:LINE=777
+提取指令名
+指令名:worker_processes
+
+FILE=src/core/night_conf.c:LINE=786
+遍历所有已加载模块
+
+FILE=src/core/night_conf.c:LINE=791
+module:night_core_module
+
+FILE=src/core/night_conf.c:LINE=800
+遍历当前模块的所有指令
+
+FILE=src/core/night_conf.c:LINE=817
+found directive worker_processes in module night_core_module
+
+FILE=src/core/night_conf.c:LINE=820
+模块类型合法性检查
+
+FILE=src/core/night_conf.c:LINE=833
+模块类型合法
+
+FILE=src/core/night_conf.c:LINE=836
+指令 作用域 合法性检查
+
+FILE=src/core/night_conf.c:LINE=847
+指令 作用域 合法性检查 完成
+
+FILE=src/core/night_conf.c:LINE=850
+指令结束符检查
+
+FILE=src/core/night_conf.c:LINE=872
+指令结束符检查 完成
+
+FILE=src/core/night_conf.c:LINE=875
+参数数量检查
+
+FILE=src/core/night_conf.c:LINE=880
+指令参数非 any
+
+FILE=src/core/night_conf.c:LINE=938
+参数数量检查 完成
+
+FILE=src/core/night_conf.c:LINE=941
+确定配置结构体的位置
+
+FILE=src/core/night_conf.c:LINE=948
+DIRECT 类型指令，用于核心模块
+
+FILE=src/core/night_conf.c:LINE=979
+调用指令的 set 函数（真正处理配置）
+
+FILE=src/core/night_core_module.c:LINE=76
+function:	night_set_worker_processes
+
+FILE=src/core/night_string.c:LINE=130
+function:	night_atoi
+
+FILE=src/core/night_string.c:LINE=158
+function night_atoi:	return value(1)
+
+FILE=src/core/night_core_module.c:LINE=115
+function night_set_worker_processes:	return NIGHT_CONF_OK
+
+FILE=src/core/night_conf.c:LINE=984
+指令的 set 函数 处理完成
+
+FILE=src/core/night_conf.c:LINE=989
+指令的 set 函数 处理 成功
+function night_conf_handler:	return NIGHT_OK
+
+FILE=src/core/night_conf.c:LINE=238
+标准指令处理器 处理指令 完成
+night_conf_handler(cf, 0) completed
+
+FILE=src/core/night_conf.c:LINE=168
+读取 token
+
+FILE=src/core/night_conf.c:LINE=318
+function:	night_conf_read_token
+
+FILE=src/core/night_conf.c:LINE=321
+初始化局部变量
+
+FILE=src/core/night_conf.c:LINE=340
+文件大小 file_size=364
+
+FILE=src/core/night_conf.c:LINE=343
+主循环：逐字节解析
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=
+
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=
+
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=e
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=v
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=e
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=n
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=t
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=s
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch= 
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=695
+found == 1，提取 token
+
+FILE=src/core/night_array.c:LINE=54
+function:	night_array_push
+
+FILE=src/core/night_array.c:LINE=100
+元素个数:1
+function night_array_push:	return
+
+FILE=src/core/night_palloc.c:LINE=300
+function:	night_pnalloc
+
+FILE=src/core/night_palloc.c:LINE=305
+分配小块内存
+night_palloc_small(pool, size, 0)
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_conf.c:LINE=746
+word->len=6
+word->data=events
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch={
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=588
+function night_conf_read_token:	return NIGHT_CONF_BLOCK_START
+
+FILE=src/core/night_conf.c:LINE=173
+读取 token 完成
+
+FILE=src/core/night_conf.c:LINE=221
+rc == NIGHT_CONF_BLOCK_START
+FILE=src/core/night_conf.c:LINE=233
+标准指令处理器 处理指令
+night_conf_handler(cf, 1) 
+
+FILE=src/core/night_conf.c:LINE=768
+function:	night_conf_handler
+
+FILE=src/core/night_conf.c:LINE=777
+提取指令名
+指令名:events
+
+FILE=src/core/night_conf.c:LINE=786
+遍历所有已加载模块
+
+FILE=src/core/night_conf.c:LINE=791
+module:night_core_module
+
+FILE=src/core/night_conf.c:LINE=800
+遍历当前模块的所有指令
+
+FILE=src/core/night_conf.c:LINE=791
+module:night_events_module
+
+FILE=src/core/night_conf.c:LINE=800
+遍历当前模块的所有指令
+
+FILE=src/core/night_conf.c:LINE=817
+found directive events in module night_events_module
+
+FILE=src/core/night_conf.c:LINE=820
+模块类型合法性检查
+
+FILE=src/core/night_conf.c:LINE=833
+模块类型合法
+
+FILE=src/core/night_conf.c:LINE=836
+指令 作用域 合法性检查
+
+FILE=src/core/night_conf.c:LINE=847
+指令 作用域 合法性检查 完成
+
+FILE=src/core/night_conf.c:LINE=850
+指令结束符检查
+
+FILE=src/core/night_conf.c:LINE=872
+指令结束符检查 完成
+
+FILE=src/core/night_conf.c:LINE=875
+参数数量检查
+
+FILE=src/core/night_conf.c:LINE=880
+指令参数非 any
+
+FILE=src/core/night_conf.c:LINE=938
+参数数量检查 完成
+
+FILE=src/core/night_conf.c:LINE=941
+确定配置结构体的位置
+
+FILE=src/core/night_conf.c:LINE=956
+MAIN 类型指令
+
+FILE=src/core/night_conf.c:LINE=979
+调用指令的 set 函数（真正处理配置）
+
+FILE=src/event/night_events_module.c:LINE=21
+function:	night_events_block
+
+FILE=src/event/night_events_module.c:LINE=32
+统计 event 类型模块的数量并分配索引
+night_count_modules
+
+FILE=src/core/night_modules.c:LINE=138
+function:	night_count_modules
+
+FILE=src/core/night_modules.c:LINE=144
+遍历所有模块
+
+FILE=src/core/night_modules.c:LINE=151
+module name=night_core_module
+
+FILE=src/core/night_modules.c:LINE=156
+跳过类型不符合的模块
+
+FILE=src/core/night_modules.c:LINE=151
+module name=night_events_module
+
+FILE=src/core/night_modules.c:LINE=156
+跳过类型不符合的模块
+
+FILE=src/core/night_modules.c:LINE=151
+module name=night_event_core_module
+
+FILE=src/core/night_modules.c:LINE=181
+按序分配可用索引，从 0 开始查找可用索引
+
+FILE=src/core/night_modules.c:LINE=20
+function:	night_module_ctx_index
+
+FILE=src/core/night_modules.c:LINE=25
+循环 遍历所有模块 检查索引 0 是否已经被使用
+
+FILE=src/core/night_modules.c:LINE=32
+module name=night_core_module
+
+FILE=src/core/night_modules.c:LINE=37
+该模块类型不匹配，跳过
+
+FILE=src/core/night_modules.c:LINE=32
+module name=night_events_module
+
+FILE=src/core/night_modules.c:LINE=37
+该模块类型不匹配，跳过
+
+FILE=src/core/night_modules.c:LINE=32
+module name=night_event_core_module
+
+FILE=src/core/night_modules.c:LINE=32
+module name=night_epoll_module
+
+FILE=src/core/night_modules.c:LINE=54
+遍历 old_cycle，避免 索引 冲突
+
+FILE=src/core/night_modules.c:LINE=77
+function night_module_ctx_index:	return 0
+
+FILE=src/core/night_modules.c:LINE=186
+分配索引完成，ctx_index=0
+
+FILE=src/core/night_modules.c:LINE=151
+module name=night_epoll_module
+
+FILE=src/core/night_modules.c:LINE=181
+按序分配可用索引，从 1 开始查找可用索引
+
+FILE=src/core/night_modules.c:LINE=20
+function:	night_module_ctx_index
+
+FILE=src/core/night_modules.c:LINE=25
+循环 遍历所有模块 检查索引 1 是否已经被使用
+
+FILE=src/core/night_modules.c:LINE=32
+module name=night_core_module
+
+FILE=src/core/night_modules.c:LINE=37
+该模块类型不匹配，跳过
+
+FILE=src/core/night_modules.c:LINE=32
+module name=night_events_module
+
+FILE=src/core/night_modules.c:LINE=37
+该模块类型不匹配，跳过
+
+FILE=src/core/night_modules.c:LINE=32
+module name=night_event_core_module
+
+FILE=src/core/night_modules.c:LINE=32
+module name=night_epoll_module
+
+FILE=src/core/night_modules.c:LINE=54
+遍历 old_cycle，避免 索引 冲突
+
+FILE=src/core/night_modules.c:LINE=77
+function night_module_ctx_index:	return 1
+
+FILE=src/core/night_modules.c:LINE=186
+分配索引完成，ctx_index=1
+
+FILE=src/core/night_modules.c:LINE=197
+max=1
+
+FILE=src/core/night_modules.c:LINE=200
+兼容  old_cycle
+
+FILE=src/core/night_modules.c:LINE=224
+max=1
+
+FILE=src/core/night_modules.c:LINE=227
+function night_count_modules:	return 2
+
+FILE=src/event/night_events_module.c:LINE=38
+统计 event 类型模块的数量并分配索引 完成
+night_count_modules completed
+
+FILE=src/event/night_events_module.c:LINE=42
+为 event 模块配置结构体指针分配内存
+
+FILE=src/core/night_palloc.c:LINE=48
+function:	night_pcalloc
+
+FILE=src/core/night_palloc.c:LINE=68
+function:	night_palloc
+
+FILE=src/core/night_palloc.c:LINE=75
+size(8) <= pool->max (4032)
+
+小块分配
+night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=59
+function night_pcalloc:	return
+
+FILE=src/core/night_palloc.c:LINE=48
+function:	night_pcalloc
+
+FILE=src/core/night_palloc.c:LINE=68
+function:	night_palloc
+
+FILE=src/core/night_palloc.c:LINE=75
+size(16) <= pool->max (4032)
+
+小块分配
+night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=59
+function night_pcalloc:	return
+
+FILE=src/event/night_events_module.c:LINE=59
+遍历所有 event 模块,调用模块的 create_conf 函数创建模块的配置结构体
+
+FILE=src/event/night_events_module.c:LINE=66
+module name=night_core_module
+
+FILE=src/event/night_events_module.c:LINE=71
+该模块非 event 模块，跳过
+
+FILE=src/event/night_events_module.c:LINE=66
+module name=night_events_module
+
+FILE=src/event/night_events_module.c:LINE=71
+该模块非 event 模块，跳过
+
+FILE=src/event/night_events_module.c:LINE=66
+module name=night_event_core_module
+
+FILE=src/event/night_events_module.c:LINE=81
+创建 night_event_core_module 模块的配置结构体
+
+FILE=src/event/night_event_core_module.c:LINE=8
+function:	night_event_core_create_conf
+
+FILE=src/event/night_event_core_module.c:LINE=13
+为配置结构体分配内存
+
+FILE=src/core/night_palloc.c:LINE=68
+function:	night_palloc
+
+FILE=src/core/night_palloc.c:LINE=75
+size(16) <= pool->max (4032)
+
+小块分配
+night_palloc_small
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/event/night_event_core_module.c:LINE=22
+设置 “未设置” 标识
+
+FILE=src/event/night_event_core_module.c:LINE=27
+返回配置结构体指针
+function night_event_core_create_conf:	return
+
+FILE=src/event/night_events_module.c:LINE=66
+module name=night_epoll_module
+
+FILE=src/event/night_events_module.c:LINE=92
+解析 events 块中的指令
+
+FILE=src/core/night_conf.c:LINE=43
+function:	night_conf_parse
+
+FILE=src/core/night_conf.c:LINE=149
+type = parse_block
+
+FILE=src/core/night_conf.c:LINE=163
+主解析循环
+
+FILE=src/core/night_conf.c:LINE=168
+读取 token
+
+FILE=src/core/night_conf.c:LINE=318
+function:	night_conf_read_token
+
+FILE=src/core/night_conf.c:LINE=321
+初始化局部变量
+
+FILE=src/core/night_conf.c:LINE=340
+文件大小 file_size=364
+
+FILE=src/core/night_conf.c:LINE=343
+主循环：逐字节解析
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=
+
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch= 
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch= 
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch= 
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch= 
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=w
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=o
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=r
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=k
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=e
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=r
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=_
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=c
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=o
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=n
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=n
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=e
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=c
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=t
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=i
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=o
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=n
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=s
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch= 
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=695
+found == 1，提取 token
+
+FILE=src/core/night_array.c:LINE=54
+function:	night_array_push
+
+FILE=src/core/night_array.c:LINE=100
+元素个数:1
+function night_array_push:	return
+
+FILE=src/core/night_palloc.c:LINE=300
+function:	night_pnalloc
+
+FILE=src/core/night_palloc.c:LINE=305
+分配小块内存
+night_palloc_small(pool, size, 0)
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_conf.c:LINE=746
+word->len=18
+word->data=worker_connections
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch= 
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=1
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=0
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=2
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=4
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=;
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=695
+found == 1，提取 token
+
+FILE=src/core/night_array.c:LINE=54
+function:	night_array_push
+
+FILE=src/core/night_array.c:LINE=100
+元素个数:2
+function night_array_push:	return
+
+FILE=src/core/night_palloc.c:LINE=300
+function:	night_pnalloc
+
+FILE=src/core/night_palloc.c:LINE=305
+分配小块内存
+night_palloc_small(pool, size, 0)
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_conf.c:LINE=746
+word->len=4
+word->data=1024
+
+FILE=src/core/night_conf.c:LINE=173
+读取 token 完成
+
+FILE=src/core/night_conf.c:LINE=233
+标准指令处理器 处理指令
+night_conf_handler(cf, 0) 
+
+FILE=src/core/night_conf.c:LINE=768
+function:	night_conf_handler
+
+FILE=src/core/night_conf.c:LINE=777
+提取指令名
+指令名:worker_connections
+
+FILE=src/core/night_conf.c:LINE=786
+遍历所有已加载模块
+
+FILE=src/core/night_conf.c:LINE=791
+module:night_core_module
+
+FILE=src/core/night_conf.c:LINE=800
+遍历当前模块的所有指令
+
+FILE=src/core/night_conf.c:LINE=791
+module:night_events_module
+
+FILE=src/core/night_conf.c:LINE=800
+遍历当前模块的所有指令
+
+FILE=src/core/night_conf.c:LINE=791
+module:night_event_core_module
+
+FILE=src/core/night_conf.c:LINE=800
+遍历当前模块的所有指令
+
+FILE=src/core/night_conf.c:LINE=817
+found directive worker_connections in module night_event_core_module
+
+FILE=src/core/night_conf.c:LINE=820
+模块类型合法性检查
+
+FILE=src/core/night_conf.c:LINE=833
+模块类型合法
+
+FILE=src/core/night_conf.c:LINE=836
+指令 作用域 合法性检查
+
+FILE=src/core/night_conf.c:LINE=847
+指令 作用域 合法性检查 完成
+
+FILE=src/core/night_conf.c:LINE=850
+指令结束符检查
+
+FILE=src/core/night_conf.c:LINE=872
+指令结束符检查 完成
+
+FILE=src/core/night_conf.c:LINE=875
+参数数量检查
+
+FILE=src/core/night_conf.c:LINE=880
+指令参数非 any
+
+FILE=src/core/night_conf.c:LINE=938
+参数数量检查 完成
+
+FILE=src/core/night_conf.c:LINE=941
+确定配置结构体的位置
+
+FILE=src/core/night_conf.c:LINE=964
+其他 类型指令
+字段偏移量:0
+
+索引 ctx_index=0
+
+FILE=src/core/night_conf.c:LINE=979
+调用指令的 set 函数（真正处理配置）
+
+FILE=src/event/night_event_core_module.c:LINE=91
+function:	night_event_connections
+
+FILE=src/event/night_event_core_module.c:LINE=106
+解析并转换指令参数
+
+FILE=src/core/night_string.c:LINE=130
+function:	night_atoi
+
+FILE=src/core/night_string.c:LINE=158
+function night_atoi:	return value(1024)
+
+FILE=src/event/night_event_core_module.c:LINE=122
+connection_n=1024
+
+FILE=src/event/night_event_core_module.c:LINE=125
+function night_event_connections:	return NIGHT_CONF_OK
+
+FILE=src/core/night_conf.c:LINE=984
+指令的 set 函数 处理完成
+
+FILE=src/core/night_conf.c:LINE=989
+指令的 set 函数 处理 成功
+function night_conf_handler:	return NIGHT_OK
+
+FILE=src/core/night_conf.c:LINE=238
+标准指令处理器 处理指令 完成
+night_conf_handler(cf, 0) completed
+
+FILE=src/core/night_conf.c:LINE=168
+读取 token
+
+FILE=src/core/night_conf.c:LINE=318
+function:	night_conf_read_token
+
+FILE=src/core/night_conf.c:LINE=321
+初始化局部变量
+
+FILE=src/core/night_conf.c:LINE=340
+文件大小 file_size=364
+
+FILE=src/core/night_conf.c:LINE=343
+主循环：逐字节解析
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=
+
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=}
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=608
+function night_conf_read_token:	return NIGHT_CONF_BLOCK_DONE
+
+FILE=src/core/night_conf.c:LINE=173
+读取 token 完成
+
+FILE=src/core/night_conf.c:LINE=187
+rc == NIGHT_CONF_BLOCK_DONE
+goto done
+
+FILE=src/core/night_conf.c:LINE=259
+done:
+FILE=src/core/night_conf.c:LINE=292
+function night_conf_parse:	return NIGHT_CONF_OK
+
+FILE=src/event/night_events_module.c:LINE=102
+解析 events 块中的指令 完成
+
+FILE=src/event/night_events_module.c:LINE=116
+调用各事件模块的 init_conf 函数初始化模块配置
+
+FILE=src/event/night_events_module.c:LINE=132
+初始化 night_event_core_module 模块的配置
+
+FILE=src/event/night_event_core_module.c:LINE=37
+function:	night_event_core_init_conf
+
+FILE=src/event/night_event_core_module.c:LINE=71
+初始化  配置结构
+
+FILE=src/event/night_event_core_module.c:LINE=82
+function night_event_core_init_conf:	return NIGHT_CONF_OK
+
+FILE=src/event/night_events_module.c:LINE=143
+function night_events_block:	return NIGHT_CONF_OK
+
+FILE=src/core/night_conf.c:LINE=984
+指令的 set 函数 处理完成
+
+FILE=src/core/night_conf.c:LINE=989
+指令的 set 函数 处理 成功
+function night_conf_handler:	return NIGHT_OK
+
+FILE=src/core/night_conf.c:LINE=238
+标准指令处理器 处理指令 完成
+night_conf_handler(cf, 0) completed
+
+FILE=src/core/night_conf.c:LINE=168
+读取 token
+
+FILE=src/core/night_conf.c:LINE=318
+function:	night_conf_read_token
+
+FILE=src/core/night_conf.c:LINE=321
+初始化局部变量
+
+FILE=src/core/night_conf.c:LINE=340
+文件大小 file_size=364
+
+FILE=src/core/night_conf.c:LINE=343
+主循环：逐字节解析
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=
+
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=
+
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=
+
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=h
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=t
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=t
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch=p
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch= 
+
+FILE=src/core/night_conf.c:LINE=645
+token 解析进行中
+
+FILE=src/core/night_conf.c:LINE=695
+found == 1，提取 token
+
+FILE=src/core/night_array.c:LINE=54
+function:	night_array_push
+
+FILE=src/core/night_array.c:LINE=100
+元素个数:1
+function night_array_push:	return
+
+FILE=src/core/night_palloc.c:LINE=300
+function:	night_pnalloc
+
+FILE=src/core/night_palloc.c:LINE=305
+分配小块内存
+night_palloc_small(pool, size, 0)
+
+FILE=src/core/night_palloc.c:LINE=96
+function:	night_palloc_small
+
+FILE=src/core/night_conf.c:LINE=746
+word->len=4
+word->data=http
+
+FILE=src/core/night_conf.c:LINE=496
+解析缓冲区中的内容
+
+FILE=src/core/night_conf.c:LINE=501
+读取当前字符 ch={
+
+FILE=src/core/night_conf.c:LINE=563
+开始新 token
+
+FILE=src/core/night_conf.c:LINE=588
+function night_conf_read_token:	return NIGHT_CONF_BLOCK_START
+
+FILE=src/core/night_conf.c:LINE=173
+读取 token 完成
+
+FILE=src/core/night_conf.c:LINE=221
+rc == NIGHT_CONF_BLOCK_START
+FILE=src/core/night_conf.c:LINE=233
+标准指令处理器 处理指令
+night_conf_handler(cf, 1) 
+
+FILE=src/core/night_conf.c:LINE=768
+function:	night_conf_handler
+
+FILE=src/core/night_conf.c:LINE=777
+提取指令名
+指令名:http
+
+FILE=src/core/night_conf.c:LINE=786
+遍历所有已加载模块
+
+FILE=src/core/night_conf.c:LINE=791
+module:night_core_module
+
+FILE=src/core/night_conf.c:LINE=800
+遍历当前模块的所有指令
+
+FILE=src/core/night_conf.c:LINE=791
+module:night_events_module
+
+FILE=src/core/night_conf.c:LINE=800
+遍历当前模块的所有指令
+
+FILE=src/core/night_conf.c:LINE=791
+module:night_event_core_module
+
+FILE=src/core/night_conf.c:LINE=800
+遍历当前模块的所有指令
+
+FILE=src/core/night_conf.c:LINE=791
+module:night_epoll_module
+
+FILE=src/core/night_conf.c:LINE=800
+遍历当前模块的所有指令
+
+FILE=src/core/night_conf.c:LINE=1029
+未知指令 http
+function night_conf_handler:	return NIGHT_ERROR
+
+FILE=src/core/night_conf.c:LINE=238
+标准指令处理器 处理指令 完成
+night_conf_handler(cf, -1) completed
+
+FILE=src/core/night_conf.c:LINE=243
+rc == NIGHT_ERROR
+指令处理失败
+goto failed
+
+FILE=src/core/night_conf.c:LINE=252
+failed:
+rc = NIGHT_ERROR
+
+FILE=src/core/night_conf.c:LINE=259
+done:
+FILE=src/core/night_conf.c:LINE=264
+释放缓冲区内存，关闭文件 /home/wsd/Desktop/night/conf/night.conf 文件描述符 4
+
+FILE=src/core/night_conf.c:LINE=278
+恢复 cf->conf_file 到调用前的状态（支持嵌套解析）
+
+FILE=src/core/night_conf.c:LINE=286
+function night_conf_parse:	return NIGHT_CONF_ERROR
+
+FILE=src/core/night_cycle.c:LINE=354
+function:	night_destroy_cycle_pools
+
+FILE=src/core/night_palloc.c:LINE=242
+function:	night_destroy_pool
+
+FILE=src/core/night_palloc.c:LINE=281
+free memory block of pool
+free(0x56c37fbea600)
+
+FILE=src/core/night_palloc.c:LINE=293
+function night_destroy_pool:	return
+
+FILE=src/core/night_palloc.c:LINE=242
+function:	night_destroy_pool
+
+FILE=src/core/night_palloc.c:LINE=281
+free memory block of pool
+free(0x56c37fbe95f0)
+
+FILE=src/core/night_palloc.c:LINE=293
+function night_destroy_pool:	return
+
+FILE=src/core/night_cycle.c:LINE=360
+function night_destroy_cycle_pools:	return
+
+FILE=src/core/night.c:LINE=191
+night_init_cycle failed
+function main:	return 1
+

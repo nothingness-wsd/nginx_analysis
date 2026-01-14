@@ -1,0 +1,787 @@
+# 头文件目录
+INCLUDE = -I./src/core -I./src/event -I./src/event/modules -I./src/http -I./src/http/modules -I./src/os/unix -I./src/tools
+
+# 默认目标
+all: build install
+
+# 编译目标
+build: \
+	objs/src/core/night.o \
+	objs/src/core/night_time.o \
+	objs/src/core/night_proctitle.o \
+	objs/src/tools/night_string.o \
+	objs/src/core/night_modules.o \
+	objs/src/core/night_cycle.o \
+	objs/src/core/night_pool.o \
+	objs/src/core/night_array.o \
+	objs/src/core/night_conf.o \
+	objs/src/core/night_file.o \
+	objs/src/core/night_core_module.o \
+	objs/src/event/night_events_module.o \
+	objs/src/event/night_event_core_module.o \
+	objs/src/http/night_http_module.o \
+	objs/src/http/night_http_core_module.o \
+	objs/src/core/night_file_name.o \
+	objs/src/http/night_http_index_module.o \
+	objs/src/event/modules/night_epoll_module.o \
+	objs/src/core/night_queue.o \
+	objs/src/core/night_listening.o \
+	objs/src/os/unix/night_fctl.o \
+	objs/src/core/night_daemon.o \
+	objs/src/core/night_pidfile.o \
+	objs/src/core/night_process_cycle.o \
+	objs/src/core/night_process.o \
+	objs/src/event/night_event_posted.o \
+	objs/src/core/night_signal.o \
+	objs/src/event/night_event_timer.o \
+	objs/src/core/night_connection.o \
+	objs/src/event/night_event_accept.o \
+	objs/src/event/night_event_udp.o \
+	objs/src/event/night_event.o \
+	objs/src/event/night_process_events.o \
+	objs/src/core/night_channel.o \
+	objs/src/core/night_rbtree.o \
+	objs/src/core/night_signal_process.o \
+	objs/src/os/unix/night_os.o \
+	objs/src/os/unix/night_os_io.o \
+	objs/src/os/unix/night_recv.o \
+	objs/src/os/unix/night_send.o \
+	objs/src/http/night_http_request.o \
+	objs/src/tools/night_sock.o \
+	objs/src/http/night_http_connection.o \
+	objs/src/core/night_buf.o \
+	objs/src/os/unix/night_ioctl.o \
+	objs/src/http/night_http_parse.o \
+	objs/src/core/night_hash.o \
+	objs/src/core/night_list.o \
+	objs/src/http/night_http_rewrite_module.o \
+	objs/src/http/night_http_limit_conn_module.o \
+	objs/src/http/night_http_limit_req_module.o \
+	objs/src/http/night_http_access_module.o \
+	objs/src/http/night_http_auth_basic_module.o \
+	objs/src/http/night_http_try_files_module.o \
+	objs/src/http/night_http_static_module.o \
+	objs/src/http/night_http_log_module.o \
+	objs/src/http/night_http_mirror_module.o \
+	objs/src/core/night_open_file_cache.o \
+	objs/src/http/night_http_autoindex_module.o \
+	objs/src/http/night_http_header_filter_module.o \
+	objs/src/http/night_http_range_filter_module.o \
+	objs/src/http/night_http_write_filter_module.o \
+	objs/src/os/unix/night_readv_chain.o \
+	objs/src/os/unix/night_writev_chain.o \
+	objs/src/os/unix/night_linux_init.o \
+	objs/src/os/unix/night_linux_sendfile_chain.o \
+	objs/src/http/night_http_postpone_filter_module.o \
+	objs/src/http/night_http_copy_filter_module.o \
+	objs/src/core/night_output_chain.o
+	
+	
+	gcc -o night \
+	objs/src/core/night.o \
+	objs/src/core/night_time.o \
+	objs/src/core/night_proctitle.o \
+	objs/src/tools/night_string.o \
+	objs/src/core/night_modules.o \
+	objs/src/core/night_cycle.o \
+	objs/src/core/night_pool.o \
+	objs/src/core/night_array.o \
+	objs/src/core/night_conf.o \
+	objs/src/core/night_file.o \
+	objs/src/core/night_core_module.o \
+	objs/src/event/night_events_module.o \
+	objs/src/event/night_event_core_module.o \
+	objs/src/http/night_http_module.o \
+	objs/src/http/night_http_core_module.o \
+	objs/src/core/night_file_name.o \
+	objs/src/http/night_http_index_module.o \
+	objs/src/event/modules/night_epoll_module.o \
+	objs/src/core/night_queue.o \
+	objs/src/core/night_listening.o \
+	objs/src/os/unix/night_fctl.o \
+	objs/src/core/night_daemon.o \
+	objs/src/core/night_pidfile.o \
+	objs/src/core/night_process_cycle.o \
+	objs/src/core/night_process.o \
+	objs/src/event/night_event_posted.o \
+	objs/src/core/night_signal.o \
+	objs/src/event/night_event_timer.o \
+	objs/src/core/night_connection.o \
+	objs/src/event/night_event_accept.o \
+	objs/src/event/night_event_udp.o \
+	objs/src/event/night_event.o \
+	objs/src/event/night_process_events.o \
+	objs/src/core/night_channel.o \
+	objs/src/core/night_rbtree.o \
+	objs/src/core/night_signal_process.o \
+	objs/src/os/unix/night_os.o \
+	objs/src/os/unix/night_os_io.o \
+	objs/src/os/unix/night_recv.o \
+	objs/src/os/unix/night_send.o \
+	objs/src/http/night_http_request.o \
+	objs/src/tools/night_sock.o \
+	objs/src/http/night_http_connection.o \
+	objs/src/core/night_buf.o \
+	objs/src/os/unix/night_ioctl.o \
+	objs/src/http/night_http_parse.o \
+	objs/src/core/night_hash.o \
+	objs/src/core/night_list.o \
+	objs/src/http/night_http_rewrite_module.o \
+	objs/src/http/night_http_limit_conn_module.o \
+	objs/src/http/night_http_limit_req_module.o \
+	objs/src/http/night_http_access_module.o \
+	objs/src/http/night_http_auth_basic_module.o \
+	objs/src/http/night_http_try_files_module.o \
+	objs/src/http/night_http_static_module.o \
+	objs/src/http/night_http_log_module.o \
+	objs/src/http/night_http_mirror_module.o \
+	objs/src/core/night_open_file_cache.o \
+	objs/src/http/night_http_autoindex_module.o \
+	objs/src/http/night_http_header_filter_module.o \
+	objs/src/http/night_http_range_filter_module.o \
+	objs/src/http/night_http_write_filter_module.o \
+	objs/src/os/unix/night_readv_chain.o \
+	objs/src/os/unix/night_writev_chain.o \
+	objs/src/os/unix/night_linux_init.o \
+	objs/src/os/unix/night_linux_sendfile_chain.o \
+	objs/src/http/night_http_postpone_filter_module.o \
+	objs/src/http/night_http_copy_filter_module.o \
+	objs/src/core/night_output_chain.o
+	
+	
+objs/src/core/night.o: \
+	src/core/night.c \
+	src/core/night.h \
+	src/core/night_core.h \
+	src/core/night_time.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night.o \
+	src/core/night.c	
+
+objs/src/core/night_time.o: \
+	src/core/night_time.c \
+	src/core/night_time.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_time.o \
+	src/core/night_time.c
+	
+objs/src/core/night_proctitle.o: \
+	src/core/night_proctitle.c \
+	src/core/night_proctitle.h \
+	src/core/night_core.h \
+	src/tools/night_string.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_proctitle.o \
+	src/core/night_proctitle.c
+	
+objs/src/tools/night_string.o: \
+	src/tools/night_string.c \
+	src/tools/night_string.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/tools/night_string.o \
+	src/tools/night_string.c
+	
+objs/src/core/night_modules.o: \
+	src/core/night_modules.c \
+	src/core/night_modules.h \
+	src/core/night_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_modules.o \
+	src/core/night_modules.c
+
+objs/src/core/night_cycle.o: \
+	src/core/night_cycle.c \
+	src/core/night_cycle.h \
+	src/core/night_pool.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_cycle.o \
+	src/core/night_cycle.c
+
+objs/src/core/night_pool.o: \
+	src/core/night_pool.c \
+	src/core/night_pool.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_pool.o \
+	src/core/night_pool.c
+	
+objs/src/core/night_array.o: \
+	src/core/night_array.c \
+	src/core/night_array.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_array.o \
+	src/core/night_array.c
+	
+objs/src/core/night_conf.o: \
+	src/core/night_conf.c \
+	src/core/night_conf.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_conf.o \
+	src/core/night_conf.c
+	
+objs/src/core/night_file.o: \
+	src/core/night_file.c \
+	src/core/night_file.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_file.o \
+	src/core/night_file.c
+		
+objs/src/core/night_core_module.o: \
+	src/core/night_core_module.c \
+	src/core/night_core_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_core_module.o \
+	src/core/night_core_module.c
+	
+objs/src/event/night_events_module.o: \
+	src/event/night_events_module.c \
+	src/event/night_events_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/event/night_events_module.o \
+	src/event/night_events_module.c
+	
+objs/src/event/night_event_core_module.o: \
+	src/event/night_event_core_module.c \
+	src/event/night_event_core_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/event/night_event_core_module.o \
+	src/event/night_event_core_module.c
+	
+objs/src/http/night_http_module.o: \
+	src/http/night_http_module.c \
+	src/http/night_http_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_module.o \
+	src/http/night_http_module.c
+	
+objs/src/http/night_http_core_module.o: \
+	src/http/night_http_core_module.c \
+	src/http/night_http_core_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_core_module.o \
+	src/http/night_http_core_module.c
+
+objs/src/core/night_file_name.o: \
+ 	src/core/night_file_name.c \
+	src/core/night_file_name.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_file_name.o \
+	src/core/night_file_name.c
+	
+objs/src/http/night_http_index_module.o: \
+	src/http/night_http_index_module.c \
+	src/http/night_http_index_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_index_module.o \
+	src/http/night_http_index_module.c
+
+objs/src/event/modules/night_epoll_module.o: \
+	src/event/modules/night_epoll_module.c \
+	src/event/modules/night_epoll_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/event/modules/night_epoll_module.o \
+	src/event/modules/night_epoll_module.c
+	
+objs/src/core/night_queue.o: \
+	src/core/night_queue.c \
+	src/core/night_queue.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_queue.o \
+	src/core/night_queue.c
+	
+objs/src/core/night_listening.o: \
+	src/core/night_listening.c \
+	src/core/night_listening.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_listening.o \
+	src/core/night_listening.c
+	
+objs/src/os/unix/night_fctl.o: \
+	src/os/unix/night_fctl.c \
+	src/os/unix/night_fctl.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/os/unix/night_fctl.o \
+	src/os/unix/night_fctl.c
+	
+objs/src/core/night_daemon.o: \
+	src/core/night_daemon.c \
+	src/core/night_daemon.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_daemon.o \
+	src/core/night_daemon.c
+
+objs/src/core/night_pidfile.o: \
+	src/core/night_pidfile.c \
+	src/core/night_pidfile.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_pidfile.o \
+	src/core/night_pidfile.c
+	
+objs/src/core/night_process_cycle.o: \
+	src/core/night_process_cycle.c \
+	src/core/night_process_cycle.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_process_cycle.o \
+	src/core/night_process_cycle.c
+	
+objs/src/core/night_process.o: \
+	src/core/night_process.c \
+	src/core/night_process.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_process.o \
+	src/core/night_process.c
+	
+objs/src/event/night_event_posted.o: \
+	src/event/night_event_posted.c \
+	src/event/night_event_posted.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/event/night_event_posted.o \
+	src/event/night_event_posted.c
+		
+objs/src/core/night_signal.o: \
+	src/core/night_signal.c \
+	src/core/night_signal.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_signal.o \
+	src/core/night_signal.c
+
+objs/src/event/night_event_timer.o: \
+	src/event/night_event_timer.c \
+	src/event/night_event_timer.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/event/night_event_timer.o \
+	src/event/night_event_timer.c
+	
+objs/src/core/night_connection.o: \
+	src/core/night_connection.c \
+	src/core/night_connection.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_connection.o \
+	src/core/night_connection.c
+		
+objs/src/event/night_event_accept.o: \
+	src/event/night_event_accept.c \
+	src/event/night_event_accept.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/event/night_event_accept.o \
+	src/event/night_event_accept.c	
+	
+objs/src/event/night_event_udp.o: \
+	src/event/night_event_udp.c \
+	src/event/night_event_udp.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/event/night_event_udp.o \
+	src/event/night_event_udp.c	
+		
+objs/src/event/night_event.o: \
+	src/event/night_event.c \
+	src/event/night_event.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/event/night_event.o \
+	src/event/night_event.c
+	
+objs/src/event/night_process_events.o: \
+	src/event/night_process_events.c \
+	src/event/night_process_events.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/event/night_process_events.o \
+	src/event/night_process_events.c
+	
+objs/src/core/night_channel.o: \
+	src/core/night_channel.c \
+	src/core/night_channel.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_channel.o \
+	src/core/night_channel.c
+	
+objs/src/core/night_rbtree.o: \
+	src/core/night_rbtree.c \
+	src/core/night_rbtree.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_rbtree.o \
+	src/core/night_rbtree.c
+	
+objs/src/core/night_signal_process.o: \
+	src/core/night_signal_process.c \
+	src/core/night_signal_process.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_signal_process.o \
+	src/core/night_signal_process.c
+	
+objs/src/os/unix/night_os.o : \
+	src/os/unix/night_os.c \
+	src/os/unix/night_os.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/os/unix/night_os.o \
+	src/os/unix/night_os.c
+	
+objs/src/os/unix/night_os_io.o: \
+	src/os/unix/night_os_io.c \
+	src/os/unix/night_os_io.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/os/unix/night_os_io.o \
+	src/os/unix/night_os_io.c
+	
+objs/src/os/unix/night_recv.o: \
+	src/os/unix/night_recv.c \
+	src/os/unix/night_recv.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/os/unix/night_recv.o \
+	src/os/unix/night_recv.c
+
+objs/src/os/unix/night_send.o: \
+	src/os/unix/night_send.c \
+	src/os/unix/night_send.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/os/unix/night_send.o \
+	src/os/unix/night_send.c
+		
+objs/src/http/night_http_request.o: \
+	src/http/night_http_request.c \
+	src/http/night_http_request.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_request.o \
+	src/http/night_http_request.c
+		
+objs/src/tools/night_sock.o: \
+	src/tools/night_sock.c \
+	src/tools/night_sock.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/tools/night_sock.o \
+	src/tools/night_sock.c
+	
+objs/src/http/night_http_connection.o: \
+	src/http/night_http_connection.c \
+	src/http/night_http_connection.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_connection.o \
+	src/http/night_http_connection.c
+	
+objs/src/core/night_buf.o: \
+	src/core/night_buf.c \
+	src/core/night_buf.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_buf.o \
+	src/core/night_buf.c
+	
+objs/src/os/unix/night_ioctl.o: \
+	src/os/unix/night_ioctl.c \
+	src/os/unix/night_ioctl.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/os/unix/night_ioctl.o \
+	src/os/unix/night_ioctl.c
+	
+objs/src/http/night_http_parse.o: \
+	src/http/night_http_parse.c \
+	src/http/night_http_parse.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_parse.o \
+	src/http/night_http_parse.c
+	
+objs/src/core/night_hash.o :\
+	src/core/night_hash.c \
+	src/core/night_hash.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_hash.o \
+	src/core/night_hash.c
+	
+objs/src/core/night_list.o: \
+	src/core/night_list.c \
+	src/core/night_list.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_list.o \
+	src/core/night_list.c
+	
+objs/src/http/night_http_rewrite_module.o : \
+	src/http/night_http_rewrite_module.c \
+	src/http/night_http_rewrite_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_rewrite_module.o \
+	src/http/night_http_rewrite_module.c
+	
+objs/src/http/night_http_limit_conn_module.o: \
+	src/http/night_http_limit_conn_module.c \
+	src/http/night_http_limit_conn_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_limit_conn_module.o \
+	src/http/night_http_limit_conn_module.c
+	
+objs/src/http/night_http_limit_req_module.o: \
+	src/http/night_http_limit_req_module.c \
+	src/http/night_http_limit_req_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_limit_req_module.o \
+	src/http/night_http_limit_req_module.c
+	
+objs/src/http/night_http_access_module.o: \
+	src/http/night_http_access_module.c \
+	src/http/night_http_access_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_access_module.o \
+	src/http/night_http_access_module.c
+	
+objs/src/http/night_http_auth_basic_module.o: \
+	src/http/night_http_auth_basic_module.c \
+	src/http/night_http_auth_basic_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_auth_basic_module.o \
+	src/http/night_http_auth_basic_module.c
+	
+objs/src/http/night_http_try_files_module.o: \
+	src/http/night_http_try_files_module.c \
+	src/http/night_http_try_files_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_try_files_module.o \
+	src/http/night_http_try_files_module.c
+	
+objs/src/http/night_http_static_module.o: \
+	src/http/night_http_static_module.c \
+	src/http/night_http_static_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_static_module.o \
+	src/http/night_http_static_module.c
+	
+objs/src/http/night_http_log_module.o: \
+	src/http/night_http_log_module.c \
+	src/http/night_http_log_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_log_module.o \
+	src/http/night_http_log_module.c
+	
+objs/src/http/night_http_mirror_module.o: \
+	src/http/night_http_mirror_module.c \
+	src/http/night_http_mirror_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_mirror_module.o \
+	src/http/night_http_mirror_module.c
+	
+objs/src/core/night_open_file_cache.o: \
+	src/core/night_open_file_cache.c \
+	src/core/night_open_file_cache.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_open_file_cache.o \
+	src/core/night_open_file_cache.c
+	
+objs/src/http/night_http_autoindex_module.o: \
+	src/http/night_http_autoindex_module.c \
+	src/http/night_http_autoindex_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_autoindex_module.o \
+	src/http/night_http_autoindex_module.c
+	
+objs/src/http/night_http_header_filter_module.o: \
+	src/http/night_http_header_filter_module.c \
+	src/http/night_http_header_filter_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_header_filter_module.o \
+	src/http/night_http_header_filter_module.c
+	
+objs/src/http/night_http_range_filter_module.o: \
+	src/http/night_http_range_filter_module.c \
+	src/http/night_http_range_filter_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_range_filter_module.o \
+	src/http/night_http_range_filter_module.c
+	
+objs/src/http/night_http_write_filter_module.o: \
+	src/http/night_http_write_filter_module.c \
+	src/http/night_http_write_filter_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_write_filter_module.o \
+	src/http/night_http_write_filter_module.c	
+	
+objs/src/os/unix/night_readv_chain.o: \
+	src/os/unix/night_readv_chain.c \
+	src/os/unix/night_readv_chain.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/os/unix/night_readv_chain.o \
+	src/os/unix/night_readv_chain.c
+	
+objs/src/os/unix/night_writev_chain.o: \
+	src/os/unix/night_writev_chain.c \
+	src/os/unix/night_writev_chain.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/os/unix/night_writev_chain.o \
+	src/os/unix/night_writev_chain.c
+	
+objs/src/os/unix/night_linux_init.o: \
+	src/os/unix/night_linux_init.c \
+	src/os/unix/night_linux_init.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/os/unix/night_linux_init.o \
+	src/os/unix/night_linux_init.c
+	
+objs/src/os/unix/night_linux_sendfile_chain.o: \
+	src/os/unix/night_linux_sendfile_chain.c \
+	src/os/unix/night_linux_sendfile_chain.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/os/unix/night_linux_sendfile_chain.o \
+	src/os/unix/night_linux_sendfile_chain.c
+		
+objs/src/http/night_http_postpone_filter_module.o: \
+	src/http/night_http_postpone_filter_module.c \
+	src/http/night_http_postpone_filter_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_postpone_filter_module.o \
+	src/http/night_http_postpone_filter_module.c
+	
+objs/src/http/night_http_copy_filter_module.o: \
+	src/http/night_http_copy_filter_module.c \
+	src/http/night_http_copy_filter_module.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/http/night_http_copy_filter_module.o \
+	src/http/night_http_copy_filter_module.c
+			
+objs/src/core/night_output_chain.o: \
+	src/core/night_output_chain.c \
+	src/core/night_output_chain.h \
+	src/core/night_core.h
+	
+	gcc -c $(INCLUDE) \
+	-o objs/src/core/night_output_chain.o \
+	src/core/night_output_chain.c
+		
+# 安装目标（剪切可执行文件到指定目录）
+install:
+	#mv $(EXECUTABLE) $(INSTALL_DIR)/
+
+# 清理目标
+clean:
+	rm -f night && \
+	find objs/src/ -type f -delete
+	
+# 声明伪目标
+.PHONY: all build install clean

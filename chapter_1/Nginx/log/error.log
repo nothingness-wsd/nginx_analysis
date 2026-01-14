@@ -1,0 +1,932 @@
+2025/08/22 16:00:36 [error] 13228#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/08/22 16:00:53 [notice] 13284#0: signal process started
+2025/09/26 13:54:05 [error] 5679#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/09/26 13:54:42 [notice] 5898#0: signal process started
+2025/09/26 14:03:09 [notice] 6082#0: signal process started
+2025/09/26 14:06:13 [notice] 6206#0: signal process started
+2025/09/26 14:08:13 [notice] 6286#0: signal process started
+2025/09/26 14:09:39 [notice] 6367#0: signal process started
+2025/09/26 14:14:37 [notice] 6473#0: signal process started
+2025/09/26 14:21:53 [notice] 6619#0: signal process started
+2025/09/26 14:25:17 [notice] 6750#0: signal process started
+2025/09/26 14:32:33 [notice] 6906#0: signal process started
+2025/09/26 14:38:03 [notice] 7042#0: signal process started
+2025/10/13 17:47:20 [notice] 5789#0: signal process started
+2025/10/13 17:48:04 [error] 5836#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/10/13 17:49:23 [notice] 6050#0: signal process started
+2025/10/14 10:56:29 [notice] 3593#0: signal process started
+2025/10/14 16:54:30 [notice] 4629#0: signal process started
+2025/10/14 18:42:39 [notice] 7618#0: signal process started
+2025/10/14 20:49:04 [notice] 8264#0: signal process started
+2025/10/15 12:34:58 [notice] 11668#0: signal process started
+2025/10/15 12:40:29 [notice] 11799#0: signal process started
+2025/10/15 12:43:42 [notice] 11938#0: signal process started
+2025/10/15 15:39:49 [notice] 13919#0: signal process started
+2025/10/15 20:37:52 [notice] 14913#0: signal process started
+2025/10/15 22:07:12 [notice] 16539#0: signal process started
+2025/10/16 13:31:10 [notice] 18389#0: signal process started
+2025/10/16 13:31:10 [error] 18389#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2025/10/16 13:38:39 [notice] 18577#0: signal process started
+2025/10/16 13:40:47 [notice] 18693#0: signal process started
+2025/10/16 16:17:51 [notice] 20174#0: signal process started
+2025/10/16 18:24:04 [notice] 22342#0: signal process started
+2025/10/16 20:41:29 [notice] 23759#0: signal process started
+2025/10/17 12:50:57 [notice] 3270#0: signal process started
+2025/10/17 12:50:57 [error] 3270#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2025/10/17 12:51:38 [notice] 3320#0: signal process started
+2025/10/17 12:51:38 [error] 3320#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2025/10/17 15:59:28 [error] 3445#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/10/17 16:01:40 [notice] 3489#0: signal process started
+2025/10/17 16:51:36 [notice] 3890#0: signal process started
+2025/10/17 17:42:37 [notice] 4849#0: signal process started
+2025/10/17 17:47:29 [notice] 5079#0: signal process started
+2025/10/17 21:47:25 [error] 2849#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/10/17 21:49:16 [notice] 3136#0: signal process started
+2025/10/18 16:54:25 [error] 4098#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/10/18 16:59:22 [notice] 4506#0: signal process started
+2025/10/18 17:03:29 [notice] 4740#0: signal process started
+2025/10/18 18:26:35 [notice] 6084#0: signal process started
+2025/10/18 19:54:22 [notice] 6883#0: signal process started
+2025/10/18 20:00:06 [notice] 7150#0: signal process started
+2025/10/19 01:04:55 [notice] 7924#0: signal process started
+2025/10/19 11:53:15 [notice] 9284#0: signal process started
+2025/10/19 12:11:03 [error] 9574#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/19 12:12:29 [notice] 9620#0: signal process started
+2025/10/19 16:07:59 [error] 10853#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/19 16:08:48 [notice] 10879#0: signal process started
+2025/10/19 16:20:21 [error] 11093#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/19 16:21:38 [notice] 11133#0: signal process started
+2025/10/19 16:22:34 [error] 11230#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/19 16:36:16 [notice] 11427#0: signal process started
+2025/10/19 16:43:27 [error] 11897#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/19 19:04:57 [notice] 12114#0: signal process started
+2025/10/19 19:07:35 [error] 12209#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/19 19:16:57 [notice] 12288#0: signal process started
+2025/10/19 20:33:03 [error] 14081#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/19 20:36:17 [notice] 14137#0: signal process started
+2025/10/19 20:39:37 [error] 14214#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/19 23:04:37 [notice] 14403#0: signal process started
+2025/10/19 23:11:45 [error] 14558#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/19 23:14:16 [notice] 14599#0: signal process started
+2025/10/20 11:18:15 [error] 2891#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/20 11:18:15 [error] 2891#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/10/20 12:46:20 [notice] 3318#0: signal process started
+2025/10/20 13:05:04 [error] 4268#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/20 13:50:50 [notice] 4395#0: signal process started
+2025/10/20 14:04:10 [error] 4634#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/20 14:07:46 [notice] 4685#0: signal process started
+2025/10/20 17:47:02 [error] 5576#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/20 17:48:15 [error] 5576#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/20 17:53:48 [notice] 5685#0: signal process started
+2025/10/20 17:55:49 [error] 5847#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/20 17:56:36 [notice] 5877#0: signal process started
+2025/10/20 18:01:35 [error] 6064#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/20 21:24:07 [notice] 6249#0: signal process started
+2025/10/20 22:13:47 [error] 6855#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 11:59:15 [notice] 8438#0: signal process started
+2025/10/21 12:20:22 [error] 18389#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 12:22:41 [notice] 18450#0: signal process started
+2025/10/21 12:23:35 [error] 18529#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 12:25:59 [notice] 18589#0: signal process started
+2025/10/21 12:26:49 [error] 18672#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 12:30:43 [notice] 18800#0: signal process started
+2025/10/21 13:44:08 [error] 19701#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 14:16:07 [notice] 19935#0: signal process started
+2025/10/21 14:51:56 [error] 20747#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 14:53:52 [notice] 20796#0: signal process started
+2025/10/21 14:55:19 [error] 20877#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 18:30:40 [notice] 21080#0: signal process started
+2025/10/21 19:41:01 [error] 21475#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 19:44:13 [notice] 21552#0: signal process started
+2025/10/21 20:20:26 [error] 22310#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 20:21:44 [notice] 22374#0: signal process started
+2025/10/21 20:28:38 [error] 22862#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 20:28:42 [error] 22862#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 20:33:31 [notice] 22927#0: signal process started
+2025/10/21 22:00:37 [error] 23693#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 22:11:54 [error] 23693#0: *3 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 22:12:45 [notice] 23847#0: signal process started
+2025/10/21 22:13:31 [error] 23986#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 22:14:34 [notice] 24006#0: signal process started
+2025/10/21 23:33:21 [error] 25826#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 23:34:04 [error] 25826#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/21 23:35:18 [notice] 25901#0: signal process started
+2025/10/21 23:36:10 [error] 26022#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/22 00:23:49 [notice] 26207#0: signal process started
+2025/10/22 00:24:35 [error] 26334#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/22 11:55:01 [error] 26334#0: *3 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/22 12:59:48 [notice] 26750#0: signal process started
+2025/10/22 13:01:57 [error] 26898#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/22 13:03:18 [notice] 26951#0: signal process started
+2025/10/22 13:55:57 [error] 27897#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/22 13:58:06 [notice] 27960#0: signal process started
+2025/10/22 14:51:52 [error] 28674#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/22 14:52:39 [notice] 28702#0: signal process started
+2025/10/22 16:56:33 [error] 31346#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/22 17:03:56 [notice] 31467#0: signal process started
+2025/10/22 17:11:41 [error] 31947#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/22 18:01:40 [notice] 32229#0: signal process started
+2025/10/22 18:03:54 [error] 32354#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/22 18:05:45 [notice] 32419#0: signal process started
+2025/10/22 18:07:31 [error] 32547#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/22 18:09:29 [notice] 32614#0: signal process started
+2025/10/22 18:10:29 [error] 32741#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/22 18:12:37 [notice] 32809#0: signal process started
+2025/10/22 18:13:15 [error] 32947#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/22 19:37:11 [notice] 33064#0: signal process started
+2025/10/23 07:01:39 [error] 3733#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/10/23 07:01:39 [error] 3733#0: *2 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/23 07:50:43 [notice] 4028#0: signal process started
+2025/10/23 07:51:55 [error] 4162#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/23 07:55:24 [notice] 4257#0: signal process started
+2025/10/23 07:56:11 [error] 4744#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/23 07:58:11 [notice] 5141#0: signal process started
+2025/10/23 07:59:54 [error] 5391#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/23 09:23:37 [notice] 5710#0: signal process started
+2025/10/23 09:40:43 [error] 5957#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/23 09:46:12 [notice] 6061#0: signal process started
+2025/10/23 09:46:54 [error] 6187#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/23 09:48:20 [error] 6187#0: *3 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/23 09:49:15 [notice] 6229#0: signal process started
+2025/10/23 09:49:22 [error] 6245#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/23 13:51:47 [notice] 6546#0: signal process started
+2025/10/23 13:51:47 [error] 6546#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2025/10/23 13:52:41 [notice] 6631#0: signal process started
+2025/10/23 13:52:41 [error] 6631#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2025/10/23 13:56:14 [alert] 6244#0: worker process 6245 exited on signal 9
+2025/10/23 13:57:13 [error] 6754#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/23 15:01:42 [notice] 7028#0: signal process started
+2025/10/23 15:10:01 [error] 7764#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/23 15:10:25 [notice] 7786#0: signal process started
+2025/10/23 15:41:38 [error] 8571#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/23 18:25:26 [notice] 8921#0: signal process started
+2025/10/23 19:50:41 [error] 9233#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/24 10:22:07 [error] 9233#0: *3 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/24 10:24:04 [notice] 11031#0: signal process started
+2025/10/24 10:24:40 [error] 11152#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/24 10:31:04 [notice] 11230#0: signal process started
+2025/10/24 10:31:44 [error] 11367#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/24 10:35:59 [notice] 11401#0: signal process started
+2025/10/24 13:29:35 [error] 12380#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/24 13:30:03 [notice] 12411#0: signal process started
+2025/10/24 13:53:14 [error] 13007#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/24 13:54:19 [notice] 13042#0: signal process started
+2025/10/24 13:54:52 [error] 13166#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/24 13:55:44 [notice] 13186#0: signal process started
+2025/10/24 17:15:51 [error] 14973#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/24 17:24:36 [notice] 15150#0: signal process started
+2025/10/24 17:25:15 [error] 15271#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/24 19:23:54 [notice] 15517#0: signal process started
+2025/10/24 19:25:15 [error] 15644#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/24 19:25:18 [error] 15644#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/24 19:53:49 [notice] 15774#0: signal process started
+2025/10/24 19:54:32 [error] 15898#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/24 19:55:33 [notice] 15934#0: signal process started
+2025/10/24 19:56:40 [error] 16069#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/24 22:18:53 [notice] 16363#0: signal process started
+2025/10/25 11:18:46 [error] 17907#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/25 11:24:37 [notice] 17994#0: signal process started
+2025/10/25 11:25:55 [error] 18073#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/25 11:28:38 [notice] 18115#0: signal process started
+2025/10/25 11:35:11 [error] 18194#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/25 11:36:05 [notice] 18242#0: signal process started
+2025/10/25 11:36:48 [error] 18319#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/25 11:44:42 [notice] 18471#0: signal process started
+2025/10/25 11:46:05 [error] 18563#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/25 12:22:53 [notice] 18700#0: signal process started
+2025/10/25 12:31:58 [error] 19008#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/25 12:58:25 [notice] 19276#0: signal process started
+2025/10/25 12:59:59 [error] 19421#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/25 13:01:51 [notice] 19477#0: signal process started
+2025/10/26 12:33:38 [error] 4314#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 12:33:38 [error] 4314#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/10/26 12:35:30 [notice] 4550#0: signal process started
+2025/10/26 12:36:10 [error] 4630#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 12:36:33 [notice] 4649#0: signal process started
+2025/10/26 13:59:47 [error] 11146#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 14:05:13 [notice] 11219#0: signal process started
+2025/10/26 17:59:59 [error] 13294#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 18:01:20 [notice] 13354#0: signal process started
+2025/10/26 18:02:03 [error] 13476#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 18:06:59 [notice] 13529#0: signal process started
+2025/10/26 18:20:35 [error] 14074#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 18:20:55 [notice] 14103#0: signal process started
+2025/10/26 18:37:13 [error] 14748#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 18:37:50 [notice] 14814#0: signal process started
+2025/10/26 18:46:14 [error] 15240#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 18:48:28 [notice] 15301#0: signal process started
+2025/10/26 18:52:51 [error] 15433#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 18:53:25 [notice] 15463#0: signal process started
+2025/10/26 18:54:04 [error] 15516#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 18:54:55 [error] 15516#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 18:55:38 [notice] 15559#0: signal process started
+2025/10/26 18:56:17 [error] 15691#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 18:57:11 [notice] 15725#0: signal process started
+2025/10/26 18:57:41 [error] 15847#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 18:58:01 [notice] 15876#0: signal process started
+2025/10/26 19:03:05 [error] 16362#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 19:05:49 [notice] 16421#0: signal process started
+2025/10/26 19:06:33 [error] 16549#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/26 19:08:26 [notice] 16610#0: signal process started
+2025/10/27 12:52:33 [error] 2900#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/10/27 12:52:33 [error] 2900#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/27 12:53:55 [notice] 3157#0: signal process started
+2025/10/27 12:54:54 [error] 3281#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/27 12:55:14 [notice] 3309#0: signal process started
+2025/10/27 13:13:26 [error] 4388#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/27 13:13:53 [notice] 4417#0: signal process started
+2025/10/27 13:26:43 [error] 4955#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/27 13:28:27 [notice] 4986#0: signal process started
+2025/10/27 13:31:51 [error] 5433#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/27 13:34:33 [notice] 5478#0: signal process started
+2025/10/27 13:37:19 [error] 5726#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/27 13:37:21 [error] 5726#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/27 13:37:44 [notice] 5753#0: signal process started
+2025/10/27 16:49:38 [error] 6522#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/27 16:50:09 [notice] 6549#0: signal process started
+2025/10/27 17:20:58 [error] 7712#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/27 17:26:55 [notice] 7784#0: signal process started
+2025/10/27 18:00:54 [error] 9061#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/27 18:02:18 [notice] 9093#0: signal process started
+2025/10/28 11:17:06 [error] 3152#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/28 11:17:06 [error] 3152#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/10/28 11:42:13 [notice] 3283#0: signal process started
+2025/10/28 18:57:54 [error] 5290#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/28 21:29:44 [notice] 8094#0: signal process started
+2025/10/28 21:31:43 [error] 8174#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/28 21:44:07 [notice] 8983#0: signal process started
+2025/10/28 21:46:41 [error] 9070#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/28 22:19:25 [notice] 9795#0: signal process started
+2025/10/28 22:23:40 [error] 12839#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/29 12:34:39 [error] 2195#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/29 12:34:39 [error] 2195#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/10/29 13:10:47 [notice] 45864#0: signal process started
+2025/10/29 13:15:18 [error] 45951#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/29 16:45:14 [error] 2273#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/29 16:45:14 [error] 2273#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/10/29 17:25:01 [notice] 3364#0: signal process started
+2025/10/29 17:26:05 [error] 3453#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/29 17:57:02 [notice] 4614#0: signal process started
+2025/10/29 17:58:45 [error] 4711#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/29 19:23:55 [notice] 4990#0: signal process started
+2025/10/29 19:26:24 [error] 5078#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/29 19:37:22 [notice] 5897#0: signal process started
+2025/10/29 19:38:11 [error] 5984#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/29 23:31:30 [notice] 7167#0: signal process started
+2025/10/29 23:32:15 [error] 7250#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/29 23:55:42 [notice] 7985#0: signal process started
+2025/10/29 23:56:31 [error] 8080#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/30 00:30:13 [notice] 8298#0: signal process started
+2025/10/30 00:31:17 [error] 8377#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/30 00:32:51 [notice] 8423#0: signal process started
+2025/10/30 00:33:26 [error] 8508#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/30 00:34:22 [notice] 8536#0: signal process started
+2025/10/30 00:35:54 [error] 8618#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/30 14:05:14 [error] 3121#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/30 14:05:14 [error] 3121#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/10/30 14:15:34 [notice] 5374#0: signal process started
+2025/10/30 14:18:08 [error] 5461#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/30 17:36:37 [error] 3088#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/30 17:36:38 [error] 3088#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/10/30 17:39:37 [notice] 3460#0: signal process started
+2025/10/30 17:40:15 [error] 3584#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/30 18:33:55 [notice] 4149#0: signal process started
+2025/10/30 18:35:23 [error] 4278#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/30 20:57:24 [notice] 7344#0: signal process started
+2025/10/30 20:59:02 [error] 7430#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/30 20:59:11 [error] 7430#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/30 22:09:29 [notice] 7601#0: signal process started
+2025/10/30 22:10:46 [error] 7688#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/31 16:15:18 [error] 4467#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/10/31 16:15:18 [error] 4467#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/01 12:36:27 [notice] 7848#0: signal process started
+2025/11/01 13:43:20 [notice] 8301#0: signal process started
+2025/11/01 13:44:12 [error] 8391#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/01 14:55:42 [notice] 8814#0: signal process started
+2025/11/01 17:53:49 [error] 10260#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/01 22:53:31 [notice] 11786#0: signal process started
+2025/11/01 22:54:08 [error] 11872#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/01 22:56:53 [notice] 11919#0: signal process started
+2025/11/01 22:58:02 [error] 12006#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/01 23:18:16 [notice] 12299#0: signal process started
+2025/11/01 23:19:11 [error] 12376#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/01 23:39:23 [notice] 12631#0: signal process started
+2025/11/01 23:43:41 [notice] 12744#0: signal process started
+2025/11/01 23:44:23 [error] 12823#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/02 13:28:23 [error] 4408#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/02 13:28:23 [error] 4408#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/02 15:01:57 [notice] 4964#0: signal process started
+2025/11/02 15:06:20 [error] 5048#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/02 16:43:20 [error] 2585#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/02 16:43:20 [error] 2585#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/02 19:04:45 [notice] 5499#0: signal process started
+2025/11/02 19:28:54 [notice] 5850#0: signal process started
+2025/11/02 19:31:55 [error] 5937#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/03 14:16:37 [error] 3502#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/03 14:16:37 [error] 3502#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/03 14:23:03 [notice] 3793#0: signal process started
+2025/11/03 14:24:24 [error] 3945#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/03 17:20:58 [notice] 7330#0: signal process started
+2025/11/03 17:21:46 [error] 7414#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/03 17:23:29 [notice] 7472#0: signal process started
+2025/11/03 17:24:44 [error] 7553#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/03 17:24:47 [error] 7553#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/03 18:16:11 [notice] 8936#0: signal process started
+2025/11/03 18:17:30 [error] 9184#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/03 18:21:37 [notice] 9216#0: signal process started
+2025/11/03 18:22:13 [alert] 9292#0: worker process 9293 exited on signal 11 (core dumped)
+2025/11/03 18:22:14 [alert] 9292#0: worker process 9304 exited on signal 11 (core dumped)
+2025/11/03 18:22:14 [alert] 9292#0: worker process 9308 exited on signal 11 (core dumped)
+2025/11/03 18:22:15 [alert] 9292#0: worker process 9311 exited on signal 11 (core dumped)
+2025/11/03 18:22:15 [alert] 9292#0: worker process 9322 exited on signal 11 (core dumped)
+2025/11/03 18:22:15 [alert] 9292#0: worker process 9326 exited on signal 11 (core dumped)
+2025/11/03 18:22:20 [alert] 9292#0: worker process 9329 exited on signal 11 (core dumped)
+2025/11/03 18:22:21 [alert] 9292#0: worker process 9341 exited on signal 11 (core dumped)
+2025/11/03 18:22:21 [alert] 9292#0: worker process 9345 exited on signal 11 (core dumped)
+2025/11/03 18:22:31 [alert] 9292#0: worker process 9347 exited on signal 11 (core dumped)
+2025/11/03 18:22:31 [alert] 9292#0: worker process 9361 exited on signal 11 (core dumped)
+2025/11/03 18:22:31 [alert] 9292#0: worker process 9365 exited on signal 11 (core dumped)
+2025/11/03 18:22:41 [alert] 9292#0: worker process 9368 exited on signal 11 (core dumped)
+2025/11/03 18:22:41 [alert] 9292#0: worker process 9381 exited on signal 11 (core dumped)
+2025/11/03 18:22:41 [alert] 9292#0: worker process 9386 exited on signal 11 (core dumped)
+2025/11/03 18:22:50 [notice] 9394#0: signal process started
+2025/11/03 18:23:47 [alert] 9494#0: worker process 9495 exited on signal 11 (core dumped)
+2025/11/03 18:23:47 [alert] 9494#0: worker process 9515 exited on signal 11 (core dumped)
+2025/11/03 18:23:48 [alert] 9494#0: worker process 9520 exited on signal 11 (core dumped)
+2025/11/03 18:23:49 [alert] 9494#0: worker process 9522 exited on signal 11 (core dumped)
+2025/11/03 18:23:49 [alert] 9494#0: worker process 9533 exited on signal 11 (core dumped)
+2025/11/03 18:23:49 [alert] 9494#0: worker process 9537 exited on signal 11 (core dumped)
+2025/11/03 18:23:54 [alert] 9494#0: worker process 9539 exited on signal 11 (core dumped)
+2025/11/03 18:23:54 [alert] 9494#0: worker process 9553 exited on signal 11 (core dumped)
+2025/11/03 18:23:54 [alert] 9494#0: worker process 9557 exited on signal 11 (core dumped)
+2025/11/03 18:24:25 [alert] 9494#0: worker process 9559 exited on signal 11 (core dumped)
+2025/11/03 18:24:25 [alert] 9494#0: worker process 9576 exited on signal 11 (core dumped)
+2025/11/03 18:24:25 [alert] 9494#0: worker process 9586 exited on signal 11 (core dumped)
+2025/11/03 18:24:34 [alert] 9494#0: worker process 9589 exited on signal 11 (core dumped)
+2025/11/03 18:24:34 [alert] 9494#0: worker process 9603 exited on signal 11 (core dumped)
+2025/11/03 18:24:34 [alert] 9494#0: worker process 9607 exited on signal 11 (core dumped)
+2025/11/03 18:24:56 [notice] 9618#0: signal process started
+2025/11/03 18:26:04 [error] 9746#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/03 18:27:57 [notice] 9802#0: signal process started
+2025/11/03 18:29:06 [error] 9877#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/04 08:46:01 [error] 2743#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/04 08:46:01 [error] 2743#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/04 08:51:42 [notice] 3043#0: signal process started
+2025/11/04 08:52:16 [error] 3160#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/04 08:59:23 [notice] 3248#0: signal process started
+2025/11/04 08:59:58 [error] 3374#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/04 10:09:56 [notice] 4102#0: signal process started
+2025/11/04 10:10:33 [error] 4188#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/04 10:11:57 [notice] 4220#0: signal process started
+2025/11/04 10:12:33 [error] 4302#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/04 15:51:42 [notice] 7122#0: signal process started
+2025/11/04 15:55:18 [error] 7232#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/04 15:58:26 [notice] 7392#0: signal process started
+2025/11/04 15:59:20 [error] 7476#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/04 16:54:20 [notice] 7789#0: signal process started
+2025/11/04 16:57:30 [notice] 8520#0: signal process started
+2025/11/04 16:59:00 [error] 8593#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/04 18:51:33 [notice] 10262#0: signal process started
+2025/11/04 18:53:12 [error] 10344#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/04 19:00:31 [notice] 10452#0: signal process started
+2025/11/05 13:16:42 [error] 3049#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/05 13:16:42 [error] 3049#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/05 13:51:08 [notice] 3807#0: signal process started
+2025/11/05 13:52:30 [error] 4174#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/05 14:01:42 [notice] 4459#0: signal process started
+2025/11/05 14:06:52 [error] 5048#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/05 16:30:34 [notice] 5303#0: signal process started
+2025/11/05 16:34:52 [error] 5396#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/05 16:46:17 [notice] 5570#0: signal process started
+2025/11/05 16:52:15 [error] 5657#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/05 16:57:28 [notice] 6292#0: signal process started
+2025/11/05 16:59:12 [error] 6643#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/05 17:10:16 [notice] 6784#0: signal process started
+2025/11/05 17:11:15 [error] 6866#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/05 17:14:26 [notice] 6921#0: signal process started
+2025/11/05 17:15:07 [error] 7003#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/05 20:54:02 [notice] 7565#0: signal process started
+2025/11/05 20:54:59 [error] 7647#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/06 13:17:18 [error] 4384#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/06 13:17:18 [error] 4384#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/06 18:48:07 [notice] 5808#0: signal process started
+2025/11/06 18:51:49 [error] 5895#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/06 19:04:24 [notice] 6325#0: signal process started
+2025/11/06 19:05:06 [error] 6409#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/06 19:08:52 [notice] 6475#0: signal process started
+2025/11/06 19:10:40 [error] 6556#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/07 07:49:32 [notice] 8163#0: signal process started
+2025/11/07 07:51:15 [error] 8366#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/07 09:32:58 [notice] 9588#0: signal process started
+2025/11/07 18:53:34 [notice] 11201#0: signal process started
+2025/11/07 18:54:13 [error] 11280#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/07 18:54:43 [error] 11280#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/07 18:54:57 [error] 11280#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/07 18:54:59 [error] 11280#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/07 18:55:01 [error] 11280#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/07 18:55:23 [error] 11280#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/07 20:09:32 [error] 11280#0: *4 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/07 22:50:13 [notice] 15088#0: signal process started
+2025/11/07 22:51:02 [error] 15172#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/07 23:04:18 [notice] 15286#0: signal process started
+2025/11/07 23:04:53 [error] 15370#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/07 23:16:02 [notice] 15459#0: signal process started
+2025/11/07 23:16:52 [error] 15539#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/08 10:54:10 [notice] 43427#0: signal process started
+2025/11/08 14:14:44 [error] 44038#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/08 14:17:49 [notice] 44118#0: signal process started
+2025/11/08 14:18:36 [error] 44197#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/08 14:32:47 [notice] 44792#0: signal process started
+2025/11/08 14:34:53 [error] 44862#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/08 15:30:55 [notice] 45717#0: signal process started
+2025/11/08 15:32:53 [error] 45838#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/08 17:38:49 [notice] 46358#0: signal process started
+2025/11/08 18:05:28 [error] 47769#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/08 20:50:42 [notice] 48150#0: signal process started
+2025/11/08 21:02:15 [error] 48235#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/08 23:49:52 [error] 2703#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/08 23:49:52 [error] 2703#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/09 00:12:03 [error] 2703#0: *3 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/09 23:02:48 [error] 3282#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/09 23:02:48 [error] 3282#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/09 23:39:34 [notice] 3799#0: signal process started
+2025/11/09 23:40:29 [error] 3927#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/09 23:56:56 [notice] 4244#0: signal process started
+2025/11/09 23:59:11 [error] 4408#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/10 18:11:39 [notice] 5645#0: signal process started
+2025/11/10 18:13:58 [error] 5778#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/10 18:16:09 [notice] 5831#0: signal process started
+2025/11/10 18:17:19 [error] 5953#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/10 19:53:15 [notice] 6598#0: signal process started
+2025/11/10 20:00:53 [error] 6776#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/10 20:05:29 [notice] 6866#0: signal process started
+2025/11/10 20:06:06 [error] 6991#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/10 20:06:15 [error] 6991#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/10 20:09:56 [notice] 7055#0: signal process started
+2025/11/12 03:48:41 [error] 5998#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/12 03:48:41 [error] 5998#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/12 22:15:22 [notice] 10410#0: signal process started
+2025/11/12 23:58:22 [error] 10505#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/12 23:58:33 [notice] 10620#0: signal process started
+2025/11/12 23:59:41 [notice] 10684#0: signal process started
+2025/11/13 00:00:20 [error] 10785#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/13 12:58:39 [notice] 18595#0: signal process started
+2025/11/13 12:59:21 [error] 18684#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/13 13:00:45 [error] 18684#0: *3 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/13 13:02:10 [notice] 18731#0: signal process started
+2025/11/13 13:02:56 [error] 18809#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/13 13:02:57 [error] 18809#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/13 13:02:57 [error] 18809#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/13 13:48:26 [notice] 19080#0: signal process started
+2025/11/13 13:49:15 [error] 19168#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/13 13:52:39 [notice] 19255#0: signal process started
+2025/11/13 13:54:17 [error] 19324#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/13 14:30:00 [notice] 19588#0: signal process started
+2025/11/13 14:30:47 [error] 19671#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/13 15:10:29 [notice] 19998#0: signal process started
+2025/11/14 13:22:34 [error] 22517#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/14 13:23:07 [error] 22517#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/14 14:18:16 [notice] 24385#0: signal process started
+2025/11/14 15:47:05 [error] 25138#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/14 15:50:24 [notice] 25200#0: signal process started
+2025/11/14 15:51:00 [error] 25283#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/14 16:07:00 [notice] 25331#0: signal process started
+2025/11/14 16:07:35 [error] 25415#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/14 16:08:53 [error] 25415#0: *3 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/14 16:29:15 [notice] 25555#0: signal process started
+2025/11/14 16:29:57 [error] 25640#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/14 16:33:01 [notice] 25676#0: signal process started
+2025/11/14 16:35:14 [error] 25763#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/14 16:44:09 [notice] 25811#0: signal process started
+2025/11/14 16:45:38 [error] 25900#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/14 16:57:02 [notice] 25969#0: signal process started
+2025/11/14 16:57:52 [error] 26047#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/14 16:59:28 [notice] 26078#0: signal process started
+2025/11/14 17:00:02 [error] 26154#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/14 17:07:52 [notice] 26292#0: signal process started
+2025/11/14 17:08:30 [error] 26375#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/14 21:58:18 [notice] 3223#0: signal process started
+2025/11/14 22:03:30 [notice] 3403#0: signal process started
+2025/11/14 22:07:09 [notice] 3680#0: signal process started
+2025/11/14 22:45:12 [error] 4670#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/14 22:45:12 [error] 4670#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/14 22:53:02 [notice] 5035#0: signal process started
+2025/11/14 22:54:19 [error] 5120#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/15 15:36:13 [error] 5120#0: *5 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/15 15:59:26 [notice] 7847#0: signal process started
+2025/11/15 16:00:09 [error] 7929#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/15 16:17:26 [notice] 8304#0: signal process started
+2025/11/15 16:21:07 [error] 8416#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/15 17:34:17 [notice] 8853#0: signal process started
+2025/11/15 17:36:24 [error] 8943#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/15 18:01:57 [notice] 10279#0: signal process started
+2025/11/15 18:02:59 [error] 10366#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/15 18:15:43 [notice] 10706#0: signal process started
+2025/11/15 18:16:46 [error] 10785#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/15 18:18:44 [notice] 10857#0: signal process started
+2025/11/15 18:19:18 [error] 10936#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/15 22:11:57 [notice] 11213#0: signal process started
+2025/11/15 22:12:30 [error] 11292#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/15 23:06:14 [notice] 11597#0: signal process started
+2025/11/15 23:08:57 [error] 11678#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/15 23:17:21 [notice] 12303#0: signal process started
+2025/11/15 23:18:00 [error] 12394#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 07:42:29 [error] 2672#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 07:42:29 [error] 2672#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/16 07:51:05 [notice] 3571#0: signal process started
+2025/11/16 07:51:28 [notice] 3600#0: signal process started
+2025/11/16 07:52:27 [error] 3681#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 08:23:35 [error] 2644#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 08:23:35 [error] 2644#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/16 08:27:11 [notice] 2931#0: signal process started
+2025/11/16 08:29:07 [error] 3057#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 08:37:54 [notice] 3555#0: signal process started
+2025/11/16 08:40:10 [error] 3643#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 08:40:51 [notice] 3692#0: signal process started
+2025/11/16 08:41:44 [error] 3771#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 10:01:28 [notice] 5679#0: signal process started
+2025/11/16 10:02:10 [notice] 5737#0: signal process started
+2025/11/16 10:02:57 [error] 5808#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 10:03:52 [notice] 5836#0: signal process started
+2025/11/16 10:58:42 [error] 2842#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 10:58:42 [error] 2842#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/16 11:04:46 [notice] 3187#0: signal process started
+2025/11/16 11:05:20 [error] 3322#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 11:09:23 [notice] 3415#0: signal process started
+2025/11/16 11:11:30 [error] 3541#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 16:44:01 [notice] 4193#0: signal process started
+2025/11/16 16:46:07 [error] 4274#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 16:57:20 [notice] 4436#0: signal process started
+2025/11/16 16:59:20 [error] 4516#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 17:07:06 [notice] 5468#0: signal process started
+2025/11/16 17:07:46 [error] 5550#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 17:13:29 [notice] 5621#0: signal process started
+2025/11/16 17:14:55 [error] 5704#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 17:20:12 [notice] 5806#0: signal process started
+2025/11/16 17:20:46 [error] 5888#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 17:36:31 [notice] 6080#0: signal process started
+2025/11/16 17:37:04 [error] 6159#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 17:42:15 [notice] 6225#0: signal process started
+2025/11/16 17:42:59 [error] 6305#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 20:45:19 [notice] 6735#0: signal process started
+2025/11/16 20:46:52 [error] 6819#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 20:55:15 [notice] 6934#0: signal process started
+2025/11/16 20:55:45 [error] 7015#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 21:10:55 [error] 7015#0: *3 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 21:49:28 [notice] 8191#0: signal process started
+2025/11/16 21:50:13 [error] 8263#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/16 22:02:20 [notice] 8380#0: signal process started
+2025/11/16 22:05:19 [error] 8465#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 10:53:01 [notice] 10026#0: signal process started
+2025/11/17 10:54:06 [error] 10111#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 11:03:55 [notice] 10728#0: signal process started
+2025/11/17 11:06:49 [error] 10814#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 11:49:07 [notice] 11236#0: signal process started
+2025/11/17 11:49:40 [error] 11305#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 12:03:10 [notice] 11787#0: signal process started
+2025/11/17 12:03:39 [notice] 11806#0: signal process started
+2025/11/17 12:03:39 [error] 11806#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2025/11/17 12:05:02 [error] 11890#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 12:27:20 [notice] 12315#0: signal process started
+2025/11/17 12:28:14 [error] 12399#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 12:29:54 [notice] 12441#0: signal process started
+2025/11/17 12:30:29 [error] 12519#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 12:32:40 [notice] 12567#0: signal process started
+2025/11/17 12:33:29 [error] 12643#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 12:46:19 [notice] 12787#0: signal process started
+2025/11/17 12:47:47 [error] 12868#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 12:48:27 [error] 12868#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 12:53:03 [notice] 13209#0: signal process started
+2025/11/17 12:54:14 [error] 13295#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 12:56:56 [notice] 13356#0: signal process started
+2025/11/17 12:58:47 [error] 13443#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 13:03:27 [notice] 13502#0: signal process started
+2025/11/17 13:04:59 [error] 13586#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 13:59:53 [notice] 13815#0: signal process started
+2025/11/17 14:02:13 [error] 14404#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 14:12:22 [notice] 14639#0: signal process started
+2025/11/17 14:13:43 [error] 14723#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 14:22:18 [notice] 14851#0: signal process started
+2025/11/17 14:23:54 [error] 14933#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 16:41:29 [notice] 15571#0: signal process started
+2025/11/17 16:44:49 [error] 15651#0: *2 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/17 17:03:39 [notice] 16220#0: signal process started
+2025/11/17 17:04:19 [error] 16304#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 10:14:30 [notice] 18551#0: signal process started
+2025/11/18 10:19:22 [error] 19307#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 12:47:24 [error] 2634#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 12:47:24 [error] 2634#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/18 13:49:09 [notice] 3991#0: signal process started
+2025/11/18 13:54:09 [error] 4161#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 15:32:01 [notice] 4408#0: signal process started
+2025/11/18 15:36:14 [error] 4977#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 15:59:02 [notice] 5286#0: signal process started
+2025/11/18 16:00:19 [error] 5369#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 16:04:30 [notice] 5446#0: signal process started
+2025/11/18 16:05:08 [error] 5523#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 16:50:11 [notice] 5774#0: signal process started
+2025/11/18 16:53:03 [error] 5855#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 16:55:57 [notice] 6171#0: signal process started
+2025/11/18 16:58:46 [error] 9166#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 17:05:01 [notice] 9295#0: signal process started
+2025/11/18 17:06:22 [error] 9376#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 17:32:49 [error] 2604#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 17:32:49 [error] 2604#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/18 18:04:51 [notice] 3742#0: signal process started
+2025/11/18 18:05:28 [error] 3828#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 18:12:03 [notice] 3877#0: signal process started
+2025/11/18 18:12:30 [error] 3954#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 18:36:59 [error] 3954#0: *3 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 18:43:55 [error] 3954#0: *5 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 18:46:14 [notice] 5404#0: signal process started
+2025/11/18 18:46:49 [error] 5488#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/18 18:47:21 [notice] 5518#0: signal process started
+2025/11/18 18:47:58 [notice] 5582#0: signal process started
+2025/11/18 18:48:31 [error] 5653#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/19 14:10:52 [notice] 7447#0: signal process started
+2025/11/19 14:10:59 [notice] 7452#0: signal process started
+2025/11/19 14:10:59 [error] 7452#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2025/11/19 14:12:02 [error] 7550#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/19 15:01:22 [notice] 7833#0: signal process started
+2025/11/19 15:03:26 [error] 7922#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/19 15:28:23 [notice] 8482#0: signal process started
+2025/11/19 15:30:43 [error] 8567#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/19 15:30:45 [error] 8567#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/19 17:20:34 [error] 2654#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/19 17:22:41 [notice] 2919#0: signal process started
+2025/11/19 17:24:41 [error] 2939#0: *3 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/19 17:24:48 [error] 2939#0: *3 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/19 17:24:56 [notice] 2996#0: signal process started
+2025/11/19 17:25:01 [error] 3003#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/19 17:34:27 [error] 2489#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/19 17:34:27 [error] 2489#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/19 17:57:11 [notice] 3478#0: signal process started
+2025/11/19 17:58:32 [error] 3557#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/20 13:54:26 [notice] 4460#0: signal process started
+2025/11/20 13:56:25 [error] 4555#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/20 13:57:56 [notice] 4624#0: signal process started
+2025/11/20 13:58:46 [error] 4711#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/20 16:07:52 [notice] 6187#0: signal process started
+2025/11/20 16:08:25 [error] 6277#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/20 16:12:28 [notice] 6361#0: signal process started
+2025/11/20 16:15:00 [error] 6504#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/20 16:24:34 [notice] 7096#0: signal process started
+2025/11/20 16:26:12 [error] 7182#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/20 17:05:39 [notice] 7354#0: signal process started
+2025/11/20 17:06:09 [error] 7438#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/20 18:00:53 [notice] 8351#0: signal process started
+2025/11/20 18:02:17 [error] 8438#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/20 18:43:17 [notice] 8630#0: signal process started
+2025/11/20 18:44:47 [error] 8712#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/20 19:32:22 [notice] 9273#0: signal process started
+2025/11/20 19:33:33 [error] 9325#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/20 20:48:16 [notice] 10074#0: signal process started
+2025/11/20 20:49:31 [error] 10160#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/21 12:26:13 [notice] 12882#0: signal process started
+2025/11/21 12:27:02 [error] 12971#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/21 12:35:20 [notice] 13171#0: signal process started
+2025/11/21 12:36:09 [error] 13250#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/21 12:51:15 [notice] 13865#0: signal process started
+2025/11/21 12:52:05 [error] 13949#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/21 13:30:30 [notice] 14836#0: signal process started
+2025/11/21 13:31:24 [error] 14923#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/21 13:36:10 [notice] 15046#0: signal process started
+2025/11/21 13:37:05 [error] 15125#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/21 16:37:05 [notice] 15672#0: signal process started
+2025/11/21 16:37:52 [error] 15760#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/21 16:50:10 [notice] 15963#0: signal process started
+2025/11/21 16:51:23 [error] 16040#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/21 17:06:49 [notice] 16577#0: signal process started
+2025/11/21 17:07:28 [error] 16653#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/21 17:21:08 [notice] 16908#0: signal process started
+2025/11/21 17:22:29 [error] 16995#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/21 17:29:08 [notice] 17126#0: signal process started
+2025/11/21 17:29:49 [error] 17208#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/21 17:37:46 [notice] 17277#0: signal process started
+2025/11/21 17:38:21 [error] 17362#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/21 17:48:09 [notice] 17857#0: signal process started
+2025/11/21 20:07:41 [error] 3312#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/21 20:07:41 [error] 3312#0: *2 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/21 20:07:46 [error] 3312#0: *2 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/21 20:10:35 [notice] 3417#0: signal process started
+2025/11/21 20:11:16 [error] 3499#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/22 11:15:20 [notice] 4280#0: signal process started
+2025/11/22 11:16:32 [error] 4393#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/22 11:22:37 [notice] 4497#0: signal process started
+2025/11/22 11:23:28 [error] 4580#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/22 11:54:30 [notice] 5471#0: signal process started
+2025/11/22 11:55:16 [error] 5551#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/22 17:37:33 [notice] 6021#0: signal process started
+2025/11/22 17:38:04 [error] 6106#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/22 17:45:35 [notice] 6523#0: signal process started
+2025/11/22 17:47:29 [error] 6612#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/22 17:51:52 [notice] 6942#0: signal process started
+2025/11/22 17:52:23 [error] 7023#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/23 15:30:52 [notice] 7749#0: signal process started
+2025/11/23 15:32:55 [error] 7828#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/23 15:39:53 [notice] 8753#0: signal process started
+2025/11/23 15:40:36 [error] 8839#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/23 16:48:13 [notice] 9804#0: signal process started
+2025/11/23 16:48:51 [error] 9881#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/23 17:02:45 [notice] 11341#0: signal process started
+2025/11/23 17:04:04 [error] 11867#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/23 17:58:16 [notice] 12363#0: signal process started
+2025/11/23 18:01:42 [error] 12966#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/23 18:16:10 [notice] 14109#0: signal process started
+2025/11/23 18:16:59 [error] 14294#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/23 18:18:58 [notice] 14362#0: signal process started
+2025/11/23 18:20:51 [error] 15119#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/23 21:05:32 [error] 15119#0: *3 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/23 21:05:55 [error] 15119#0: *3 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/23 21:25:18 [notice] 16172#0: signal process started
+2025/11/23 21:26:05 [error] 16254#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/24 11:39:01 [notice] 18078#0: signal process started
+2025/11/24 11:40:33 [error] 18166#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/24 12:55:21 [error] 18166#0: *3 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/24 13:12:19 [notice] 19812#0: signal process started
+2025/11/24 13:14:22 [error] 19912#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/24 13:25:10 [notice] 20119#0: signal process started
+2025/11/24 13:26:28 [error] 20205#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/24 13:29:37 [notice] 20552#0: signal process started
+2025/11/24 13:30:21 [error] 20637#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/25 20:41:19 [error] 2608#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/25 20:41:19 [error] 2608#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/25 21:05:32 [notice] 3554#0: signal process started
+2025/11/25 21:07:12 [error] 3640#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/25 21:12:07 [notice] 4269#0: signal process started
+2025/11/25 21:12:42 [error] 4319#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/25 22:09:28 [notice] 5073#0: signal process started
+2025/11/25 22:14:57 [notice] 5251#0: signal process started
+2025/11/25 22:16:24 [error] 5334#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/26 12:24:32 [error] 2568#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/26 12:24:32 [error] 2568#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/26 13:09:45 [notice] 3539#0: signal process started
+2025/11/26 13:10:24 [error] 3624#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/26 14:06:40 [error] 2666#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/26 14:06:40 [error] 2666#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/26 14:17:10 [notice] 3394#0: signal process started
+2025/11/26 14:19:20 [error] 3478#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/26 16:24:00 [notice] 6428#0: signal process started
+2025/11/26 16:32:21 [notice] 7150#0: signal process started
+2025/11/26 16:33:44 [error] 7226#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/26 17:47:05 [notice] 7916#0: signal process started
+2025/11/26 17:48:08 [error] 7989#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/26 17:52:59 [notice] 8321#0: signal process started
+2025/11/26 17:54:04 [error] 8408#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/26 21:14:46 [notice] 9112#0: signal process started
+2025/11/26 21:17:10 [error] 9201#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/26 21:30:37 [notice] 9722#0: signal process started
+2025/11/26 21:32:42 [error] 10051#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/27 13:39:17 [notice] 12661#0: signal process started
+2025/11/27 13:40:14 [error] 12750#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/27 14:55:24 [error] 2597#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/27 14:55:24 [error] 2597#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/11/27 15:02:48 [notice] 3233#0: signal process started
+2025/11/27 15:04:04 [error] 3338#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/27 16:48:14 [notice] 4024#0: signal process started
+2025/11/27 16:53:45 [error] 4206#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/27 18:04:35 [notice] 5750#0: signal process started
+2025/11/27 18:05:56 [error] 5841#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/27 18:07:57 [notice] 6392#0: signal process started
+2025/11/27 18:08:31 [error] 6464#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/27 22:51:53 [notice] 7074#0: signal process started
+2025/11/27 22:55:52 [error] 7212#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/28 13:08:48 [notice] 10076#0: signal process started
+2025/11/28 13:09:33 [error] 10172#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/28 17:46:58 [notice] 12124#0: signal process started
+2025/11/28 17:47:26 [error] 12201#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/28 17:53:48 [notice] 12314#0: signal process started
+2025/11/28 17:54:43 [error] 12402#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/28 21:29:52 [notice] 13192#0: signal process started
+2025/11/28 21:32:13 [error] 13284#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/28 21:34:59 [notice] 13614#0: signal process started
+2025/11/28 21:40:52 [error] 13773#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/28 21:41:58 [error] 13773#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/29 12:10:50 [notice] 15697#0: signal process started
+2025/11/29 12:11:24 [error] 15781#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/29 13:05:23 [notice] 16822#0: signal process started
+2025/11/29 13:06:35 [error] 16910#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/29 14:03:31 [notice] 18124#0: signal process started
+2025/11/29 14:04:34 [error] 18207#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/29 14:17:12 [notice] 18440#0: signal process started
+2025/11/29 14:18:26 [error] 18526#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/29 17:10:27 [notice] 19463#0: signal process started
+2025/11/29 17:12:56 [error] 19542#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/29 17:18:10 [notice] 19936#0: signal process started
+2025/11/29 17:19:15 [error] 20020#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/29 17:22:02 [notice] 20366#0: signal process started
+2025/11/29 17:24:12 [error] 20445#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/29 17:36:57 [notice] 21011#0: signal process started
+2025/11/29 17:37:53 [error] 21092#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/29 17:44:15 [notice] 21938#0: signal process started
+2025/11/29 17:45:36 [error] 22014#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/29 17:46:31 [error] 22014#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/29 22:50:32 [notice] 23498#0: signal process started
+2025/11/29 22:51:34 [error] 23582#0: *1 open() "/usr/local/nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/11/30 14:50:43 [notice] 3468#0: signal process started
+2025/11/30 14:51:59 [notice] 3582#0: signal process started
+2025/11/30 15:42:19 [notice] 3936#0: signal process started
+2025/11/30 16:34:08 [notice] 4299#0: signal process started
+2025/11/30 17:20:31 [notice] 4821#0: signal process started
+2025/11/30 17:22:52 [notice] 4939#0: signal process started
+2025/12/01 05:56:11 [notice] 5681#0: signal process started
+2025/12/01 15:01:14 [notice] 7009#0: signal process started
+2025/12/01 16:51:09 [notice] 8133#0: signal process started
+2025/12/01 17:20:11 [notice] 8488#0: signal process started
+2025/12/01 19:43:48 [notice] 9383#0: signal process started
+2025/12/01 19:48:09 [notice] 9553#0: signal process started
+2025/12/01 21:15:09 [notice] 9957#0: signal process started
+2025/12/01 21:23:20 [notice] 10141#0: signal process started
+2025/12/01 22:44:53 [notice] 10687#0: signal process started
+2025/12/01 22:46:55 [notice] 10835#0: signal process started
+2025/12/02 03:59:02 [notice] 11739#0: signal process started
+2025/12/02 12:02:47 [notice] 12419#0: signal process started
+2025/12/02 22:33:20 [notice] 3352#0: signal process started
+2025/12/03 15:35:17 [notice] 3393#0: signal process started
+2025/12/03 15:48:24 [notice] 3810#0: signal process started
+2025/12/03 15:49:56 [notice] 3912#0: signal process started
+2025/12/03 16:19:39 [notice] 4154#0: signal process started
+2025/12/03 19:17:38 [notice] 4802#0: signal process started
+2025/12/03 19:45:38 [notice] 5005#0: signal process started
+2025/12/03 19:50:56 [notice] 7635#0: signal process started
+2025/12/04 11:38:17 [notice] 9102#0: signal process started
+2025/12/04 13:39:49 [notice] 10493#0: signal process started
+2025/12/04 15:13:24 [notice] 3156#0: signal process started
+2025/12/05 15:57:07 [notice] 4416#0: signal process started
+2025/12/05 16:00:51 [notice] 4564#0: signal process started
+2025/12/05 16:42:00 [notice] 5211#0: signal process started
+2025/12/05 17:56:48 [notice] 5815#0: signal process started
+2025/12/05 20:35:37 [notice] 6227#0: signal process started
+2025/12/05 21:02:34 [notice] 6451#0: signal process started
+2025/12/05 21:08:03 [notice] 6578#0: signal process started
+2025/12/05 22:24:56 [notice] 7080#0: signal process started
+2025/12/05 22:28:41 [notice] 7195#0: signal process started
+2025/12/05 22:37:18 [notice] 7342#0: signal process started
+2025/12/06 07:00:33 [notice] 9339#0: signal process started
+2025/12/06 17:46:21 [notice] 11300#0: signal process started
+2025/12/06 17:50:02 [notice] 11621#0: signal process started
+2025/12/06 20:26:45 [notice] 11973#0: signal process started
+2025/12/06 20:51:18 [notice] 12404#0: signal process started
+2025/12/07 02:45:58 [notice] 13193#0: signal process started
+2025/12/07 02:48:37 [notice] 13446#0: signal process started
+2025/12/07 03:03:03 [notice] 13833#0: signal process started
+2025/12/07 13:17:11 [notice] 24826#0: signal process started
+2025/12/07 17:34:12 [notice] 25721#0: signal process started
+2025/12/07 17:56:36 [notice] 26124#0: signal process started
+2025/12/07 18:04:20 [notice] 26390#0: signal process started
+2025/12/07 21:15:17 [notice] 26800#0: signal process started
+2025/12/08 14:33:47 [notice] 4062#0: signal process started
+2025/12/08 14:36:27 [notice] 4186#0: signal process started
+2025/12/08 14:38:37 [notice] 5149#0: signal process started
+2025/12/11 18:06:55 [notice] 8268#0: signal process started
+2025/12/12 11:13:40 [notice] 2495#0: signal process started
+2025/12/12 11:37:01 [notice] 2848#0: signal process started
+2025/12/12 11:57:25 [notice] 3084#0: signal process started
+2025/12/12 12:55:24 [notice] 3533#0: signal process started
+2025/12/12 14:23:27 [notice] 4042#0: signal process started
+2025/12/12 14:37:20 [notice] 4374#0: signal process started
+2025/12/12 14:44:38 [notice] 4522#0: signal process started
+2025/12/12 14:48:00 [notice] 4670#0: signal process started
+2025/12/12 15:05:19 [notice] 4830#0: signal process started
+2025/12/12 16:45:17 [notice] 5065#0: signal process started
+2025/12/13 11:59:30 [notice] 6442#0: signal process started
+2025/12/13 15:55:25 [notice] 2716#0: signal process started
+2025/12/15 15:03:34 [notice] 5630#0: signal process started
+2025/12/15 15:05:43 [notice] 5795#0: signal process started
+2025/12/15 16:38:50 [notice] 6277#0: signal process started
+2025/12/21 18:52:07 [notice] 2788#0: signal process started
+2025/12/21 19:15:01 [notice] 3187#0: signal process started
+2025/12/24 19:14:40 [notice] 14650#0: signal process started
+2025/12/24 19:14:40 [alert] 14650#0: kill(3317, 3) failed (3: No such process)
+2025/12/24 19:18:14 [notice] 15100#0: signal process started
+2025/12/25 10:58:29 [notice] 5065#0: signal process started
+2025/12/25 17:32:16 [notice] 9077#0: signal process started
+2025/12/25 22:08:03 [notice] 10726#0: signal process started
+2025/12/26 14:12:25 [notice] 12490#0: signal process started
+2025/12/26 15:36:32 [emerg] 14288#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/12/26 15:36:32 [emerg] 14288#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/12/26 15:36:32 [emerg] 14288#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/12/26 15:36:32 [emerg] 14288#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/12/26 15:36:32 [emerg] 14288#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2025/12/26 15:36:32 [emerg] 14288#0: still could not bind()
+2025/12/26 15:36:38 [notice] 14301#0: signal process started
+2025/12/26 17:38:40 [notice] 14730#0: signal process started
+2025/12/26 22:38:23 [notice] 15847#0: signal process started
+2025/12/27 07:29:59 [notice] 16590#0: signal process started
+2025/12/27 12:28:30 [notice] 17915#0: signal process started
+2025/12/27 14:11:59 [notice] 18339#0: signal process started
+2025/12/27 20:23:05 [notice] 19593#0: signal process started
+2025/12/28 18:18:57 [notice] 4759#0: signal process started
+2025/12/28 18:34:05 [notice] 4976#0: signal process started
+2025/12/28 19:40:21 [notice] 6566#0: signal process started
+2025/12/29 13:29:14 [notice] 8009#0: signal process started
+2026/01/02 00:11:14 [notice] 4324#0: signal process started
+2026/01/02 15:23:55 [notice] 5865#0: signal process started
+2026/01/02 15:42:13 [notice] 6247#0: signal process started
+2026/01/02 17:07:41 [notice] 7407#0: signal process started
+2026/01/02 23:45:18 [notice] 10395#0: signal process started
+2026/01/03 00:21:36 [notice] 13556#0: signal process started
+2026/01/04 20:39:04 [notice] 7001#0: signal process started
+2026/01/07 16:35:42 [notice] 12141#0: signal process started
+2026/01/10 17:02:16 [notice] 3614#0: signal process started
+2026/01/13 15:05:24 [error] 3970#0: *1 open() "/usr/local/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+rm -f ./tmp.txt
+
+grep -rn "full_name" ./src > ./tmp.txt
+
+#grep -rn "pagesize" ./src_2025_11_30 > ./tmp.txt

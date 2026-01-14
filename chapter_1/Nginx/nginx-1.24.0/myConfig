@@ -1,0 +1,6 @@
+ sudo ./configure \
+  --sbin-path=/home/wsd/Desktop/Nginx \
+  --conf-path=/home/wsd/Desktop/Nginx/conf/nginx.conf \
+  --error-log-path=/home/wsd/Desktop/Nginx/log/error.log \
+  --http-log-path=/home/wsd/Desktop/Nginx/log/access.log
+

@@ -1,0 +1,5 @@
+#ifndef _NIGHT_EVENT_CORE_MODULE_H_
+#define _NIGHT_EVENT_CORE_MODULE_H_
+
+
+#endif /* _NIGHT_EVENT_CORE_MODULE_H_ */

@@ -1,0 +1,178 @@
+FILE=src/core/night.c:LINE=144
+The daemon process is completed
+
+FILE=src/core/night_pidfile.c:LINE=7
+function:	night_create_pidfile
+
+FILE=src/core/night.c:LINE=156
+create pidfile completed
+
+FILE=src/core/night_signal.c:LINE=30
+function:	night_init_signals
+
+FILE=src/core/night_process_cycle.c:LINE=32
+function:	night_master_process_cycle
+
+FILE=src/core/night_process_cycle.c:LINE=65
+size=23
+
+FILE=src/core/night_pool.c:LINE=41
+function:	night_pmalloc
+
+FILE=src/core/night_pool.c:LINE=46
+size=23
+size after night_align=24
+
+FILE=src/core/night_pool.c:LINE=55
+p = night_pmalloc_small(pool, size);
+
+FILE=src/core/night_pool.c:LINE=79
+function:	night_pmalloc_small
+
+FILE=src/core/night_process_cycle.c:LINE=96
+title=master process ./night
+
+FILE=src/core/night_proctitle.c:LINE=10
+function:	night_setproctitle
+
+FILE=src/tools/night_string.c:LINE=7
+function:	night_cpystrn
+
+FILE=src/tools/night_string.c:LINE=7
+function:	night_cpystrn
+
+FILE=src/core/night_proctitle.c:LINE=26
+night_argv[0]=night:master process ./night
+
+FILE=src/core/night_process_cycle.c:LINE=101
+night_setproctitle is completed
+
+FILE=src/core/night_process_cycle.c:LINE=162
+function:	night_start_worker_processes
+
+FILE=src/core/night_process.c:LINE=15
+function:	night_spawn_process
+
+FILE=src/os/unix/night_fctl.c:LINE=7
+function:	night_nonblocking
+
+FILE=src/os/unix/night_fctl.c:LINE=7
+function:	night_nonblocking
+
+FILE=src/os/unix/night_fctl.c:LINE=24
+function:	night_async
+
+FILE=src/os/unix/night_fctl.c:LINE=47
+function:	night_fdCloexec
+
+FILE=src/os/unix/night_fctl.c:LINE=47
+function:	night_fdCloexec
+
+FILE=src/core/night_process.c:LINE=148
+spawn_process is completed
+
+FILE=src/core/night_process.c:LINE=167
+night_last_process=1
+
+FILE=src/core/night_process_cycle.c:LINE=107
+night_start_worker_processes is completed
+
+FILE=src/core/night_process_cycle.c:LINE=112
+loop of master process
+sigsuspend is waiting signal
+
+FILE=src/core/night_signal.c:LINE=67
+function:	night_signal_handler
+
+FILE=src/core/night_process_cycle.c:LINE=118
+wake up from sigsuspend 
+
+FILE=src/core/night_time.c:LINE=53
+function:	night_time_update
+
+FILE=src/core/night_time.c:LINE=131
+function:	night_monotonic_time
+
+FILE=src/core/night_time.c:LINE=86
+night_current_msec=133963876
+
+FILE=src/core/night_time.c:LINE=111
+night_cached_time_slot=1
+
+FILE=src/core/night_time.c:LINE=156
+function:	night_gmtime
+
+FILE=src/core/night_process_cycle.c:LINE=148
+night_quit = 1
+
+FILE=src/core/night_process.c:LINE=245
+function:	night_signal_worker_processes
+
+FILE=src/core/night_process.c:LINE=272
+night_last_process=1
+
+FILE=src/core/night_process.c:LINE=277
+night_processes[0].pid=23830
+
+FILE=src/core/night_process.c:LINE=285
+night_processes[0].exiting = 0
+signo=3
+
+FILE=src/core/night_process.c:LINE=294
+ch.command=3
+
+FILE=src/core/night_channel.c:LINE=12
+function:	night_write_channel
+
+FILE=src/core/night_channel.c:LINE=27
+if(ch->fd == -1) 
+
+FILE=src/core/night_process.c:LINE=302
+0=night_write_channel
+
+FILE=src/core/night_process_cycle.c:LINE=112
+loop of master process
+sigsuspend is waiting signal
+
+FILE=src/core/night_signal.c:LINE=67
+function:	night_signal_handler
+
+FILE=src/core/night_process.c:LINE=177
+function:	night_process_get_status
+
+FILE=src/core/night_process.c:LINE=236
+ Î¸ü is exited
+
+FILE=src/core/night_process_cycle.c:LINE=118
+wake up from sigsuspend 
+
+FILE=src/core/night_time.c:LINE=53
+function:	night_time_update
+
+FILE=src/core/night_time.c:LINE=131
+function:	night_monotonic_time
+
+FILE=src/core/night_time.c:LINE=86
+night_current_msec=133963894
+
+FILE=src/core/night_process_cycle.c:LINE=129
+reap children
+
+FILE=src/core/night_process.c:LINE=334
+function:	night_reap_children
+
+FILE=src/core/night_channel.c:LINE=171
+function:	night_close_channel
+
+FILE=src/core/night_process_cycle.c:LINE=244
+function:	night_master_process_exit
+
+FILE=src/core/night_listening.c:LINE=217
+function:	night_close_listening_sockets
+
+FILE=src/core/night_pool.c:LINE=167
+function:	night_destroy_pool
+
+FILE=src/core/night_process_cycle.c:LINE=261
+night master process exit(0)
+
