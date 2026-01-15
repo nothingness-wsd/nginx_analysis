@@ -211,6 +211,138 @@ ngx_debug_init
 
 ---
 
+```c
+#define _GNU_SOURCE
+```
+在 C 语言中，`#define _GNU_SOURCE` 是一个**特性测试宏（Feature Test Macro）**，它的作用是**启用 GNU/Linux 系统（特别是 glibc）中的一系列非标准但非常有用的扩展功能**。
+
+---
+
+### 🔍 核心作用
+
+当你在包含任何系统头文件（如 `<stdio.h>`、`<unistd.h>` 等）**之前**定义 `_GNU_SOURCE`：
+
+```c
+#define _GNU_SOURCE
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+// ...
+```
+
+你告诉 **glibc（GNU C Library）**：“请暴露所有 GNU/Linux 特有的、POSIX 或 ISO C 标准之外的函数、宏和定义”。
+
+---
+
+### ✅ 启用哪些功能？（常见例子）
+
+| 功能 | 说明 |
+|------|------|
+| **`strdup()`**, **`strndup()`** | 复制字符串（ISO C 没有，POSIX 有，但需 `_GNU_SOURCE` 或 `_POSIX_C_SOURCE`） |
+| **`getline()`** | 从流中读取整行（比 `fgets` 更方便） |
+| **`asprintf()`**, **`vasprintf()`** | 动态分配内存的 `printf`（返回格式化后的字符串指针） |
+| **`daemon()`** | 将进程转为守护进程 |
+| **`get_current_dir_name()`** | 获取当前工作目录（比 `getcwd(NULL, 0)` 更直接） |
+| **`pthread_setname_np()`** | 设置线程名（用于调试） |
+| **`O_TMPFILE`** | Linux 特有的安全临时文件标志（`open()` 中使用） |
+| **`CPU_SET` 宏族** | CPU 亲和性操作（`sched_setaffinity` 相关） |
+| **`epoll_create1()`**, **`accept4()`** | 带 flags 的现代系统调用 |
+
+> 💡 很多这些函数以 `_np`（non-portable）结尾，明确表示“非可移植”。
+
+---
+
+### ⚠️ 重要注意事项
+
+#### 1. **必须在包含任何头文件前定义**
+```c
+// ✅ 正确
+#define _GNU_SOURCE
+#include <stdio.h>
+
+// ❌ 错误：可能无效
+#include <stdio.h>
+#define _GNU_SOURCE  // 太晚了！
+```
+
+#### 2. **降低代码可移植性**
+- `_GNU_SOURCE` 是 **Linux/glibc 特有**的。
+- 在 macOS、FreeBSD、Windows 等系统上，这些函数可能不存在。
+- 如果需要跨平台，应使用条件编译或替代实现。
+
+#### 3. **与其他特性宏互斥**
+- `_GNU_SOURCE` 会**自动启用**：
+  - `_ISOC99_SOURCE`
+  - `_POSIX_SOURCE`
+  - `_POSIX_C_SOURCE`（设为 200809L）
+  - `_XOPEN_SOURCE`（设为 700）
+- 所以**不要同时定义** `_POSIX_C_SOURCE` 和 `_GNU_SOURCE`，否则可能冲突。
+
+---
+
+### 🛠 替代方式（推荐用于大型项目）
+
+在编译时通过 `-D` 定义，而不是写死在源码中：
+
+```bash
+gcc -D_GNU_SOURCE -o myapp myapp.c
+```
+
+优点：
+- 源码更干净；
+- 可通过构建系统（如 Makefile、CMake）统一控制。
+
+---
+
+### 📚 官方文档参考
+
+- [glibc 手册：Feature Test Macros](https://www.gnu.org/software/libc/manual/html_node/Feature-Test-Macros.html)
+- man 手册页中常有说明，例如：
+  ```bash
+  man getline
+  ```
+  会显示：
+  > Feature Test Macro Requirements for glibc:
+  > ```c
+  > #define _GNU_SOURCE
+  >         /* or */
+  > #define _POSIX_C_SOURCE 200809L
+  > ```
+
+---
+
+### ✅ 总结
+
+| 项目 | 说明 |
+|------|------|
+| **作用** | 启用 GNU/Linux（glibc）特有扩展功能 |
+| **位置** | 必须在 `#include` 任何系统头文件**之前**定义 |
+| **用途** | 使用 `getline`, `asprintf`, `epoll_create1` 等强大但非标准的函数 |
+| **代价** | 代码绑定到 GNU/Linux 平台，失去可移植性 |
+| **建议** | 小型 Linux 工具可直接用；大型/跨平台项目慎用或封装 |
+
+> 简单说：**`#define _GNU_SOURCE` = “我要用 Linux 最强大的系统功能，不在乎跨平台”**。
+
+---
+
+要使用 `dprintf` 函数就需要 `#define _GNU_SOURCE` 
+
+`dprintf` 是一个 GNU 扩展函数
+
+功能：像 fprintf 一样格式化输出，但直接写入文件描述符（fd），而不是 FILE* 流。
+
+它是 printf + write 的便捷组合。
+
+---
+
+**为什么需要 _GNU_SOURCE？**
+
+dprintf 不是 ISO C 标准函数。
+它最初是 GNU 扩展，后来被纳入 POSIX.1-2008。
+但在 glibc（GNU C Library） 中，为了兼容旧代码和控制暴露的接口，默认不启用 POSIX.1-2008 及 GNU 扩展，除非你显式启用。
+
+---
+
 由于
 ```c
     ngx_debug_init();
