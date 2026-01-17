@@ -8,8 +8,9 @@
 
 int				trace_file_fd;
 
-int 			night_pid;
-int 			night_parent;
+pid_t 			night_pid;
+pid_t 			night_parent;
+
 night_cycle_t 	*night_cycle;
 
 char	**night_os_argv;

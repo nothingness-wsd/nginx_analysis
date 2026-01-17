@@ -54,8 +54,8 @@
 #define NIGHT_MAX_INT_T_VALUE	9223372036854775807
 
 extern int		trace_file_fd;
-extern int 		night_pid;
-extern int 		night_parent;
+extern pid_t	night_pid;
+extern pid_t	night_parent;
 
 extern int		night_dump_config;
 
